@@ -1,0 +1,1906 @@
+{
+  "sections": [
+    {
+      "tag": "DIV",
+      "id": "shopify-section-sections--24848398909767__announcement-bar",
+      "className": "shopify-section shopify-section-group-header-group section-announcement-bar",
+      "heading": null,
+      "textSnippet": "Free delivery to your door for orders over $100. Check out our new Protein Shake, 20% off for a limi"
+    },
+    {
+      "tag": "DIV",
+      "id": "shopify-section-sections--24848398909767__header",
+      "className": "shopify-section shopify-section-group-header-group section-header bmrk-header shopify-section-header-sticky",
+      "heading": null,
+      "textSnippet": "Select product type All Bars Cereal Drinks Fruit & Vegetables Nutrition Vitamins & Minerals All Sear"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__icons_with_text_A8P3h4",
+      "className": "shopify-section section section-icons-with-text",
+      "heading": null,
+      "textSnippet": "WELL TRUSTED Over 100k customers SUPER FAST With Express delivery EXPERT HELP Seven days a week BEST"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "icons-with-text section__inner",
+      "heading": null,
+      "textSnippet": "WELL TRUSTED Over 100k customers SUPER FAST With Express delivery EXPERT HELP Seven days a week BEST"
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__icons_with_text_A8P3h4",
+      "className": "section-grid grid mb-0 mt-0\n            grid--4-col-desktop\n            grid--central-loners\n            \n              grid--2-col-tablet-down\n            \n            \n              slider\n              \n               slider--tablet grid--peek\n            ",
+      "heading": null,
+      "textSnippet": "WELL TRUSTED Over 100k customers SUPER FAST With Express delivery EXPERT HELP Seven days a week BEST"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "icons-with-text__heading section-content__text rte t6\n                            ",
+      "heading": null,
+      "textSnippet": "WELL TRUSTED"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "icons-with-text__text section-content__text rte max-w- t6",
+      "heading": null,
+      "textSnippet": "Over 100k customers"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "icons-with-text__heading section-content__text rte t6\n                            ",
+      "heading": null,
+      "textSnippet": "SUPER FAST"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "icons-with-text__text section-content__text rte max-w- t6",
+      "heading": null,
+      "textSnippet": "With Express delivery"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "icons-with-text__heading section-content__text rte t6\n                            ",
+      "heading": null,
+      "textSnippet": "EXPERT HELP"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "icons-with-text__text section-content__text rte max-w- t6",
+      "heading": null,
+      "textSnippet": "Seven days a week"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "icons-with-text__heading section-content__text rte t6\n                            ",
+      "heading": null,
+      "textSnippet": "BEST PRICES"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "icons-with-text__text section-content__text rte max-w- t6",
+      "heading": null,
+      "textSnippet": "Unbeatable value"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__slideshow",
+      "className": "shopify-section section section-slideshow",
+      "heading": "Nourish your everyday,\nthe \nnatural\n way.",
+      "textSnippet": "Nourish your everyday, the  natural  way. Wholesome foods for healthier daily choices. Shop now nu"
+    },
+    {
+      "tag": "SLIDESHOW-COMPONENT",
+      "id": "",
+      "className": "slider-mobile-gutter\n        section__inner\n        \n        \n          pt-0 pb-0\n        \n        ",
+      "heading": "Nourish your everyday,\nthe \nnatural\n way.",
+      "textSnippet": "Nourish your everyday, the  natural  way. Wholesome foods for healthier daily choices. Shop now nu"
+    },
+    {
+      "tag": "DIV",
+      "id": "Slider-template--24848398352711__slideshow",
+      "className": "slideshow banner grid grid--1-col slider slider--everywhere section-height-responsive--desktop section-height-responsive--mobile slider--scroll-active",
+      "heading": "Nourish your everyday,\nthe \nnatural\n way.",
+      "textSnippet": "Nourish your everyday, the  natural  way. Wholesome foods for healthier daily choices. Shop now nu"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "slideshow__media image-overlay banner__media media\n                   section-height-responsive--mobile\n                  \n                  ",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "slideshow__text banner__box section-content max-w-m content-container content-container--full-width-mobile color-scheme-3 gradient items-left md:items-left text-left md:text-left responsive-offset-x responsive-offset-y",
+      "heading": "Nourish your everyday,\nthe \nnatural\n way.",
+      "textSnippet": "Nourish your everyday, the  natural  way. Wholesome foods for healthier daily choices. Shop now"
+    },
+    {
+      "tag": "H1",
+      "id": "",
+      "className": "banner__heading inline-richtext section-content__heading color-heading italics-convert italics-accent text-size-custom self-left text-left md:self-left md:text-left",
+      "heading": null,
+      "textSnippet": "Nourish your everyday, the  natural  way."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__text section-content__text rte max-w-m t1",
+      "heading": null,
+      "textSnippet": "Wholesome foods for healthier daily choices."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__buttons section-content__buttons justify-left md:justify-left",
+      "heading": null,
+      "textSnippet": "Shop now"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "slideshow__media image-overlay banner__media media section-height-responsive--mobile no-js-not-hidden",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "slideshow__text banner__box section-content max-w-s content-container content-container--full-width-mobile color-scheme-3 gradient items-center md:items-left text-center md:text-left responsive-offset-x responsive-offset-y",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "banner__heading inline-richtext section-content__heading color-heading italics-convert italics-accent text-size-custom self-center text-center md:self-left md:text-left",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__text section-content__text rte max-w-s t1",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__buttons section-content__buttons justify-center md:justify-left",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "slideshow__media image-overlay banner__media media\n                   section-height-responsive--mobile\n                  \n                   hidden no-js-not-hidden",
+      "heading": null,
+      "textSnippet": "                   "
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "slideshow__text banner__box section-content max-w-m content-container content-container--full-width-mobile color-scheme-6 gradient items-center md:items-center text-center md:text-center responsive-offset-x responsive-offset-y",
+      "heading": "nutrition",
+      "textSnippet": "nutrition"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "banner__heading inline-richtext section-content__heading color-heading italics-convert italics-accent text-size-custom self-center text-center md:self-center md:text-center",
+      "heading": null,
+      "textSnippet": "nutrition"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__buttons section-content__buttons justify-center md:justify-center banner__buttons--multiple",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "slideshow__media image-overlay banner__media media\n                   section-height-responsive--mobile\n                  \n                   hidden no-js-not-hidden",
+      "heading": null,
+      "textSnippet": "                   "
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "slideshow__text banner__box section-content max-w-xs content-container content-container--full-width-mobile color-scheme-3 gradient items-left md:items-left text-left md:text-left responsive-offset-x responsive-offset-y",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "banner__heading inline-richtext section-content__heading color-heading italics-convert italics-accent text-size-custom self-left text-left md:self-left md:text-left",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__text section-content__text rte max-w-xs t1",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__buttons section-content__buttons justify-left md:justify-left banner__buttons--multiple",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__featured_collection_izXb9P",
+      "className": "shopify-section section section-featured-collection",
+      "heading": "Our Bestsellers",
+      "textSnippet": "Our Bestsellers Our best-loved picks, chosen for everyday nourishment and smarter snacking. Renew "
+    },
+    {
+      "tag": "DIV",
+      "id": "collection-template--24848398352711__featured_collection_izXb9P",
+      "className": "collection collection-quick-add-bulk section__inner pt-s pb-s\n      ",
+      "heading": "Our Bestsellers",
+      "textSnippet": "Our Bestsellers Our best-loved picks, chosen for everyday nourishment and smarter snacking. Renew "
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "section-title title inline-richtext italics-convert italics-light h1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Our Bestsellers"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-text collection__description rte t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Our best-loved picks, chosen for everyday nourishment and smarter snacking."
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__featured_collection_izXb9P",
+      "className": "section-grid grid product-grid contains-card contains-card--product grid--6-col-desktop grid--scaled grid--1-col-tablet-down slider slider--desktop slider--tablet grid--peek slider--scroll-active",
+      "heading": "Renew Cereal - Cinnamon Crunch",
+      "textSnippet": "Renew Cereal - Cinnamon Crunch High in protein Regular price From £7.00 GBP UNIT PRICE £0.28 /   PER"
+    },
+    {
+      "tag": "DIV",
+      "id": "shopify-section-template--24848398352711__gallery_B78Qp6",
+      "className": "shopify-section section section-gallery",
+      "heading": "Açaí Powder For Brighter Everyday Blends",
+      "textSnippet": "Açaí Powder For Brighter Everyday Blends All the açaí goodness, without the fuss. Learn about açaí"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner pt-s pb-s",
+      "heading": "Açaí Powder For Brighter Everyday Blends",
+      "textSnippet": "Açaí Powder For Brighter Everyday Blends All the açaí goodness, without the fuss. Learn about açaí"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "section-title title inline-richtext h0 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Açaí Powder For Brighter Everyday Blends"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-text gallery__description rte t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "All the açaí goodness, without the fuss."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-view-all gallery__view-all scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Learn about açaí"
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__gallery_B78Qp6",
+      "className": "gallery-grid section-grid grid mb-0 mt-0\n            \n              gallery-grid--rounding-inner\n            \n            grid--4-col-desktop\n            grid--central-loners\n            \n              grid--1-col-tablet-down\n            \n            \n              slider slider--tablet grid--peek\n            ",
+      "heading": "Steady Energy",
+      "textSnippet": "All the açaí goodness, without the fuss. Steady Energy A nourishing boost to keep you feeling balan"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "card-padding block-when-empty relative grow section-height-responsive--mobile section-height-responsive--desktop\n                      max-w-xs flex flex-col justify-start self-left\n                       z-1",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "card-padding block-when-empty relative grow section-height-responsive--mobile section-height-responsive--desktop\n                      max-w-l flex flex-col justify-end self-left\n                      ",
+      "heading": "Steady Energy",
+      "textSnippet": "Steady Energy A nourishing boost to keep you feeling balanced."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "card-padding block-when-empty relative grow section-height-responsive--mobile section-height-responsive--desktop\n                      max-w-l flex flex-col justify-end self-left\n                      ",
+      "heading": "Daily Digestion",
+      "textSnippet": "Daily Digestion Gut-friendly to support your everyday routine."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "card-padding block-when-empty relative grow section-height-responsive--mobile section-height-responsive--desktop\n                      max-w-s flex flex-col justify-end self-left\n                      ",
+      "heading": "Refuel Naturally",
+      "textSnippet": "Refuel Naturally Plant-powered goodness made for mornings, post-workouts and snack time."
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__collection_list_9pHBkC",
+      "className": "shopify-section section section-collection-list",
+      "heading": "Shop by Department",
+      "textSnippet": "Shop by Department Everything you need to make healthier everyday choices, from pantry staples and "
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "collection-list section__inner pt-s pb-s\n      ",
+      "heading": "Shop by Department",
+      "textSnippet": "Shop by Department Everything you need to make healthier everyday choices, from pantry staples and "
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "section-title title inline-richtext italics-convert italics-light h1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Shop by Department"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-text collection-list__description rte t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Everything you need to make healthier everyday choices, from pantry staples and breakfast favourites"
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__collection_list_9pHBkC",
+      "className": "collection_list__collections section-grid grid contains-card--collection mt-0 mb-0\n            grid--8-col-desktop\n            \n             grid--scaled\n            \n              grid--2-col-tablet-down\n            \n            \n              slider\n               slider--desktop\n               slider--tablet grid--peek\n            ",
+      "heading": "Cereal",
+      "textSnippet": "Cereal Vitamins & Minerals Drinks Nutrition Supplements Fruit & Vegetables Bars Bestsellers Flash sa"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__rich_text_UQPkGb",
+      "className": "shopify-section section section-rich-text",
+      "heading": "Peak \nFood\n Supplies",
+      "textSnippet": "FUELLING YOUR HEALTHIER LIFE Peak  Food  Supplies We’re dedicated to igniting your well-being and "
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner page-width pt-s pb-s05",
+      "heading": "Peak \nFood\n Supplies",
+      "textSnippet": "FUELLING YOUR HEALTHIER LIFE Peak  Food  Supplies We’re dedicated to igniting your well-being and "
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "w-full section-content section-content-template--24848398352711__rich_text_UQPkGb max-w-m text-left md:text-center\n            p-0",
+      "heading": "Peak \nFood\n Supplies",
+      "textSnippet": "FUELLING YOUR HEALTHIER LIFE Peak  Food  Supplies We’re dedicated to igniting your well-being and "
+    },
+    {
+      "tag": "P",
+      "id": "",
+      "className": "rich-text__text section-content__caption rich-text__text--caption caption-with-letter-spacing t6 scroll-trigger animate--fade-in self-left text-left md:self-center md:text-center scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "FUELLING YOUR HEALTHIER LIFE"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "rich-text__heading inline-richtext section-content__heading color-heading italics-convert italics-light h0 self-left text-left md:self-center md:text-center scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Peak  Food  Supplies"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "rich-text__text section-content__text rte max-w- t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "We’re dedicated to igniting your well-being and fueling your day. Our thoughtfully curated selection"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "rich-text__buttons section-content__buttons justify-left md:justify-center scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "More about us"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__multicolumn_kjNPD9",
+      "className": "shopify-section section section-multicolumn",
+      "heading": "Vegan",
+      "textSnippet": "Vegan Nut Free Gluten Free Plant Based Dairy Free Keto"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner isolate\n        pt-s05 pb-s\n        ",
+      "heading": "Vegan",
+      "textSnippet": "Vegan Nut Free Gluten Free Plant Based Dairy Free Keto"
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__multicolumn_kjNPD9",
+      "className": "multicolumn-list contains-content-container section-grid grid mb-0\n          grid--6-col-desktop\n          \n           grid--scaled\n          \n            grid--2-col-tablet-down\n          \n          \n            slider\n            \n             slider--tablet grid--peek\n          ",
+      "heading": "Vegan",
+      "textSnippet": "Vegan Nut Free Gluten Free Plant Based Dairy Free Keto"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__multicolumn_kjNPD9-1",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Vegan",
+      "textSnippet": "Vegan"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__multicolumn_kjNPD9-2",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Nut Free",
+      "textSnippet": "Nut Free"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__multicolumn_kjNPD9-3",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Gluten Free",
+      "textSnippet": "Gluten Free"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__multicolumn_kjNPD9-4",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Plant Based",
+      "textSnippet": "Plant Based"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__multicolumn_kjNPD9-5",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Dairy Free",
+      "textSnippet": "Dairy Free"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__multicolumn_kjNPD9-6",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Keto",
+      "textSnippet": "Keto"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__social_video_reel_VytnEN",
+      "className": "shopify-section section section-multicolumn section-social-video-reel",
+      "heading": "Fresh ideas,\nblended by you.",
+      "textSnippet": "Fresh ideas, blended by you. Smoothie recipes, wellness rituals and feel-good blends. 1 / of 10"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "w-full section-content responsive-card-padding card-padding max-w-xl",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner isolate\n        pt-s pb-s\n        ",
+      "heading": "Fresh ideas,\nblended by you.",
+      "textSnippet": "Fresh ideas, blended by you. Smoothie recipes, wellness rituals and feel-good blends. 1 / of 10"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "section-title title inline-richtext italics-convert italics-light h1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Fresh ideas, blended by you."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-text multicolumn-list__description rte t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Smoothie recipes, wellness rituals and feel-good blends."
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__social_video_reel_VytnEN",
+      "className": "multicolumn-list contains-content-container section-grid grid mb-0\n          grid--5-col-desktop\n          \n           grid--scaled\n          \n            grid--2-col-tablet-down\n          \n          \n            slider\n             slider--desktop\n             slider--tablet grid--peek\n          ",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__social_video_reel_VytnEN-1",
+      "className": "multicolumn-list__item grid__item text- section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "section template--24848398352711__social_video_reel_VytnEN-social-video-wrapper social-video-wrapper video-section__media deferred-media no-js-hidden gradient global-media-settings media-fit-cover global-media-settings--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__social_video_reel_VytnEN-58654305419591",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__social_video_reel_VytnEN-2",
+      "className": "multicolumn-list__item grid__item text- section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "section template--24848398352711__social_video_reel_VytnEN-social-video-wrapper social-video-wrapper video-section__media deferred-media no-js-hidden gradient global-media-settings media-fit-cover global-media-settings--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__social_video_reel_VytnEN-58654305059143",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__social_video_reel_VytnEN-3",
+      "className": "multicolumn-list__item grid__item text- section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "section template--24848398352711__social_video_reel_VytnEN-social-video-wrapper social-video-wrapper video-section__media deferred-media no-js-hidden gradient global-media-settings media-fit-cover global-media-settings--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__social_video_reel_VytnEN-58654305190215",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__social_video_reel_VytnEN-4",
+      "className": "multicolumn-list__item grid__item text- section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "section template--24848398352711__social_video_reel_VytnEN-social-video-wrapper social-video-wrapper video-section__media deferred-media no-js-hidden gradient global-media-settings media-fit-cover global-media-settings--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__social_video_reel_VytnEN-58654305354055",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__social_video_reel_VytnEN-5",
+      "className": "multicolumn-list__item grid__item text- section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "section template--24848398352711__social_video_reel_VytnEN-social-video-wrapper social-video-wrapper video-section__media deferred-media no-js-hidden gradient global-media-settings media-fit-cover global-media-settings--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__social_video_reel_VytnEN-58654305157447",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__social_video_reel_VytnEN-6",
+      "className": "multicolumn-list__item grid__item text- section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "section template--24848398352711__social_video_reel_VytnEN-social-video-wrapper social-video-wrapper video-section__media deferred-media no-js-hidden gradient global-media-settings media-fit-cover global-media-settings--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__social_video_reel_VytnEN-58654305321287",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__social_video_reel_VytnEN-7",
+      "className": "multicolumn-list__item grid__item text- section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "section template--24848398352711__social_video_reel_VytnEN-social-video-wrapper social-video-wrapper video-section__media deferred-media no-js-hidden gradient global-media-settings media-fit-cover global-media-settings--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__social_video_reel_VytnEN-58654305222983",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__social_video_reel_VytnEN-8",
+      "className": "multicolumn-list__item grid__item text- section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "section template--24848398352711__social_video_reel_VytnEN-social-video-wrapper social-video-wrapper video-section__media deferred-media no-js-hidden gradient global-media-settings media-fit-cover global-media-settings--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__social_video_reel_VytnEN-58654305255751",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__social_video_reel_VytnEN-9",
+      "className": "multicolumn-list__item grid__item text- section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "section template--24848398352711__social_video_reel_VytnEN-social-video-wrapper social-video-wrapper video-section__media deferred-media no-js-hidden gradient global-media-settings media-fit-cover global-media-settings--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__social_video_reel_VytnEN-58654305386823",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__social_video_reel_VytnEN-10",
+      "className": "multicolumn-list__item grid__item text- section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "section template--24848398352711__social_video_reel_VytnEN-social-video-wrapper social-video-wrapper video-section__media deferred-media no-js-hidden gradient global-media-settings media-fit-cover global-media-settings--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__social_video_reel_VytnEN-58654305091911",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__video_banner_HLY4Lb",
+      "className": "shopify-section section section-video-banner",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner\n      \n        pt-0 pb-0\n      \n      ",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "video-section video-banner-section\n          ",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DEFERRED-MEDIA",
+      "id": "",
+      "className": "video-section__media banner__media deferred-media gradient media-fit-cover global-media-settings--full-width ratio scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "Deferred-Poster-Modal-template--24848398352711__video_banner_HLY4Lb-58663028228423",
+      "className": "video-section__poster media deferred-media__poster media--landscape",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__box section-content section-content-template--24848398352711__video_banner_HLY4Lb max-w-s content-container content-container--full-width-mobile color-scheme-3 gradient items-center md:items-center text-center md:text-center",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "video-banner__heading inline-richtext section-content__heading color-heading italics-convert italics-accent text-size-custom self-center text-center md:self-center md:text-center scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "video-banner__buttons section-content__buttons justify-center md:justify-center scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__featured_product_tyMy6H",
+      "className": "shopify-section section section-featured-product",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__ribbon_banner_zQ9nzL",
+      "className": "shopify-section section section-ribbon-banner",
+      "heading": "Nutrition sale starts soon",
+      "textSnippet": "Nutrition sale starts soon Grab a bargain and stock up on protein powders, superfoods, and suppleme"
+    },
+    {
+      "tag": "CLOSABLE-ELEMENT",
+      "id": "",
+      "className": "block short-section hidden-during-load",
+      "heading": "Nutrition sale starts soon",
+      "textSnippet": "Nutrition sale starts soon Grab a bargain and stock up on protein powders, superfoods, and suppleme"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner ribbon-banner z-1 content-container color-scheme-3 gradient overflow-hidden responsive-padding-y\n         content-container--full-width",
+      "heading": "Nutrition sale starts soon",
+      "textSnippet": "Nutrition sale starts soon Grab a bargain and stock up on protein powders, superfoods, and suppleme"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "ribbon-banner__grid section-content flex items-center flex-col md:flex-row md:responsive-gap xs:text-center responsive-padding-x pt-0 pb-0\n            justify-between w-full",
+      "heading": "Nutrition sale starts soon",
+      "textSnippet": "Nutrition sale starts soon Grab a bargain and stock up on protein powders, superfoods, and suppleme"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "ribbon-banner__text section-content__text rte max-w-s t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Nutrition sale starts soon",
+      "textSnippet": "Nutrition sale starts soon Grab a bargain and stock up on protein powders, superfoods, and suppleme"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__multicolumn_kVkQqD",
+      "className": "shopify-section section section-multicolumn",
+      "heading": "Naturally Effective Supplements",
+      "textSnippet": "Naturally Effective Supplements A curated selection of everyday essentials, from clean hydration to"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner isolate\n        pt-s pb-s\n        ",
+      "heading": "Naturally Effective Supplements",
+      "textSnippet": "Naturally Effective Supplements A curated selection of everyday essentials, from clean hydration to"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "section-title title inline-richtext h0 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Naturally Effective Supplements"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-text multicolumn-list__description rte t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "A curated selection of everyday essentials, from clean hydration to nutrient-rich boosts and feel-go"
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__multicolumn_kVkQqD",
+      "className": "multicolumn-list contains-content-container section-grid grid mb-0\n          grid--3-col-desktop\n          \n           grid--scaled\n          \n            grid--1-col-tablet-down\n          \n          \n            slider\n            \n             slider--tablet grid--peek\n          ",
+      "heading": "Coconut Water",
+      "textSnippet": "Coconut Water Effortless energy. Shop Drinks ACAI Powder Natural boost. Shop Protein Morning Boo"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__multicolumn_kVkQqD-1",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Coconut Water",
+      "textSnippet": "Coconut Water Effortless energy. Shop Drinks"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__multicolumn_kVkQqD-2",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "ACAI Powder",
+      "textSnippet": "ACAI Powder Natural boost. Shop Protein"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__multicolumn_kVkQqD-3",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Morning Boost",
+      "textSnippet": "Morning Boost Wake fresh. Shop Cereal"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__quick_filter_ApReJQ",
+      "className": "shopify-section section section-quick-filter relative z-1",
+      "heading": "Find the right fuel...",
+      "textSnippet": "Find the right fuel... Not sure where to start? Use the finder below to discover healthy snacks, dr"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner\n      \n        pt-0 pb-0\n      \n      ",
+      "heading": "Find the right fuel...",
+      "textSnippet": "Find the right fuel... Not sure where to start? Use the finder below to discover healthy snacks, dr"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "image-banner-section\n          ",
+      "heading": "Find the right fuel...",
+      "textSnippet": "Find the right fuel... Not sure where to start? Use the finder below to discover healthy snacks, dr"
+    },
+    {
+      "tag": "DIV",
+      "id": "Banner-template--24848398352711__quick_filter_ApReJQ",
+      "className": "banner\n          banner--content-align-left\n          banner--content-align-mobile-center\n           skew\n           section-height-responsive--desktop\n           banner--stacked\n          \n           banner--two-images\n          \n           md:h-auto\n           banner--mobile-box\n           banner--desktop-box\n          banner--opaque-dropdowns",
+      "heading": "Find the right fuel...",
+      "textSnippet": "Find the right fuel... Not sure where to start? Use the finder below to discover healthy snacks, dr"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__media media image-overlay\n             section-height-responsive--mobile\n            \n             banner__media-half banner__media-left-half\n            ",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__media media image-overlay\n             section-height-responsive--mobile\n             banner__media-half banner__media-right-half\n            ",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__content responsive-padding-y section-height-responsive--mobile justify-center items-center md:justify-center md:items-center page-width scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Find the right fuel...",
+      "textSnippet": "Find the right fuel... Not sure where to start? Use the finder below to discover healthy snacks, dr"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__box section-content max-w- content-container content-container--full-width-mobile color-scheme-4d1e776d-8d32-4abc-8de7-14cfb0f61354 gradient items-center md:items-left text-center md:text-left\n              \n              \n              ",
+      "heading": "Find the right fuel...",
+      "textSnippet": "Find the right fuel... Not sure where to start? Use the finder below to discover healthy snacks, dr"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "quick-filter__heading inline-richtext section-content__heading color-heading h2 self-center text-center md:self-left md:text-left scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Find the right fuel..."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "quick-filter__text section-content__text rte max-w- t2 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Not sure where to start? Use the finder below to discover healthy snacks, drinks, and supplements ta"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__product_compare_agxz8a",
+      "className": "shopify-section section section-product-compare",
+      "heading": null,
+      "textSnippet": "Compare Protein Bars Product:\tRippl Caramel Chocolate & Peanut Protein Booster\tRipe Dark Chocolate S"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "product-compare__buttons section-content__buttons justify- md:justify- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "View product Rippl Caramel Chocolate & Peanut Protein Booster"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "product-compare__buttons section-content__buttons justify- md:justify- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "View product Ripe Dark Chocolate Salted Caramel Protein Bar"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "product-compare__buttons section-content__buttons justify- md:justify- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "View product Botaniq Cookie Dough Protein Bar - Early Morning Boost"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "product-compare__buttons section-content__buttons justify- md:justify- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "View product Summit Bar Honey Oat Cereal Protein Booster Bar"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__image_hotspots_JWwfEt",
+      "className": "shopify-section section section-image-hotspots relative z-1",
+      "heading": null,
+      "textSnippet": "View hotspot View hotspot View hotspot Explore ingredients Tap the hotspots to discover the fresh f"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner\n      \n        page-width pt-s pb-s\n      \n       mobile-text-below",
+      "heading": null,
+      "textSnippet": "View hotspot View hotspot View hotspot Explore ingredients Tap the hotspots to discover the fresh f"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "image-banner-section\n          \n            \n              border-radius-media\n            \n              transform-none\n          ",
+      "heading": null,
+      "textSnippet": "View hotspot View hotspot View hotspot Explore ingredients Tap the hotspots to discover the fresh f"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__box pointer-events-auto section-content max-w-xs content-container color-scheme-3 gradient items-left md:items-right text-left md:text-right",
+      "heading": "Explore ingredients",
+      "textSnippet": "Explore ingredients Tap the hotspots to discover the fresh fruits, crunchy toppings and nourishing "
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "banner__heading inline-richtext section-content__heading color-heading italics-convert italics-light text-size-custom self-left text-left md:self-right md:text-right scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Explore ingredients"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__text section-content__text rte max-w- t2 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Tap the hotspots to discover the fresh fruits, crunchy toppings and nourishing blends inside."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__buttons section-content__buttons justify-left md:justify-right scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Breakfast"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__image_banner_erYEJH",
+      "className": "shopify-section section section-image-banner",
+      "heading": "Our exclusive organic range",
+      "textSnippet": "Our exclusive organic range Fuel your fitness with our own brand high-performance nutrition at unbe"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner\n      \n        pt-0 pb-0\n      \n      ",
+      "heading": "Our exclusive organic range",
+      "textSnippet": "Our exclusive organic range Fuel your fitness with our own brand high-performance nutrition at unbe"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "image-banner-section\n          ",
+      "heading": "Our exclusive organic range",
+      "textSnippet": "Our exclusive organic range Fuel your fitness with our own brand high-performance nutrition at unbe"
+    },
+    {
+      "tag": "DIV",
+      "id": "Banner-template--24848398352711__image_banner_erYEJH",
+      "className": "banner\n            banner--content-align-left\n            banner--content-align-mobile-center\n            \n             section-height-responsive--desktop\n            \n             banner--one-image\n            \n            \n             md:h-auto\n             banner--mobile-transparent\n             banner--desktop-transparent",
+      "heading": "Our exclusive organic range",
+      "textSnippet": "Our exclusive organic range Fuel your fitness with our own brand high-performance nutrition at unbe"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__media media image-overlay\n               section-height-responsive--mobile\n              \n              \n              ",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__content section-height-responsive--mobile justify-center items-center md:justify-start md:items-center page-width scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Our exclusive organic range",
+      "textSnippet": "Our exclusive organic range Fuel your fitness with our own brand high-performance nutrition at unbe"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__box section-content max-w-s content-container content-container--full-width-mobile color-scheme-6 gradient items-center md:items-left text-center md:text-left",
+      "heading": "Our exclusive organic range",
+      "textSnippet": "Our exclusive organic range Fuel your fitness with our own brand high-performance nutrition at unbe"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "banner__heading inline-richtext section-content__heading color-heading italics-convert italics-glow text-size-custom self-center text-center md:self-left md:text-left scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Our exclusive organic range"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__text section-content__text rte max-w- t2 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Fuel your fitness with our own brand high-performance nutrition at unbeatable prices."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__buttons section-content__buttons justify-center md:justify-left scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Our range"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__scrolling_text_NMMAkt",
+      "className": "shopify-section section section-scrolling-text",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner scrolling-text z-1 content-container color-scheme-4d1e776d-8d32-4abc-8de7-14cfb0f61354 gradient overflow-hidden\n         content-container--full-width",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "scrolling-text__wrapper section-content p-0 flex whitespace-nowrap",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__featured_blog_zTLXdP",
+      "className": "shopify-section section section-featured-blog",
+      "heading": "Explore our Blog",
+      "textSnippet": "Explore our Blog Real food, smart choices, everyday goodness. Read blog The best healthy-ish treat"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "blog section__inner pt-s pb-s\n      ",
+      "heading": "Explore our Blog",
+      "textSnippet": "Explore our Blog Real food, smart choices, everyday goodness. Read blog The best healthy-ish treat"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "section-title title inline-richtext italics-convert italics-light h1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Explore our Blog"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-text blog__description rte t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Real food, smart choices, everyday goodness."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-view-all blog__view-all scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Read blog"
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__featured_blog_zTLXdP",
+      "className": "blog__posts section-grid grid articles-wrapper contains-card contains-card--article\n            \n            grid--5-col-desktop\n             grid--scaled\n            grid--1-col-tablet-down\n            \n              slider\n               slider--desktop\n               slider--tablet grid--peek\n            ",
+      "heading": "The best healthy-ish treats in our store right now",
+      "textSnippet": "The best healthy-ish treats in our store right now Are you looking for a guilt-free indulgence that "
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__slideshow_tVJLGX",
+      "className": "shopify-section section section-slideshow",
+      "heading": "Your goals,\nour expertise",
+      "textSnippet": "Your goals, our expertise Explore our 1-on-1 services - from personalised nutrition plans and fitne"
+    },
+    {
+      "tag": "SLIDESHOW-COMPONENT",
+      "id": "",
+      "className": "slider-mobile-gutter\n        section__inner\n        slider--full-width-mobile\n        \n          page-width pt-s pb-s\n        \n        ",
+      "heading": "Your goals,\nour expertise",
+      "textSnippet": "Your goals, our expertise Explore our 1-on-1 services - from personalised nutrition plans and fitne"
+    },
+    {
+      "tag": "DIV",
+      "id": "Slider-template--24848398352711__slideshow_tVJLGX",
+      "className": "slideshow banner grid grid--1-col slider slider--everywhere border-radius-media overflow-hidden section-height-responsive--desktop section-height-responsive--mobile scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Your goals,\nour expertise",
+      "textSnippet": "Your goals, our expertise Explore our 1-on-1 services - from personalised nutrition plans and fitne"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "slideshow__media image-overlay banner__media media\n                   section-height-responsive--mobile\n                  \n                  ",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "slideshow__text banner__box section-content max-w-s content-container content-container--full-width-mobile color-scheme-3 gradient items-center md:items-left text-center md:text-left responsive-offset-x responsive-offset-y",
+      "heading": "Your goals,\nour expertise",
+      "textSnippet": "Your goals, our expertise Explore our 1-on-1 services - from personalised nutrition plans and fitne"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "banner__heading inline-richtext section-content__heading color-heading text-size-custom self-center text-center md:self-left md:text-left scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Your goals, our expertise"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__text section-content__text rte max-w-s t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Explore our 1-on-1 services - from personalised nutrition plans and fitness training to wellness coa"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "banner__buttons section-content__buttons justify-center md:justify-left scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Our Services"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__product_list_qXJ8hw",
+      "className": "shopify-section section section-product-list",
+      "heading": "Energize everyday",
+      "textSnippet": "Energize everyday Daily staples, smart supplements and feel-good essentials to help you get more ou"
+    },
+    {
+      "tag": "DIV",
+      "id": "collection-template--24848398352711__product_list_qXJ8hw",
+      "className": "collection collection-quick-add-bulk section__inner pt-s pb-s\n      ",
+      "heading": "Energize everyday",
+      "textSnippet": "Energize everyday Daily staples, smart supplements and feel-good essentials to help you get more ou"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "section-title title inline-richtext h0 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Energize everyday"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-text collection__description rte t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Daily staples, smart supplements and feel-good essentials to help you get more out of every day."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-view-all collection__view-all scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "View more"
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__product_list_qXJ8hw",
+      "className": "section-grid grid product-grid contains-card contains-card--product\n            \n            grid--4-col-desktop\n             grid--scaled\n            \n              grid--1-col-tablet-down\n            \n            \n              slider\n               slider--desktop\n               slider--tablet grid--peek\n            ",
+      "heading": "Organic No Caffeine Coffee Alternative",
+      "textSnippet": "Up to 25% off Organic No Caffeine Coffee Alternative Size: 100g 200g 300g Sale price From £3.00 GBP "
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__ribbon_banner_JefMbE",
+      "className": "shopify-section section section-ribbon-banner",
+      "heading": null,
+      "textSnippet": "Savings worth signing up for. How about 10% off? Sign in for discount My Account E10"
+    },
+    {
+      "tag": "CLOSABLE-ELEMENT",
+      "id": "",
+      "className": "block short-section hidden-during-load",
+      "heading": null,
+      "textSnippet": "Savings worth signing up for. How about 10% off? Sign in for discount My Account E10"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner ribbon-banner z-1 content-container color-scheme-2716dacd-7d56-4d62-811d-fea5d91ff010 gradient overflow-hidden responsive-padding-y\n         content-container--full-width",
+      "heading": null,
+      "textSnippet": "Savings worth signing up for. How about 10% off? Sign in for discount My Account E10"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "ribbon-banner__grid section-content flex items-center flex-col md:flex-row md:responsive-gap xs:text-center responsive-padding-x pt-0 pb-0\n            ",
+      "heading": null,
+      "textSnippet": "Savings worth signing up for. How about 10% off? Sign in for discount My Account E10"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "ribbon-banner__text section-content__text rte max-w-m t2 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Savings worth signing up for."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "ribbon-banner__text section-content__text rte max-w-m t2 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "How about 10% off?"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__stats_AhFJcf",
+      "className": "shopify-section section section-stats",
+      "heading": "Why shop with us?",
+      "textSnippet": "Why shop with us? You're in good hands. OVER 142k products sold WITH 95% positive reviews SELL"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner isolate\n        pt-s pb-0\n        ",
+      "heading": "Why shop with us?",
+      "textSnippet": "Why shop with us? You're in good hands. OVER 142k products sold WITH 95% positive reviews SELL"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "section-title title inline-richtext h1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Why shop with us?"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-text multicolumn-list__description rte t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "You're in good hands."
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__stats_AhFJcf",
+      "className": "multicolumn-list contains-content-container section-grid grid mb-0\n          grid--3-col-desktop\n          \n           grid--scaled\n          \n            grid--1-col-tablet-down\n          \n          ",
+      "heading": "products sold",
+      "textSnippet": "OVER 142k products sold WITH 95% positive reviews SELLING IN 12 territories"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__stats_AhFJcf-1",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--matching scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "products sold",
+      "textSnippet": "OVER 142k products sold"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__stats_AhFJcf-2",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--matching scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "positive reviews",
+      "textSnippet": "WITH 95% positive reviews"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__stats_AhFJcf-3",
+      "className": "multicolumn-list__item grid__item text-center section-height-responsive--desktop section-height-responsive--mobile color-schemes--matching scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "territories",
+      "textSnippet": "SELLING IN 12 territories"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__testimonials_7kN8a4",
+      "className": "shopify-section section section-testimonials",
+      "heading": "Fast shipping",
+      "textSnippet": "Fast shipping Ordered some healthy snacks and they arrived the next day. Super impressed with the s"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner isolate\n        pt-s05 pb-s\n        ",
+      "heading": "Fast shipping",
+      "textSnippet": "Fast shipping Ordered some healthy snacks and they arrived the next day. Super impressed with the s"
+    },
+    {
+      "tag": "UL",
+      "id": "Slider-template--24848398352711__testimonials_7kN8a4",
+      "className": "multicolumn-list contains-content-container section-grid grid mb-0\n          grid--4-col-desktop\n          \n           grid--scaled\n          \n            grid--1-col-tablet-down\n          \n          \n            slider\n            \n             slider--tablet grid--peek\n          ",
+      "heading": "Fast shipping",
+      "textSnippet": "Fast shipping Ordered some healthy snacks and they arrived the next day. Super impressed with the s"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__testimonials_7kN8a4-1",
+      "className": "multicolumn-list__item grid__item text-left section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Fast shipping",
+      "textSnippet": "Fast shipping Ordered some healthy snacks and they arrived the next day. Super impressed with the s"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__testimonials_7kN8a4-2",
+      "className": "multicolumn-list__item grid__item text-left section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Excellent service",
+      "textSnippet": "Excellent service Customer support was helpful; they resolved my issue in minutes. Really appreciat"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__testimonials_7kN8a4-3",
+      "className": "multicolumn-list__item grid__item text-left section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Great selection",
+      "textSnippet": "Great selection Wide variety of pet products from protein powder to wine. Found everything I needed"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__testimonials_7kN8a4-4",
+      "className": "multicolumn-list__item grid__item text-left section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Top quality",
+      "textSnippet": "Top quality The healthy food I ordered exceeded my expectations. Top-notch quality, great taste, an"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__testimonials_7kN8a4-5",
+      "className": "multicolumn-list__item grid__item text-left section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Reliable store",
+      "textSnippet": "Reliable store I’ve ordered multiple times and always received exactly what was promised. The produ"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__testimonials_7kN8a4-6",
+      "className": "multicolumn-list__item grid__item text-left section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "User-friendly website",
+      "textSnippet": "User-friendly website Easy to navigate and make purchases. A hassle-free shopping experience with c"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__testimonials_7kN8a4-7",
+      "className": "multicolumn-list__item grid__item text-left section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Fresh and delicious",
+      "textSnippet": "Fresh and delicious The smoothies taste amazing and make it so easy to keep healthier habits on tra"
+    },
+    {
+      "tag": "LI",
+      "id": "Slide-template--24848398352711__testimonials_7kN8a4-8",
+      "className": "multicolumn-list__item grid__item text-left section-height-responsive--desktop section-height-responsive--mobile color-schemes--different slider__slide scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": "Perfect blend",
+      "textSnippet": "Perfect blend Exactly what I needed for quick breakfasts before work. The recipes are simple, the i"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__flexible_columns_qfhVC4",
+      "className": "shopify-section section section-flexible-columns",
+      "heading": "Renew Cinnamon Crunch",
+      "textSnippet": "INTRODUCING Renew Cinnamon Crunch Crafted from the ground up for a better breakfast. PLANT-POWERE"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "theme-block-section-container color-scheme-4d1e776d-8d32-4abc-8de7-14cfb0f61354 gradient isolate   ",
+      "heading": "Renew Cinnamon Crunch",
+      "textSnippet": "INTRODUCING Renew Cinnamon Crunch Crafted from the ground up for a better breakfast. PLANT-POWERE"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner page-width pt-s15 pb-s",
+      "heading": "Renew Cinnamon Crunch",
+      "textSnippet": "INTRODUCING Renew Cinnamon Crunch Crafted from the ground up for a better breakfast. PLANT-POWERE"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "w-full p-0 section-content section-content-template--24848398352711__flexible_columns_qfhVC4 max-w-xl",
+      "heading": "Renew Cinnamon Crunch",
+      "textSnippet": "INTRODUCING Renew Cinnamon Crunch Crafted from the ground up for a better breakfast. PLANT-POWERE"
+    },
+    {
+      "tag": "P",
+      "id": "",
+      "className": "anonymous__text section-content__caption anonymous__text--caption caption-with-letter-spacing t4 scroll-trigger animate--fade-in self- text- md:self- md:text- scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "INTRODUCING"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "anonymous__heading inline-richtext section-content__heading color-heading h0 self- text- md:self- md:text- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Renew Cinnamon Crunch"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "anonymous__text section-content__text rte max-w- t0 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Crafted from the ground up for a better breakfast."
+    },
+    {
+      "tag": "P",
+      "id": "",
+      "className": "anonymous__text section-content__caption anonymous__text--caption caption-with-letter-spacing t6 scroll-trigger animate--fade-in self- text- md:self- md:text- scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "PLANT-POWERED FUEL"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "anonymous__heading inline-richtext section-content__heading color-heading h3 self- text- md:self- md:text- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "12g Protein"
+    },
+    {
+      "tag": "P",
+      "id": "",
+      "className": "anonymous__text section-content__caption anonymous__text--caption caption-with-letter-spacing t6 scroll-trigger animate--fade-in self- text- md:self- md:text- scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "FEEL-GOOD FIBRE"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "anonymous__heading inline-richtext section-content__heading color-heading h3 self- text- md:self- md:text- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "6g Fibre"
+    },
+    {
+      "tag": "P",
+      "id": "",
+      "className": "anonymous__text section-content__caption anonymous__text--caption caption-with-letter-spacing t6 scroll-trigger animate--fade-in self- text- md:self- md:text- scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "LESS SUGAR"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "anonymous__heading inline-richtext section-content__heading color-heading h3 self- text- md:self- md:text- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "4.3g sugar"
+    },
+    {
+      "tag": "P",
+      "id": "",
+      "className": "anonymous__text section-content__caption anonymous__text--caption caption-with-letter-spacing t6 scroll-trigger animate--fade-in self- text- md:self- md:text- scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "MADE WITH WHOLEGRAIN"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "anonymous__heading inline-richtext section-content__heading color-heading text-size-custom self- text- md:self- md:text- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "100% wholegrain"
+    },
+    {
+      "tag": "P",
+      "id": "",
+      "className": "anonymous__text section-content__caption anonymous__text--caption caption-with-letter-spacing t6 scroll-trigger animate--fade-in self- text- md:self- md:text- scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "KEEPS BREAKFAST SIMPLE"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "anonymous__heading inline-richtext section-content__heading color-heading text-size-custom self- text- md:self- md:text- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "0g artificial colors"
+    },
+    {
+      "tag": "P",
+      "id": "",
+      "className": "anonymous__text section-content__caption anonymous__text--caption caption-with-letter-spacing t6 scroll-trigger animate--fade-in self- text- md:self- md:text- scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "READY IN SECONDS"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "anonymous__heading inline-richtext section-content__heading color-heading h3 self- text- md:self- md:text- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "2 min breakfast"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "anonymous__heading inline-richtext section-content__heading color-heading italics-convert italics-accent h1 self- text- md:self- md:text- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Naturally satisfying. Seriously crunchy."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "anonymous__text section-content__text rte max-w- t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Renew Cinnamon Crunch brings together wholegrain goodness, warm cinnamon flavour and a crisp, golden"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "anonymous__buttons section-content__buttons justify- md:justify- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Renew Cereal"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "anonymous__buttons section-content__buttons justify- md:justify- scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Shop Renew Cereal"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-template--24848398352711__image_with_collapsible_content_WiWG7D",
+      "className": "shopify-section section section-image-with-collapsible-content",
+      "heading": "Staff favorites...",
+      "textSnippet": "Staff favorites... Top picks from the folks in the office. Workout Smoothies Stay energized, nour"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner border-top pt-s pb-s15 gradient color-scheme-1  ",
+      "heading": "Staff favorites...",
+      "textSnippet": "Staff favorites... Top picks from the folks in the office. Workout Smoothies Stay energized, nour"
+    },
+    {
+      "tag": "H3",
+      "id": "",
+      "className": "section-title title inline-richtext h1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Staff favorites..."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-text collapsible-content__description rte t1 scroll-trigger animate--fade-in scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Top picks from the folks in the office."
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "image-with-text__media-item flex__item section-height-responsive--desktop relative",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "image-with-text__media global-media-settings media section-height-responsive--mobile\n                  \n                   section-height-responsive--desktop sticky top-header-and-section\n                   image-overlay\n                  ",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "image-with-text__text-item flex__item section-height-responsive--desktop",
+      "heading": "Workout Smoothies",
+      "textSnippet": "Workout Smoothies Stay energized, nourished, and on track with the Fibre Fuel Smoothie Boost – Berr"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section-content lg:p-0 w-full accordion-container",
+      "heading": "Workout Smoothies",
+      "textSnippet": "Workout Smoothies Stay energized, nourished, and on track with the Fibre Fuel Smoothie Boost – Berr"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "collapsible-content-row__buttons section-content__buttons justify- md:justify- scroll-trigger animate--fade-in mt-2 scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": "Show me"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "collapsible-content-row__buttons section-content__buttons justify- md:justify- scroll-trigger animate--fade-in mt-2 scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "collapsible-content-row__buttons section-content__buttons justify- md:justify- scroll-trigger animate--fade-in mt-2 scroll-trigger--offscreen",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "shopify-section-sections--24848398811463__stickers",
+      "className": "shopify-section shopify-section-group-overlay-group hidden",
+      "heading": null,
+      "textSnippet": "           NEW                    SALE                    SALE                    BLACK FRIDAY D"
+    },
+    {
+      "tag": "DIV",
+      "id": "shopify-section-sections--24848398811463__scroll-to-top",
+      "className": "shopify-section shopify-section-group-overlay-group section-scroll-to-top",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-sections--24848398811463__age_verifier_47qffQ",
+      "className": "shopify-section shopify-section-group-overlay-group section section-age-verifier no-move",
+      "heading": "Are you 21 or older?",
+      "textSnippet": "Are you 21 or older? YES NO You must verify that you are at least 21 years of age to enter this sit"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "w-full section-content responsive-card-padding card-padding\n          max-w-s\n          text-center\n          md:text-left\n          \n           banner--mobile-transparent banner--desktop-transparent",
+      "heading": "Are you 21 or older?",
+      "textSnippet": "Are you 21 or older? YES NO You must verify that you are at least 21 years of age to enter this sit"
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "popup__heading inline-richtext section-content__heading color-heading h2 self-center text-center md:self-left md:text-left scroll-trigger animate--fade-in",
+      "heading": null,
+      "textSnippet": "Are you 21 or older?"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "age_verifier__buttons section-content__buttons justify-center md:justify-left banner__buttons--multiple",
+      "heading": null,
+      "textSnippet": "YES NO"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "popup__text section-content__text rte max-w- t6 scroll-trigger animate--fade-in",
+      "heading": null,
+      "textSnippet": "You must verify that you are at least 21 years of age to enter this site."
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-sections--24848398811463__popup_Hepgfg",
+      "className": "shopify-section shopify-section-group-overlay-group section section-popup no-move",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "w-full section-content responsive-card-padding card-padding\n          max-w-xs\n          text-left\n          md:text-left\n          \n           banner--mobile-transparent banner--desktop-transparent",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "H2",
+      "id": "",
+      "className": "popup__heading inline-richtext section-content__heading color-heading h4 self-left text-left md:self-left md:text-left scroll-trigger animate--fade-in",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "popup__text section-content__text rte max-w- t4 scroll-trigger animate--fade-in",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "popup__buttons section-content__buttons justify-left md:justify-left scroll-trigger animate--fade-in",
+      "heading": null,
+      "textSnippet": ""
+    },
+    {
+      "tag": "DIV",
+      "id": "shopify-section-sections--24848398975303__footer",
+      "className": "shopify-section shopify-section-group-footer-group section section-footer bmrk-footer",
+      "heading": "SHOP",
+      "textSnippet": "At Peak, our mission is to consistently bring you nutritious, high-quality food at unbeatably low pr"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "color-scheme-3 gradient section__inner",
+      "heading": "SHOP",
+      "textSnippet": "At Peak, our mission is to consistently bring you nutritious, high-quality food at unbeatably low pr"
+    },
+    {
+      "tag": "SECTION",
+      "id": "shopify-section-sections--24848398975303__ribbon_banner_cNiVV7",
+      "className": "shopify-section shopify-section-group-footer-group section section-ribbon-banner",
+      "heading": null,
+      "textSnippet": "All imagery on this website is protected by copyright and remains the property of its respective own"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "section__inner ribbon-banner z-1 content-container color-scheme-3 gradient overflow-hidden responsive-padding-y\n         content-container--full-width",
+      "heading": null,
+      "textSnippet": "All imagery on this website is protected by copyright and remains the property of its respective own"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "ribbon-banner__grid section-content flex items-center flex-col md:flex-row md:responsive-gap xs:text-center responsive-padding-x pt-0 pb-0\n            ",
+      "heading": null,
+      "textSnippet": "All imagery on this website is protected by copyright and remains the property of its respective own"
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "className": "ribbon-banner__text section-content__text rte max-w-m t6",
+      "heading": null,
+      "textSnippet": "All imagery on this website is protected by copyright and remains the property of its respective own"
+    }
+  ],
+  "navLinks": [
+    {
+      "text": "Wine",
+      "href": "/search?options%5Bprefix%5D=last&q=Wine"
+    },
+    {
+      "text": "Vitamins",
+      "href": "/search?options%5Bprefix%5D=last&q=Vitamins"
+    },
+    {
+      "text": "Coffee",
+      "href": "/search?options%5Bprefix%5D=last&q=Coffee"
+    },
+    {
+      "text": "Protein powder",
+      "href": "/search?options%5Bprefix%5D=last&q=Protein+powder"
+    },
+    {
+      "text": "My Account",
+      "href": "https://benchmark-food-demo.myshopify.com/customer_authentication/redirect?locale=en&region_country=GB"
+    },
+    {
+      "text": "Cart",
+      "href": "/cart"
+    },
+    {
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "text": "Shop",
+      "href": "/collections/all"
+    },
+    {
+      "text": "Drinks",
+      "href": "/collections/drinks"
+    },
+    {
+      "text": "Brands",
+      "href": "/pages/shop-by-brand"
+    },
+    {
+      "text": "Deals",
+      "href": "/collections/deals"
+    },
+    {
+      "text": "About Us",
+      "href": "/pages/about-us"
+    },
+    {
+      "text": "Our Services",
+      "href": "/pages/our-services"
+    },
+    {
+      "text": "Blog",
+      "href": "/blogs/daily-dose"
+    },
+    {
+      "text": "FAQs",
+      "href": "/pages/faqs"
+    },
+    {
+      "text": "Contact",
+      "href": "/pages/contact"
+    },
+    {
+      "text": "Theme Features",
+      "href": "#"
+    }
+  ],
+  "fonts": {
+    "bodyFont": "Almarai, sans-serif",
+    "bgColor": "rgb(251, 239, 225)",
+    "color": "rgb(72, 62, 43)"
+  }
+}

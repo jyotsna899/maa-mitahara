@@ -1,0 +1,1601 @@
+<div id="shopify-section-sections--24848398909767__header" class="shopify-section shopify-section-group-header-group section-header bmrk-header shopify-section-header-sticky"><link rel="stylesheet" href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-search.css?v=128304653847253674431760529008" media="all" onload="this.media='all'">
+  <link rel="stylesheet" href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-menu-drawer.css?v=72111407839480185541771321753" media="all" onload="this.media='all'">
+  <link rel="stylesheet" href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-cart-notification.css?v=57729900906650647671763641335" media="all" onload="this.media='all'">
+  <link rel="stylesheet" href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-cart-items.css?v=64931371077814291611771321752" media="all" onload="this.media='all'"><link rel="stylesheet" href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-mega-menu.css?v=181131554741954889841760529007" media="all" onload="this.media='all'"><link rel="stylesheet" href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-cart-drawer.css?v=62757918450476865651760529008" media="all" onload="this.media='all'">
+    <link rel="stylesheet" href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-cart.css?v=168539190544286108171760529007" media="all" onload="this.media='all'">
+    <link rel="stylesheet" href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-totals.css?v=35794747265334708631744044613" media="all" onload="this.media='all'">
+    <link rel="stylesheet" href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-discounts.css?v=24929967379199481731760529007" media="all" onload="this.media='all'"><link rel="stylesheet" href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-price.css?v=169866451957412321261760529008" media="all" onload="this.media='all'"><style data-shopify="">
+  header-drawer {
+    --header-drawer-font-size: 1.6rem;
+    justify-self: start;
+    margin-inline-start: -1rem;
+  }
+
+  .header {
+    padding: 1rem var(--px-mobile);
+  }
+
+  .section-header {
+    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
+  }.menu-drawer-container {
+    display: flex;
+  }
+
+  .list-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-menu--inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .list-menu--merged .header__menu-item {
+    padding-top: 0;
+    padding-bottom: 1.4rem;
+  }
+
+  .list-menu--merged .header__menu-item .icon-caret {
+    top: calc(50% - .9em);
+  }
+
+  summary.list-menu__item {
+    padding-inline-end: 2.7rem;
+  }
+
+  .list-menu__item {
+    display: inline-flex;
+    line-height: calc(1 + 0.6 / var(--font-body-scale));
+    gap: 0.6em;
+    width: 100%;
+  }
+
+  .list-menu__item.stickerified {
+    display: block;
+  }
+
+  .menu-drawer__menu-item {
+    display: flex;
+    gap: 0.6em;
+  }
+
+  .menu-drawer__menu-item .icon {
+    width: calc(var(--header-drawer-font-size, 1.8rem) * 1.3);
+    height: calc(var(--header-drawer-font-size, 1.8rem) * 1.3);
+  }
+
+  .list-menu__item--link {
+    text-decoration: none;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+  }.header__cta {
+      --header-cta-icon-size: 3.4rem;
+      --header-cta-pad-start: 1.5rem;
+    }
+
+    .header__cta--icon-only {
+      --header-cta-pad-start: 1rem;
+      --header-cta-radius: 20px;
+      border-radius: var(--header-cta-radius, var(--inputs-radius, 20px));
+      aspect-ratio: 1 / 1;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 749.98px) {
+      .header__cta {
+        --header-cta-icon-size: 2.6rem;
+        --header-cta-pad-start: 0.9rem;
+        --color-background: 255,255,255;
+        --color-foreground: 0,0,0;
+        --color-link: 0,128,49;
+        --color-icon: var(--color-foreground);
+        background: none !important;
+        border-radius: 0;
+        aspect-ratio: auto;
+        padding-inline: 0;
+        color: rgb(var(--color-foreground));
+        height: 4.4rem;
+        width: 4.4rem;
+        justify-content: center;
+
+        .icon {
+          height: 2.6rem;
+          width: 2.6rem;
+        }
+      }
+
+      .header__cta-text {
+        display: none;
+      }
+    }@media screen and (max-width: 749.98px) {
+    .header__heading-logo {
+        width: 70px;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .list-menu__item--link {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .header {
+      padding: 1.7rem 3rem;
+    }
+  }</style>
+
+<lazy-script data-watch-element="details-modal" src="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/details-modal.js?v=98758011813413895591744044614" defer="defer"></lazy-script><script src="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/cart-drawer.js?v=96670681833512806041758569606" defer="defer"></script><svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+    <symbol id="icon-search" viewBox="0 0 512 512" fill="none">
+      <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448"></path>
+    </symbol>
+
+    <symbol id="icon-close" class="icon icon-close" viewBox="0 0 512 512">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
+    </symbol>
+  </svg><sticky-header data-sticky-type="always" class="header-wrapper color-scheme-8 gradient md-down:border-bottom"><header class="header header--top-left header--mobile-left page-width drawer-menu drawer-menu--on-scroll header--has-menu header--has-social header--has-account header--keep-mobile-search">
+<header-drawer data-breakpoint="tablet">
+  <details id="Details-menu-drawer-container" class="menu-drawer-container js-header-drawer-main">
+    <summary class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="Menu" role="button" aria-expanded="false" aria-controls="menu-drawer">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-hamburger" fill="none" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"></path>
+</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-close hidden-during-load" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
+</svg>
+      </span>
+    </summary>
+    <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-scheme-8">
+      <div class="menu-drawer__inner-container">
+        <div class="menu-drawer__navigation-container custom-scrollbar">
+          <nav class="menu-drawer__navigation">
+            <div class="border-bottom flex justify-end p-1 mb-1 hidden-xs">
+              <button class="button-control--no-colors color-foreground" type="button" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-close" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
+</svg>
+              </button>
+            </div>
+
+            
+            <ul class="menu-drawer__menu has-submenu list-menu" role="list"><li class=""><a id="HeaderDrawer-home" href="/" class="menu-drawer__menu-item items-center list-menu__item link link--text focus-inset menu-drawer__menu-item--active" aria-current="page"><svg class="icon icon--home custom-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+        <path d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212" stroke-linecap="round" stroke-linejoin="round" class="fill-none stroke-width-standard"></path><path d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69" stroke-linecap="round" stroke-linejoin="round" class="fill-none stroke-width-standard"></path>
+    </svg><span>Home</span>
+                    </a></li><li class=""><details id="Details-menu-drawer-menu-item-2" class="js-header-drawer-sub">
+                      <summary id="HeaderDrawer-shop" class="menu-drawer__menu-item items-center list-menu__item link link--text arrow-inset focus-inset" role="button" aria-expanded="false" aria-controls="link-shop"><svg class="icon icon--storefront custom-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M448 448V240M64 240v208M382.47 48H129.53c-21.79 0-41.47 12-49.93 30.46L36.3 173c-14.58 31.81 9.63 67.85 47.19 69h2c31.4 0 56.85-25.18 56.85-52.23 0 27 25.46 52.23 56.86 52.23s56.8-23.38 56.8-52.23c0 27 25.45 52.23 56.85 52.23s56.86-23.38 56.86-52.23c0 28.85 25.45 52.23 56.85 52.23h1.95c37.56-1.17 61.77-37.21 47.19-69l-43.3-94.54C423.94 60 404.26 48 382.47 48zM32 464h448M136 288h80a24 24 0 0124 24v88h0-128 0v-88a24 24 0 0124-24zM288 464V312a24 24 0 0124-24h64a24 24 0 0124 24v152" class="fill-none stroke-width-standard"></path>
+    </svg><span>Shop</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                      </summary>
+                      <div id="link-shop" class="menu-drawer__submenu custom-scrollbar has-submenu gradient motion-reduce" tabindex="-1">
+                        <div class="menu-drawer__inner-submenu custom-scrollbar">
+                          <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true" dir="ltr">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" focusable="false" class="icon icon-arrow" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M268 112l144 144-144 144M392 256H100" class="stroke-width-standard"></path>
+</svg>
+                            Back
+                          </button>
+<ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                  <a href="/collections/all" class="menu-drawer__menu-item menu__menu-item-title link link--text list-menu__item focus-inset">
+                                    <span>Shop</span>
+                                  </a>
+                                </li><li><custom-accordion>
+                                      <details id="Details-menu-drawer-shop-vitamins-minerals">
+                                        <summary id="HeaderDrawer-shop-vitamins-minerals" class="menu-drawer__menu-item menu-drawer__child-menu-item link link--text list-menu__item focus-inset" role="button" aria-expanded="false" aria-controls="childlink-vitamins-minerals">
+                                          <span>Vitamins &amp; Minerals</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                                        </summary>
+                                        <div id="childlink-vitamins-minerals" class="custom-accordion__panel custom-scrollbar has-submenu gradient motion-reduce">
+                                          
+                                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                                <a id="HeaderDrawer-shop-vitamins-minerals-fibre-fuel-smoothie-boost" href="/products/fibre-fuel-smoothie-boost-berry-300g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Fibre Fuel Smoothie Boost</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-vitamins-minerals-omega-3-dha-capsules" href="/products/omega-3-dha-capsules-from-algae-oil-30-tabs" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Omega 3 DHA capsules</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-vitamins-minerals-truefuel-protein-milkshake" href="/products/truefuel-lean-protein-milkshake" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Truefuel Protein Milkshake</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-vitamins-minerals-high-strength-turmeric" href="/products/high-strength-turmeric-600mg-with-black-pepper-90-capsules" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>High Strength Turmeric</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-vitamins-minerals-fibre-fuel-smoothie-berry" href="/products/fibre-fuel-smoothie-boost-berry-300g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Fibre Fuel Smoothie Berry</span>
+                                                </a>
+                                              </li><li>
+                                                <a href="/collections/vitamins-minerals" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>View all Vitamins &amp; Minerals</span>
+                                                </a>
+                                              </li></ul>
+                                        </div>
+                                      </details>
+                                    </custom-accordion></li><li><custom-accordion>
+                                      <details id="Details-menu-drawer-shop-nutrition">
+                                        <summary id="HeaderDrawer-shop-nutrition" class="menu-drawer__menu-item menu-drawer__child-menu-item link link--text list-menu__item focus-inset" role="button" aria-expanded="false" aria-controls="childlink-nutrition">
+                                          <span>Nutrition</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                                        </summary>
+                                        <div id="childlink-nutrition" class="custom-accordion__panel custom-scrollbar has-submenu gradient motion-reduce">
+                                          
+                                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                                <a id="HeaderDrawer-shop-nutrition-live-probiotic-course" href="/products/live-probiotic-course-4x500ml" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Live Probiotic Course</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-nutrition-glowwell-hair-skin-nails" href="/products/glowwell-hair-skin-nails-complex" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>GlowWell Hair, Skin &amp; Nails</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-nutrition-sunvies-acai-powder" href="/products/sunvies-acai-powder-125g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span class="stickerified">
+          <span class="sticker-wrapper-above"></span>
+          <span>
+            <span class="sticker-text">Sunvies Acai Powder</span>
+            <span class="sticker-wrapper-inline"><span class="sticker-spacer"></span><span class="sticker sticker-header_RgByXQ sticker--rounded sticker--inline text-body">
+          <span>NEW</span>
+        </span></span>
+          </span>
+          <span class="sticker-wrapper-below"></span>
+        </span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-nutrition-fibre-fuel-smoothie-boost" href="/products/fibre-fuel-smoothie-boost-berry-300g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Fibre Fuel Smoothie Boost</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-nutrition-high-protein-cereal-cinnamon" href="/products/high-protein-cereal-cinnamon-250g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>High Protein Cereal Cinnamon</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-nutrition-essential-fairtrade-bananas" href="/products/essential-fairtrade-bananas" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Essential Fairtrade Bananas</span>
+                                                </a>
+                                              </li><li>
+                                                <a href="/collections/nutrition" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>View all Nutrition</span>
+                                                </a>
+                                              </li></ul>
+                                        </div>
+                                      </details>
+                                    </custom-accordion></li><li><custom-accordion>
+                                      <details id="Details-menu-drawer-shop-cereal">
+                                        <summary id="HeaderDrawer-shop-cereal" class="menu-drawer__menu-item menu-drawer__child-menu-item link link--text list-menu__item focus-inset" role="button" aria-expanded="false" aria-controls="childlink-cereal">
+                                          <span>Cereal</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                                        </summary>
+                                        <div id="childlink-cereal" class="custom-accordion__panel custom-scrollbar has-submenu gradient motion-reduce">
+                                          
+                                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                                <a id="HeaderDrawer-shop-cereal-high-protein-cereal-cinnamon" href="/products/high-protein-cereal-cinnamon-250g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>High Protein Cereal Cinnamon</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-cereal-renew-cereal-cinnamon" href="/products/renew-cereal-cinnamon-crunch-250g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Renew Cereal - Cinnamon</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-cereal-summit-bar-vanilla-almond" href="/products/summit-bar-white-chocolate-macadmia-nut-68g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Summit Bar Vanilla &amp; Almond</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-cereal-botaniq-cereal-bar" href="/products/botaniq-cookie-dough-protein-bar-57g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Botaniq Cereal Bar</span>
+                                                </a>
+                                              </li><li>
+                                                <a href="/collections/cereal" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>View all Cereal</span>
+                                                </a>
+                                              </li></ul>
+                                        </div>
+                                      </details>
+                                    </custom-accordion></li><li><custom-accordion>
+                                      <details id="Details-menu-drawer-shop-bars">
+                                        <summary id="HeaderDrawer-shop-bars" class="menu-drawer__menu-item menu-drawer__child-menu-item link link--text list-menu__item focus-inset" role="button" aria-expanded="false" aria-controls="childlink-bars">
+                                          <span>Bars</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                                        </summary>
+                                        <div id="childlink-bars" class="custom-accordion__panel custom-scrollbar has-submenu gradient motion-reduce">
+                                          
+                                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                                <a id="HeaderDrawer-shop-bars-botaniq-protein-bar" href="/products/botaniq-cookie-dough-protein-bar-57g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Botaniq Protein Bar</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-bars-ripe-caramel-protein-bar" href="/products/dark-chocolate-salted-caramel-protein-bar-49g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Ripe Caramel Protein Bar</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-bars-rippl-peanut-booster" href="/products/rippl-caramel-chocolate-peanut-protein-booster-50g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Rippl Peanut Booster</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-bars-summit-bar-vanilla" href="/products/summit-bar-white-chocolate-macadmia-nut-68g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span class="stickerified">
+          <span class="sticker-wrapper-above"></span>
+          <span>
+            <span class="sticker-text">Summit Bar Vanilla</span>
+            <span class="sticker-wrapper-inline"><span class="sticker-spacer"></span><span class="sticker sticker-header_gpc76h sticker--rounded sticker--inline text-body">
+          <span>SALE</span>
+        </span></span>
+          </span>
+          <span class="sticker-wrapper-below"></span>
+        </span>
+                                                </a>
+                                              </li><li>
+                                                <a href="/collections/bars" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>View all Bars</span>
+                                                </a>
+                                              </li></ul>
+                                        </div>
+                                      </details>
+                                    </custom-accordion></li><li><custom-accordion>
+                                      <details id="Details-menu-drawer-shop-drinks">
+                                        <summary id="HeaderDrawer-shop-drinks" class="menu-drawer__menu-item menu-drawer__child-menu-item link link--text list-menu__item focus-inset" role="button" aria-expanded="false" aria-controls="childlink-drinks">
+                                          <span>Drinks</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                                        </summary>
+                                        <div id="childlink-drinks" class="custom-accordion__panel custom-scrollbar has-submenu gradient motion-reduce">
+                                          
+                                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                                <a id="HeaderDrawer-shop-drinks-coconut-water" href="/products/coconut-water-1l" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Coconut Water</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-drinks-fevert-organic-craft-cider" href="/products/fevert-organic-premium-craft-cider-5-vol-500ml" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Fevert Organic Craft Cider</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-drinks-sunny-mango-lemonade" href="/products/sunny-mango-lemonade-591ml" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Sunny Mango Lemonade</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-drinks-vina-del-rio-wine" href="/products/vina-del-rio-wine-no-added-sulphur-14-vol-70cl" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Vina Del Rio Wine</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-drinks-no-caffeine-coffee-alternative" href="/products/organic-no-caffeine-coffee-alternative-100g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>No Caffeine Coffee Alternative</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-drinks-omega-3-dha" href="/products/omega-3-dha-capsules-from-algae-oil-30-tabs" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Omega 3 DHA</span>
+                                                </a>
+                                              </li><li>
+                                                <a href="/collections/drinks" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>View all Drinks</span>
+                                                </a>
+                                              </li></ul>
+                                        </div>
+                                      </details>
+                                    </custom-accordion></li><li><custom-accordion>
+                                      <details id="Details-menu-drawer-shop-fruit-vegetables">
+                                        <summary id="HeaderDrawer-shop-fruit-vegetables" class="menu-drawer__menu-item menu-drawer__child-menu-item link link--text list-menu__item focus-inset" role="button" aria-expanded="false" aria-controls="childlink-fruit-vegetables">
+                                          <span>Fruit &amp; Vegetables</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                                        </summary>
+                                        <div id="childlink-fruit-vegetables" class="custom-accordion__panel custom-scrollbar has-submenu gradient motion-reduce">
+                                          
+                                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                                <a id="HeaderDrawer-shop-fruit-vegetables-blush-pears-loose" href="/products/blush-pears-loose" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Blush Pears Loose</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-fruit-vegetables-broccoli-crown" href="/products/broccoli-crown" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Broccoli Crown</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-fruit-vegetables-classic-vine-tomatoes" href="/products/tomatoes" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Classic Vine Tomatoes</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-fruit-vegetables-easy-peeler-oranges" href="/products/easy-peeler-oranges" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Easy Peeler Oranges</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-shop-fruit-vegetables-fairtrade-bananas" href="/products/essential-fairtrade-bananas" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Fairtrade Bananas</span>
+                                                </a>
+                                              </li><li>
+                                                <a href="/collections/fruit-vegetables" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>View all Fruit &amp; Vegetables</span>
+                                                </a>
+                                              </li></ul>
+                                        </div>
+                                      </details>
+                                    </custom-accordion></li></ul><div class="menu-drawer__promo-container">
+<div class="mega-promos mega-promos--text_promo mega_promos--separator mega_promos--separator-right flex flex-col" data-nosnippet=""><div class="promo-card--grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+<div class="promo-card promo-card--text w-full" style="--ratio-percent: 125.0%;--color-accent: var(--color-foreground);">
+    
+      <a href="/collections/bestsellers" class="promo-card--text-container w-full">
+    
+
+      <div class="w-full"><div class="mb-15 last-child:mb-0"><div class="image-overlay promo-image overflow-hidden  hover-zoom ratio"><img class="promo-image img-cover" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/kimia-kazemi-Ok0v4HfXWrA-unsplash.jpg?v=1745141706&amp;width=810" style="object-position: 50.0% 50.0%" alt="A hand holds a spoon above a glass dessert cup layered with yogurt, granola, and fresh strawberries and blueberries." loading="lazy" fetchpriority="low" width="405" height="610"></div></div><div class="promo-card--text__heading mb-05 last-child:mb-0">Healthy inspiration</div><div class="promo-card--text__text rte mb-05 last-child:mb-0">Browse our range of healthy ingredients to inspire your next workout.
+</div></div>
+
+    
+      </a>
+    
+  </div>
+
+<div class="promo-card promo-card--text w-full" style="--ratio-percent: 125.0%;--color-accent: var(--color-foreground);">
+    
+      <a href="/collections/bestsellers" class="promo-card--text-container w-full">
+    
+
+      <div class="w-full"><div class="mb-15 last-child:mb-0"><div class="image-overlay promo-image overflow-hidden  hover-zoom ratio"><img class="promo-image img-cover" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-19_-2025_-06_38_02-PM.jpg?v=1745094947&amp;width=810" style="object-position: 50.0% 50.0%" alt="Yellow protein powder, black coffee bag, fresh broccoli, and corn are displayed on a green backdrop with bold branding." loading="lazy" fetchpriority="low" width="405" height="405"></div></div><div class="promo-card--text__heading mb-05 last-child:mb-0">Explore our range</div><div class="promo-card--text__text rte mb-05 last-child:mb-0">Supplements, Protein, Groceries, Coffee? We've got you covered.
+</div></div>
+
+    
+      </a>
+    
+  </div>
+
+
+
+
+
+
+</div></div></div></div>
+                      </div>
+                    </details></li><li class=""><a id="HeaderDrawer-drinks" href="/collections/drinks" class="menu-drawer__menu-item items-center list-menu__item link link--text focus-inset"><svg class="icon icon--wine custom-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+        <path d="M398.57 80H113.43v16S87.51 272 256 272 398.57 96 398.57 96zM256 272v160" stroke-linejoin="round" class="fill-none stroke-width-standard"></path><path stroke-linecap="round" stroke-linejoin="round" d="M352 432H160" class="fill-none stroke-width-standard"></path><path stroke-linejoin="round" d="M112 160h288" class="fill-none stroke-width-standard"></path>
+    </svg><span>Drinks</span>
+                    </a></li><li class=""><a id="HeaderDrawer-brands" href="/pages/shop-by-brand" class="menu-drawer__menu-item items-center list-menu__item link link--text focus-inset"><svg class="icon icon--apps custom-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+        <rect x="64" y="64" width="80" height="80" rx="40" ry="40" stroke-miterlimit="10" class="fill-none stroke-width-standard"></rect><rect x="216" y="64" width="80" height="80" rx="40" ry="40" stroke-miterlimit="10" class="fill-none stroke-width-standard"></rect><rect x="368" y="64" width="80" height="80" rx="40" ry="40" stroke-miterlimit="10" class="fill-none stroke-width-standard"></rect><rect x="64" y="216" width="80" height="80" rx="40" ry="40" stroke-miterlimit="10" class="fill-none stroke-width-standard"></rect><rect x="216" y="216" width="80" height="80" rx="40" ry="40" stroke-miterlimit="10" class="fill-none stroke-width-standard"></rect><rect x="368" y="216" width="80" height="80" rx="40" ry="40" stroke-miterlimit="10" class="fill-none stroke-width-standard"></rect><rect x="64" y="368" width="80" height="80" rx="40" ry="40" stroke-miterlimit="10" class="fill-none stroke-width-standard"></rect><rect x="216" y="368" width="80" height="80" rx="40" ry="40" stroke-miterlimit="10" class="fill-none stroke-width-standard"></rect><rect x="368" y="368" width="80" height="80" rx="40" ry="40" stroke-miterlimit="10" class="fill-none stroke-width-standard"></rect>
+    </svg><span>Brands</span>
+                    </a></li><li class=""><a id="HeaderDrawer-deals" href="/collections/deals" class="menu-drawer__menu-item items-center list-menu__item link link--text focus-inset"><svg class="icon icon--price_tags custom-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+        <path d="M403.29 32H280.36a14.46 14.46 0 00-10.2 4.2L24.4 281.9a28.85 28.85 0 000 40.7l117 117a28.86 28.86 0 0040.71 0L427.8 194a14.46 14.46 0 004.2-10.2v-123A28.66 28.66 0 00403.29 32z" stroke-linecap="round" stroke-linejoin="round" class="fill-none stroke-width-standard"></path><path d="M352 144a32 32 0 1132-32 32 32 0 01-32 32z"></path><path d="M230 480l262-262a13.81 13.81 0 004-10V80" stroke-linecap="round" stroke-linejoin="round" class="fill-none stroke-width-standard"></path>
+    </svg><span>Deals</span>
+                    </a></li><li class=""><a id="HeaderDrawer-about-us" href="/pages/about-us" class="menu-drawer__menu-item items-center list-menu__item link link--text focus-inset"><svg class="icon icon--apple standard-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M10.6616 1.84311C11.4997 0.994336 12.5829 0.555929 13.3364 0.406304C13.4671 0.380359 13.6027 0.407635 13.7132 0.48208C13.8237 0.556525 13.8999 0.671982 13.9249 0.802834C14.2685 2.59987 13.7042 3.90202 12.8265 4.77303C11.9732 5.61989 10.8528 6.03394 10.0739 6.16284C9.94237 6.1846 9.80763 6.15297 9.69957 6.07495C9.59151 5.99694 9.51906 5.87901 9.49832 5.74735C9.22227 3.99494 9.8034 2.71219 10.6616 1.84311ZM10.4322 5.05051C10.9838 4.87866 11.6201 4.56143 12.1221 4.06324C12.6862 3.5034 13.1028 2.69625 13.0153 1.52987C12.4847 1.71504 11.8688 2.04373 11.3731 2.54573C10.8104 3.1156 10.3882 3.92035 10.4322 5.05051Z"></path>
+      <path d="M6.74466 1.36403C6.82081 1.09859 7.09771 0.945143 7.36315 1.02129C8.4313 1.32771 10.4241 2.68991 10.4999 5.68393C10.5069 5.95998 10.2888 6.18943 10.0127 6.19643C9.73668 6.20342 9.50723 5.9853 9.50024 5.70925C9.43732 3.22559 7.81131 2.19019 7.0874 1.98252C6.82196 1.90637 6.66851 1.62947 6.74466 1.36403Z"></path>
+      <path d="M5.7976 5.51618C5.08273 5.80325 4.40428 6.33518 3.91474 6.94951C3.01446 8.0793 2.53613 9.47907 2.53613 11.1986C2.53613 14.3276 4.3809 16.9669 7.07997 18.0835C7.41131 18.2206 7.75875 18.2099 8.22329 18.1348C8.32226 18.1188 8.42919 18.0991 8.54253 18.0782C8.92684 18.0074 9.38491 17.923 9.85684 17.923C10.3302 17.923 10.8107 18.007 11.2255 18.0795C11.3576 18.1026 11.4831 18.1246 11.5995 18.1422C12.1188 18.2211 12.517 18.2314 12.872 18.0838C15.6049 16.9478 17.4589 14.3 17.4639 11.2113C17.3883 9.75258 17.1668 8.70553 16.7428 7.88888C16.3278 7.08972 15.6964 6.46856 14.717 5.90109C13.9224 5.57109 13.3583 5.45194 12.9406 5.4387C12.5294 5.42567 12.2379 5.51434 11.9817 5.63936C11.8475 5.70489 11.72 5.78185 11.5797 5.86982C11.5575 5.8837 11.5348 5.89804 11.5115 5.91271C11.3938 5.98697 11.2627 6.06966 11.1279 6.14411C10.7884 6.3316 10.3877 6.48938 9.85684 6.48938C9.22764 6.48938 8.83995 6.29877 8.52175 6.04985C8.44189 5.98738 8.34486 5.90226 8.26392 5.83126C8.22148 5.79404 8.18347 5.76069 8.15468 5.73653C8.04777 5.64681 7.94466 5.57121 7.8199 5.50793C7.21536 5.2013 6.5101 5.23007 5.7976 5.51618ZM5.42495 4.58821C6.32089 4.22843 7.33981 4.14315 8.27225 4.61609C8.4901 4.72659 8.65843 4.8538 8.79753 4.97054C8.86924 5.03072 8.92077 5.07647 8.96623 5.11683C9.02365 5.16781 9.07139 5.2102 9.13788 5.26221C9.30136 5.39009 9.47644 5.48938 9.85684 5.48938C10.1679 5.48938 10.4012 5.4031 10.6445 5.26872C10.7515 5.20961 10.8536 5.14531 10.9708 5.07145C10.9959 5.05563 11.0217 5.03937 11.0484 5.02262C11.1936 4.93153 11.3585 4.83076 11.5431 4.74067C11.9247 4.55444 12.3768 4.42033 12.9722 4.4392C13.556 4.4577 14.2527 4.62242 15.1322 4.99079L15.1611 5.00288L15.1882 5.01846C16.3065 5.66113 17.1032 6.41295 17.6303 7.42805C18.1508 8.43058 18.3851 9.64589 18.4633 11.173L18.4639 11.1858V11.1986C18.4639 14.7063 16.3566 17.7183 13.2559 19.0072C12.6339 19.2658 12.0024 19.2149 11.4494 19.1309C11.2863 19.1061 11.1317 19.0792 10.9824 19.0532C10.5912 18.9849 10.2359 18.923 9.85684 18.923C9.48487 18.923 9.15235 18.984 8.78723 19.0509C8.65765 19.0747 8.52396 19.0992 8.38294 19.122C7.87454 19.2042 7.29552 19.2549 6.69769 19.0075C3.6271 17.7372 1.53613 14.7348 1.53613 11.1986C1.53613 9.28002 2.07513 7.65346 3.13268 6.32632C3.71714 5.59286 4.53139 4.94704 5.42495 4.58821Z"></path></svg><span>About Us</span>
+                    </a></li><li class="menu-drawer__secondary-link menu-drawer__first-secondary-link"><a id="HeaderDrawer-our-services" href="/pages/our-services" class="menu-drawer__menu-item items-center list-menu__item link link--text focus-inset"><span>Our Services</span>
+                    </a></li><li class="menu-drawer__secondary-link"><a id="HeaderDrawer-blog" href="/blogs/daily-dose" class="menu-drawer__menu-item items-center list-menu__item link link--text focus-inset"><span>Blog</span>
+                    </a></li><li class="menu-drawer__secondary-link"><a id="HeaderDrawer-faqs" href="/pages/faqs" class="menu-drawer__menu-item items-center list-menu__item link link--text focus-inset"><span>FAQs</span>
+                    </a></li><li class="menu-drawer__secondary-link"><a id="HeaderDrawer-contact" href="/pages/contact" class="menu-drawer__menu-item items-center list-menu__item link link--text focus-inset"><span>Contact</span>
+                    </a></li><li class="menu-drawer__secondary-link"><details id="Details-menu-drawer-menu-item-11" class="js-header-drawer-sub">
+                      <summary id="HeaderDrawer-theme-features" class="menu-drawer__menu-item items-center list-menu__item link link--text arrow-inset focus-inset" role="button" aria-expanded="false" aria-controls="link-theme-features"><span>Theme Features</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                      </summary>
+                      <div id="link-theme-features" class="menu-drawer__submenu custom-scrollbar has-submenu gradient motion-reduce" tabindex="-1">
+                        <div class="menu-drawer__inner-submenu custom-scrollbar">
+                          <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true" dir="ltr">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" focusable="false" class="icon icon-arrow" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M268 112l144 144-144 144M392 256H100" class="stroke-width-standard"></path>
+</svg>
+                            Back
+                          </button>
+<ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                  <a href="#" class="menu-drawer__menu-item menu__menu-item-title link link--text list-menu__item focus-inset">
+                                    <span>Theme Features</span>
+                                  </a>
+                                </li><li><custom-accordion>
+                                      <details id="Details-menu-drawer-theme-features-product-page">
+                                        <summary id="HeaderDrawer-theme-features-product-page" class="menu-drawer__menu-item menu-drawer__child-menu-item link link--text list-menu__item focus-inset" role="button" aria-expanded="false" aria-controls="childlink-product-page">
+                                          <span>Product Page</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                                        </summary>
+                                        <div id="childlink-product-page" class="custom-accordion__panel custom-scrollbar has-submenu gradient motion-reduce">
+                                          
+                                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                                <a id="HeaderDrawer-theme-features-product-page-slider" href="/products/renew-cereal-cinnamon-crunch-250g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Slider</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-product-page-one-column" href="/products/coconut-water-1l?view=feature-one-column" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>One column</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-product-page-two-column" href="/products/summit-bar-white-chocolate-macadmia-nut-68g?view=two-column" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Two column</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-product-page-collage" href="/products/summit-bar-white-chocolate-macadmia-nut-68g?view=feature-collage" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Collage</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-product-page-high-converting" href="/products/coconut-water-1l?view=feature-high-converting" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span class="stickerified">
+          <span class="sticker-wrapper-above"></span>
+          <span>
+            <span class="sticker-text">High converting</span>
+            <span class="sticker-wrapper-inline"><span class="sticker-spacer"></span><span class="sticker sticker-header_nK7aje sticker--pill sticker--inline text-body">
+          <span>NEW</span>
+        </span></span>
+          </span>
+          <span class="sticker-wrapper-below"></span>
+        </span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-product-page-back-in-stock-notification" href="/products/avocado" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Back in stock notification</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-product-page-bulk-order" href="/products/lean-protein-smooth-vanilla-500g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Bulk order</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-product-page-enquiry" href="/products/coconut-water-1l?view=enquire" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Enquiry</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-product-page-preorder" href="/products/renew-cereal-cinnamon-crunch-250g?view=preorder" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Preorder</span>
+                                                </a>
+                                              </li><li>
+                                                <a href="/products/renew-cereal-cinnamon-crunch-250g" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>View all Product Page</span>
+                                                </a>
+                                              </li></ul>
+                                        </div>
+                                      </details>
+                                    </custom-accordion></li><li><custom-accordion>
+                                      <details id="Details-menu-drawer-theme-features-collection-page">
+                                        <summary id="HeaderDrawer-theme-features-collection-page" class="menu-drawer__menu-item menu-drawer__child-menu-item link link--text list-menu__item focus-inset" role="button" aria-expanded="false" aria-controls="childlink-collection-page">
+                                          <span>Collection page</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                                        </summary>
+                                        <div id="childlink-collection-page" class="custom-accordion__panel custom-scrollbar has-submenu gradient motion-reduce">
+                                          
+                                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                                <a id="HeaderDrawer-theme-features-collection-page-minimal" href="/collections/drinks?view=feature-no-image" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Minimal</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-collection-page-side-image" href="/collections/cereal" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Side image</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-collection-page-banner-image" href="/collections/fruit-vegetables?view=feature-banner-image" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Banner image</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-collection-page-sub-collections" href="/collections/all?view=feature-sub-collections" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Sub-collections</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-collection-page-flash-sales" href="/collections/flash-sales" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Flash sales</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-collection-page-black-friday-deals" href="/collections/deals" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Black Friday/Deals</span>
+                                                </a>
+                                              </li><li>
+                                                <a href="/collections/drinks" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>View all Collection page</span>
+                                                </a>
+                                              </li></ul>
+                                        </div>
+                                      </details>
+                                    </custom-accordion></li><li><custom-accordion>
+                                      <details id="Details-menu-drawer-theme-features-pages">
+                                        <summary id="HeaderDrawer-theme-features-pages" class="menu-drawer__menu-item menu-drawer__child-menu-item link link--text list-menu__item focus-inset" role="button" aria-expanded="false" aria-controls="childlink-pages">
+                                          <span>Pages</span>
+                                          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                                        </summary>
+                                        <div id="childlink-pages" class="custom-accordion__panel custom-scrollbar has-submenu gradient motion-reduce">
+                                          
+                                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1"><li>
+                                                <a id="HeaderDrawer-theme-features-pages-book-a-nutritionist" href="/pages/our-services#shopify-section-template--25591518626119__contact_form_fCfLLT" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Book a nutritionist</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-pages-about-us" href="/pages/about-us" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>About us</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-pages-brands" href="/pages/shop-by-brand" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Brands</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-pages-contact" href="/pages/contact" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Contact</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-pages-faqs" href="/pages/faqs" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>FAQs</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-pages-services" href="/pages/our-services" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Services</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-pages-store-locator" href="/pages/store-locator" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Store locator</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-pages-collections-list" href="/collections" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Collections list</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-pages-blog-landing-page" href="/blogs/daily-dose" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Blog landing page</span>
+                                                </a>
+                                              </li><li>
+                                                <a id="HeaderDrawer-theme-features-pages-blog-post" href="/blogs/daily-dose/the-best-healthy-ish-treats-in-our-store-right-now" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>Blog post</span>
+                                                </a>
+                                              </li><li>
+                                                <a href="#" class="menu-drawer__menu-item link link--text list-menu__item focus-inset">
+                                                  <span>View all Pages</span>
+                                                </a>
+                                              </li></ul>
+                                        </div>
+                                      </details>
+                                    </custom-accordion></li></ul><div class="menu-drawer__promo-container">
+<div class="mega-promos mega-promos--text_promo flex flex-col" data-nosnippet=""><div class="promo-card--grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+<div class="promo-card promo-card--text w-full" style="--ratio-percent: 75.18796992481202%;--color-accent: 51,65,46;">
+    
+      <a href="/products/renew-cereal-cinnamon-crunch-250g" class="promo-card--text-container w-full">
+    
+
+      <div class="w-full"><div class="mb-15 last-child:mb-0"><div class="image-overlay promo-image overflow-hidden  hover-zoom ratio"><img class="promo-image img-cover" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/32y39cye4th568kk3wx01736k5bn.jpg?v=1780589153&amp;width=810" style="object-position: 50.0% 50.0%" alt="A vibrant assortment of fresh fruits and vegetables displayed alongside a cup of coffee and a bowl of granola." loading="lazy" fetchpriority="low" width="405" height="304"></div></div><div class="promo-card--text__heading mb-05 last-child:mb-0">AI-era product pages.</div><div class="promo-card--text__text rte mb-05 last-child:mb-0">With AI commerce, shoppers join further down the funnel - so your product page matters more than ever.
+</div></div>
+
+    
+      </a>
+    
+  </div>
+
+<div class="promo-card promo-card--text w-full" style="--ratio-percent: 75.18796992481202%;--color-accent: 114,70,127;">
+    
+      <a href="/collections/cereal" class="promo-card--text-container w-full">
+    
+
+      <div class="w-full"><div class="mb-15 last-child:mb-0"><div class="image-overlay promo-image overflow-hidden  hover-zoom ratio"><img class="promo-image img-cover" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/24kg2zs9k3xtsykpsju8vnn83sjr.png?v=1780589173&amp;width=810" style="object-position: 50.0% 50.0%" alt="Nutritional interface showing product details, icons for dietary features, and nutritional facts in a clean layout." loading="lazy" fetchpriority="low" width="405" height="304"></div></div><div class="promo-card--text__heading mb-05 last-child:mb-0">SEO-optimized collection pages.</div><div class="promo-card--text__text rte mb-05 last-child:mb-0">SEO starts with structure - a rich collection page helps shoppers and search engines understand your range.
+</div></div>
+
+    
+      </a>
+    
+  </div>
+
+
+
+
+
+
+</div></div></div><div class="menu-drawer__promo-container">
+<div class="mega-promos mega-promos--image_promo flex flex-col" data-nosnippet=""><div class="promo-card--grid" style="--overlay-opacity: 0.02;grid-template-columns: repeat(1, minmax(0, 1fr));">
+
+    <a href="/pages/icons" class="promo-card promo-card--image promo last-child:mb-0 flex hover-zoom relative justify-start items-start" style="--ratio-percent: 56.49717514124294%;">
+  
+
+    <div class="promo-image image-overlay overflow-hidden w-full relative ratio"><img class="promo-image img-cover" style="object-position: 32.9216% 39.7494%" srcset="//benchmark-food-demo.myshopify.com/cdn/shop/files/peakChatGPT-Image-Jun-6_-2026_-05_24_10-PM.jpg?v=1780764968&amp;width=3240 3240w, //benchmark-food-demo.myshopify.com/cdn/shop/files/peakChatGPT-Image-Jun-6_-2026_-05_24_10-PM.jpg?v=1780764968&amp;width=1620 1620w" sizes="(max-width: 749.98px) 810px, 1620px" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/peakChatGPT-Image-Jun-6_-2026_-05_24_10-PM.jpg?v=1780764968&amp;width=3240" alt="A variety of white icons, such as a camera and gaming controller, displayed on a dark green grid background." loading="lazy" fetchpriority="low" width="1620" height="192"></div>
+
+    
+      <div class="rte z-2 color-inherit lh-13 text-heading text-left h3-size absolute" style="--color-foreground: 255,255,255;color: #ffffff;padding: 1.8em">
+        <p>Explore 200+ theme icons</p>
+      </div>
+    
+
+  
+    </a>
+  
+
+
+
+
+
+
+
+</div></div></div></div>
+                      </div>
+                    </details></li><li class="menu-drawer__secondary-link">
+                  <a href="https://benchmark-food-demo.myshopify.com/customer_authentication/redirect?locale=en&amp;region_country=GB" class="menu-drawer__menu-item items-center list-menu__item link link--text focus-inset">
+                    <span>My Account</span>
+                  </a>
+                </li></ul>
+          </nav>
+          <div class="menu-drawer__utility-links border-top">
+            <div class="flex flex-wrap items-center gap-2 justify-between">
+<ul class="list-unstyled list-social" role="list"><li class="list-social__item">
+        <a href="https://instagram.com/shopify" class="link tap-target list-social__link"><svg aria-hidden="true" focusable="false" class="icon icon-instagram" viewBox="0 0 20 20">
+  <path fill="currentColor" fill-rule="evenodd" d="M13.23 3.492c-.84-.037-1.096-.046-3.23-.046-2.144 0-2.39.01-3.238.055-.776.027-1.195.164-1.487.273a2.43 2.43 0 0 0-.912.593 2.486 2.486 0 0 0-.602.922c-.11.282-.238.702-.274 1.486-.046.84-.046 1.095-.046 3.23 0 2.134.01 2.39.046 3.229.004.51.097 1.016.274 1.495.145.365.319.639.602.913.282.282.538.456.92.602.474.176.974.268 1.479.273.848.046 1.103.046 3.238.046 2.134 0 2.39-.01 3.23-.046.784-.036 1.203-.164 1.486-.273.374-.146.648-.329.921-.602.283-.283.447-.548.602-.922.177-.476.27-.979.274-1.486.037-.84.046-1.095.046-3.23 0-2.134-.01-2.39-.055-3.229-.027-.784-.164-1.204-.274-1.495a2.43 2.43 0 0 0-.593-.913 2.604 2.604 0 0 0-.92-.602c-.284-.11-.703-.237-1.488-.273ZM6.697 2.05c.857-.036 1.131-.045 3.302-.045 1.1-.014 2.202.001 3.302.045.664.014 1.321.14 1.943.374a3.968 3.968 0 0 1 1.414.922c.41.397.728.88.93 1.414.23.622.354 1.279.365 1.942C18 7.56 18 7.824 18 10.005c0 2.17-.01 2.444-.046 3.292-.036.858-.173 1.442-.374 1.943-.2.53-.474.976-.92 1.423a3.896 3.896 0 0 1-1.415.922c-.51.191-1.095.337-1.943.374-.857.036-1.122.045-3.302.045-2.171 0-2.445-.009-3.302-.055-.849-.027-1.432-.164-1.943-.364a4.152 4.152 0 0 1-1.414-.922 4.128 4.128 0 0 1-.93-1.423c-.183-.51-.329-1.085-.365-1.943C2.009 12.45 2 12.167 2 10.004c0-2.161 0-2.435.055-3.302.027-.848.164-1.432.365-1.942a4.44 4.44 0 0 1 .92-1.414 4.18 4.18 0 0 1 1.415-.93c.51-.183 1.094-.33 1.943-.366Zm.427 4.806a4.105 4.105 0 1 1 5.805 5.805 4.105 4.105 0 0 1-5.805-5.805Zm1.882 5.371a2.668 2.668 0 1 0 2.042-4.93 2.668 2.668 0 0 0-2.042 4.93Zm5.922-5.942a.958.958 0 1 1-1.355-1.355.958.958 0 0 1 1.355 1.355Z" clip-rule="evenodd"></path>
+</svg>
+<span class="visually-hidden">Instagram</span>
+        </a>
+      </li><li class="list-social__item">
+        <a href="https://tiktok.com/shopify" class="link tap-target list-social__link"><svg aria-hidden="true" focusable="false" class="icon icon-tiktok" viewBox="0 0 20 20">
+  <path fill="currentColor" d="M10.511 1.705h2.74s-.157 3.51 3.795 3.768v2.711s-2.114.129-3.796-1.158l.028 5.606A5.073 5.073 0 1 1 8.213 7.56h.708v2.785a2.298 2.298 0 1 0 1.618 2.205L10.51 1.705Z"></path>
+</svg>
+<span class="visually-hidden">TikTok</span>
+        </a>
+      </li><li class="list-social__item">
+        <a href="https://pinterest.com/shopify" class="link tap-target list-social__link"><svg aria-hidden="true" focusable="false" class="icon icon-pinterest" viewBox="0 0 20 20">
+  <path fill="currentColor" d="M10 2.01c2.124.01 4.16.855 5.666 2.353a8.087 8.087 0 0 1 1.277 9.68A7.952 7.952 0 0 1 10 18.04a8.164 8.164 0 0 1-2.276-.307c.403-.653.672-1.24.816-1.729l.567-2.2c.134.27.393.5.768.702.384.192.768.297 1.19.297.836 0 1.585-.24 2.248-.72a4.678 4.678 0 0 0 1.537-1.969c.37-.89.554-1.848.537-2.813 0-1.249-.48-2.315-1.43-3.227a5.061 5.061 0 0 0-3.65-1.374c-.893 0-1.729.154-2.478.461a5.023 5.023 0 0 0-3.236 4.552c0 .72.134 1.355.413 1.902.269.538.672.922 1.22 1.152.096.039.182.039.25 0 .066-.028.114-.096.143-.192l.173-.653c.048-.144.02-.288-.105-.432a2.257 2.257 0 0 1-.548-1.565 3.803 3.803 0 0 1 3.976-3.861c1.047 0 1.863.288 2.44.855.585.576.883 1.315.883 2.228 0 .768-.106 1.479-.317 2.122a3.813 3.813 0 0 1-.893 1.556c-.384.384-.836.576-1.345.576-.413 0-.749-.144-1.018-.451-.259-.307-.345-.672-.25-1.085.147-.514.298-1.026.452-1.537l.173-.701c.057-.25.086-.451.086-.624 0-.346-.096-.634-.269-.855-.192-.22-.451-.336-.797-.336-.432 0-.797.192-1.085.595-.288.394-.442.893-.442 1.499.005.374.063.746.173 1.104l.058.144c-.576 2.478-.913 3.938-1.037 4.36-.116.528-.154 1.153-.125 1.863A8.067 8.067 0 0 1 2 10.03c0-2.208.778-4.11 2.343-5.666A7.721 7.721 0 0 1 10 2.001v.01Z"></path>
+</svg>
+<span class="visually-hidden">Pinterest</span>
+        </a>
+      </li><li class="list-social__item">
+        <a href="https://whatsapp.com/shopify" class="link tap-target list-social__link"><svg aria-hidden="true" focusable="false" class="icon icon-whatsapp" fill="currentColor" viewBox="0 0 512 512">
+  <path d="M414.73 97.1A222.14 222.14 0 00256.94 32C134 32 33.92 131.58 33.87 254a220.61 220.61 0 0029.78 111L32 480l118.25-30.87a223.63 223.63 0 00106.6 27h.09c122.93 0 223-99.59 223.06-222A220.18 220.18 0 00414.73 97.1zM256.94 438.66h-.08a185.75 185.75 0 01-94.36-25.72l-6.77-4-70.17 18.32 18.73-68.09-4.41-7A183.46 183.46 0 0171.53 254c0-101.73 83.21-184.5 185.48-184.5a185 185 0 01185.33 184.64c-.04 101.74-83.21 184.52-185.4 184.52zm101.69-138.19c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54 2.78-14.4 18-17.65 21.75-6.5 4.16-12.07 1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56 2.44-11.32c2.51-2.49 5.57-6.48 8.36-9.72s3.72-5.56 5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53 20.53 0 00-14.86 6.94c-5.11 5.56-19.51 19-19.51 46.28s20 53.68 22.76 57.38 39.3 59.73 95.21 83.76a323.11 323.11 0 0031.78 11.68c13.35 4.22 25.5 3.63 35.1 2.2 10.71-1.59 33-13.42 37.63-26.38s4.64-24.06 3.25-26.37-5.11-3.71-10.69-6.48z" fill-rule="evenodd"></path>
+</svg><span class="visually-hidden">WhatsApp</span>
+        </a>
+      </li></ul>
+<div class="menu-drawer__localization header-localization flex"><localization-form data-prevent-hide=""><form method="post" action="/localization" id="HeaderDrawerLocalizationForm" accept-charset="UTF-8" class="localization-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="_method" value="put"><input type="hidden" name="return_to" value="/"><div>
+
+<div class="disclosure  disclosure--full">
+  <button type="button" class="disclosure__button localization-form__select localization-selector link link--text" data-load-trigger=".js-HeaderDrawerLocalization-trigger" aria-expanded="false" aria-controls="HeaderDrawerLocalization-country-results" aria-label="Change country/language">
+    <span class="flex items-center gap-1">
+      
+        <span class="localization-flag shrink-0">
+          <img src="//cdn.shopify.com/static/images/flags/gb.svg?width=20" alt="United Kingdom" srcset="//cdn.shopify.com/static/images/flags/gb.svg?width=20 20w" width="20" height="15">
+        </span>
+      
+
+      <span class="t6 mt--1px">
+        
+United Kingdom (GBP £, EN)
+      </span>
+    </span>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+  </button>
+
+  <div class="disclosure__list-wrapper custom-scrollbar country-selector p-1 pl-2 pr-2 disclosure__list-wrapper--one-option gradient color-scheme-8" hidden="">
+    <template class="deferred js-HeaderDrawerLocalization-trigger">
+    <div class="flex justify-end">
+      <button class="country-selector__close-button button--small link" type="button" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-close" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
+</svg>
+      </button>
+    </div>
+
+    <div class="localization__grid flex flex-col md:flex-row gap-2">
+      
+        <div class="language-column">
+          
+            <h2 class="text-body caption t7 opacity-70 m-0">LANGUAGE</h2>
+          
+          <ul id="HeaderDrawerLocalizationList" role="list" class="disclosure__list custom-scrollbar list-unstyled"><li class="disclosure__item" tabindex="-1">
+                <a class="link link--text disclosure__link focus-inset" href="#" data-no-instant="" hreflang="en" lang="en" aria-current="true" data-value="en">
+                  <span class="t5 font-bold color-link">
+                    English
+                  </span>
+                </a>
+              </li><li class="disclosure__item" tabindex="-1">
+                <a class="link link--text disclosure__link focus-inset" href="#" data-no-instant="" hreflang="de" lang="de" data-value="de">
+                  <span class="t5">
+                    Deutsch
+                  </span>
+                </a>
+              </li><li class="disclosure__item" tabindex="-1">
+                <a class="link link--text disclosure__link focus-inset" href="#" data-no-instant="" hreflang="ar" lang="ar" data-value="ar">
+                  <span class="t5">
+                    العربية
+                  </span>
+                </a>
+              </li></ul>
+        </div>
+      
+
+      
+<div>
+          
+            <h2 class="text-body caption t7 opacity-70 m-0">COUNTRY/REGION</h2>
+          
+          <div class="js-country-search-results visually-hidden" aria-live="polite"></div>
+          <div class="disclosure__list custom country-selector__list country-selector__list--with-multiple-currencies custom-scrollbar" id="HeaderDrawerLocalization-country-results">
+            
+            <ul role="list" class="list-unstyled countries">
+              
+<li class="disclosure__item" tabindex="-1">
+                  <a class="link link--text disclosure__link disclosure__link--show-currency focus-inset no-scroll" href="#" data-no-instant="" data-value="CA">
+                    <span class="country t5 flex items-center gap-1">
+                      
+                        <span class="localization-flag shrink-0">
+                          <img src="//cdn.shopify.com/static/images/flags/ca.svg?width=20" alt="Canada" srcset="//cdn.shopify.com/static/images/flags/ca.svg?width=20 20w" width="20" height="15" loading="lazy">
+                        </span>
+                      
+Canada
+                    </span>
+                    <span class="localization-form__currency pl-2 t6 motion-reduce">
+                      CAD
+                      $</span>
+                  </a>
+                </li><li class="disclosure__item" tabindex="-1">
+                  <a class="link link--text disclosure__link disclosure__link--show-currency focus-inset no-scroll" href="#" data-no-instant="" data-value="FR">
+                    <span class="country t5 flex items-center gap-1">
+                      
+                        <span class="localization-flag shrink-0">
+                          <img src="//cdn.shopify.com/static/images/flags/fr.svg?width=20" alt="France" srcset="//cdn.shopify.com/static/images/flags/fr.svg?width=20 20w" width="20" height="15" loading="lazy">
+                        </span>
+                      
+France
+                    </span>
+                    <span class="localization-form__currency pl-2 t6 motion-reduce">
+                      EUR
+                      €</span>
+                  </a>
+                </li><li class="disclosure__item" tabindex="-1">
+                  <a class="link link--text disclosure__link disclosure__link--show-currency focus-inset no-scroll" href="#" data-no-instant="" data-value="DE">
+                    <span class="country t5 flex items-center gap-1">
+                      
+                        <span class="localization-flag shrink-0">
+                          <img src="//cdn.shopify.com/static/images/flags/de.svg?width=20" alt="Germany" srcset="//cdn.shopify.com/static/images/flags/de.svg?width=20 20w" width="20" height="15" loading="lazy">
+                        </span>
+                      
+Germany
+                    </span>
+                    <span class="localization-form__currency pl-2 t6 motion-reduce">
+                      EUR
+                      €</span>
+                  </a>
+                </li><li class="disclosure__item" tabindex="-1">
+                  <a class="link link--text disclosure__link disclosure__link--show-currency focus-inset no-scroll" href="#" data-no-instant="" data-value="SA">
+                    <span class="country t5 flex items-center gap-1">
+                      
+                        <span class="localization-flag shrink-0">
+                          <img src="//cdn.shopify.com/static/images/flags/sa.svg?width=20" alt="Saudi Arabia" srcset="//cdn.shopify.com/static/images/flags/sa.svg?width=20 20w" width="20" height="15" loading="lazy">
+                        </span>
+                      
+Saudi Arabia
+                    </span>
+                    <span class="localization-form__currency pl-2 t6 motion-reduce">
+                      SAR
+                      ر.س</span>
+                  </a>
+                </li><li class="disclosure__item" tabindex="-1">
+                  <a class="link link--text disclosure__link disclosure__link--show-currency focus-inset no-scroll" href="#" data-no-instant="" data-value="AE">
+                    <span class="country t5 flex items-center gap-1">
+                      
+                        <span class="localization-flag shrink-0">
+                          <img src="//cdn.shopify.com/static/images/flags/ae.svg?width=20" alt="United Arab Emirates" srcset="//cdn.shopify.com/static/images/flags/ae.svg?width=20 20w" width="20" height="15" loading="lazy">
+                        </span>
+                      
+United Arab Emirates
+                    </span>
+                    <span class="localization-form__currency pl-2 t6 motion-reduce">
+                      AED
+                      د.إ</span>
+                  </a>
+                </li><li class="disclosure__item" tabindex="-1">
+                  <a class="link link--text disclosure__link disclosure__link--show-currency focus-inset no-scroll" href="#" data-no-instant="" aria-current="true" data-value="GB">
+                    <span class="country t5 flex items-center gap-1 font-bold color-link">
+                      
+                        <span class="localization-flag shrink-0">
+                          <img src="//cdn.shopify.com/static/images/flags/gb.svg?width=20" alt="United Kingdom" srcset="//cdn.shopify.com/static/images/flags/gb.svg?width=20 20w" width="20" height="15" loading="lazy">
+                        </span>
+                      
+United Kingdom
+                    </span>
+                    <span class="localization-form__currency pl-2 t6 motion-reduce">
+                      GBP
+                      £</span>
+                  </a>
+                </li><li class="disclosure__item" tabindex="-1">
+                  <a class="link link--text disclosure__link disclosure__link--show-currency focus-inset no-scroll" href="#" data-no-instant="" data-value="US">
+                    <span class="country t5 flex items-center gap-1">
+                      
+                        <span class="localization-flag shrink-0">
+                          <img src="//cdn.shopify.com/static/images/flags/us.svg?width=20" alt="United States" srcset="//cdn.shopify.com/static/images/flags/us.svg?width=20 20w" width="20" height="15" loading="lazy">
+                        </span>
+                      
+United States
+                    </span>
+                    <span class="localization-form__currency pl-2 t6 motion-reduce">
+                      USD
+                      $</span>
+                  </a>
+                </li></ul>
+          </div>
+        </div>
+      
+    </div>
+    </template>
+  </div>
+  <div class="country-selector__overlay"></div>
+</div>
+
+
+  <input type="hidden" name="country_code" value="GB">
+
+
+
+  <input type="hidden" name="locale_code" value="en">
+</div></form></localization-form></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </details>
+</header-drawer>
+<a href="/" class="header__heading-link link link--text focus-inset"><div class="header__heading-logo-wrapper">
+            
+            <img src="//benchmark-food-demo.myshopify.com/cdn/shop/files/peak5.png?v=1752614293&amp;width=600" alt="Bold black logo featuring the word &quot;Peak&quot; in a modern, sans-serif font on a simple background." srcset="//benchmark-food-demo.myshopify.com/cdn/shop/files/peak5.png?v=1752614293&amp;width=85 85w, //benchmark-food-demo.myshopify.com/cdn/shop/files/peak5.png?v=1752614293&amp;width=128 128w, //benchmark-food-demo.myshopify.com/cdn/shop/files/peak5.png?v=1752614293&amp;width=170 170w" width="85" height="34.91731940818103" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 170px) 50vw, 85px">
+          </div></a><div class="header__search-bar flex justify-end">
+<form class="predictive_search_form hidden">
+    <input type="hidden" name="resources[options][fields]" value="title,product_type,variants.title,vendor,variants.sku,variants.barcode,tag">
+    <input type="hidden" name="resources[limit]" value="8">
+    <input type="hidden" name="resources[limit_scope]" value="each">
+    <input type="hidden" name="section_id" value="predictive-search">
+  </form>
+  <predictive-search class="search-modal__form search-modal__form--large" data-loading-text="Loading..."><form action="/search" method="get" role="search" class="search search-modal__form">
+    <input type="hidden" name="options[prefix]" value="last"><div class="field border-radius-input color-scheme-2 gradient field--matching-color-scheme"><label for="Inline-Search_header-product-type" class="visually-hidden">Select product type</label>
+        <div class="select flex items-center">
+          <select class="select__select caption-large js-product-types nice__select" id="Inline-Search_header-product-type" name="filter.p.product_type" tabindex="-1" style="opacity: 0; min-width: 0px; width: 0px; padding: 0px; height: 0px;">
+            <option value="" selected="">All</option>
+                <option value="Bars">Bars</option>
+                <option value="Cereal">Cereal</option>
+                <option value="Drinks">Drinks</option>
+                <option value="Fruit &amp; Vegetables">Fruit &amp; Vegetables</option>
+                <option value="Nutrition">Nutrition</option>
+                <option value="Vitamins &amp; Minerals">Vitamins &amp; Minerals</option></select><div class="nice-select select__select caption-large js-product-types nice__select  " tabindex="0"><span class="current">All</span><div class="nice-select-dropdown custom-scrollbar"><ul class="nice-list"><li data-value="" class="option selected null">All</li><li data-value="Bars" class="option null">Bars</li><li data-value="Cereal" class="option null">Cereal</li><li data-value="Drinks" class="option null">Drinks</li><li data-value="Fruit &amp; Vegetables" class="option null">Fruit &amp; Vegetables</li><li data-value="Nutrition" class="option null">Nutrition</li><li data-value="Vitamins &amp; Minerals" class="option null">Vitamins &amp; Minerals</li></ul></div></div>
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+        </div><input class="search__input field__input visible-placeholder" id="Inline-Search" type="search" name="q" value="" placeholder="Find yo" data-second-placeholder="Find quality groceries..." data-third-placeholder="Find vital vitamins..." data-fourth-placeholder="Find quality beverages..." data-animated-placeholder-mob="true" role="combobox" aria-expanded="false" aria-owns="predictive-search-results" aria-controls="predictive-search-results" aria-haspopup="listbox" aria-autocomplete="list" autocorrect="off" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <label class="visually-hidden" for="Inline-Search">
+        Search our store
+      </label>
+      <button class="search__button field__button">
+        <svg class="icon icon-search" aria-hidden="true" focusable="false">
+          <use href="#icon-search"></use>
+        </svg>
+
+<span class="predictive-search__loading-state">
+  <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+  </svg>
+</span>
+<span class="visually-hidden">What are you looking for?</span>
+      </button>
+    </div><button type="button" class="inline-search__close-button modal__close-button absolute link link--text focus-inset opacity-0 visibility-hidden" aria-label="Close">
+        <svg class="icon icon-close" aria-hidden="true" focusable="false">
+          <use href="#icon-close"></use>
+        </svg>
+      </button><div class="predictive-search predictive-search--header color-scheme-2 gradient custom-scrollbar" tabindex="-1" data-predictive-search=""></div><div class="predictive-search color-scheme-2 gradient predictive-search--suggestions-desktop predictive-search--header custom-scrollbar" tabindex="-1" hidden="">
+          <div class="p-1 pb-2">
+            <p class="predictive-search__subheading font-medium t3 mb-1 mt-1 pl-15 pr-15">Popular searches</p>
+            <ul class="list-unstyled"><li>
+                  <a href="/search?options%5Bprefix%5D=last&amp;q=Wine" class="predictive-search__item link link--text ">
+                    Wine
+                  </a>
+                </li><li>
+                  <a href="/search?options%5Bprefix%5D=last&amp;q=Vitamins" class="predictive-search__item link link--text ">
+                    Vitamins
+                  </a>
+                </li><li>
+                  <a href="/search?options%5Bprefix%5D=last&amp;q=Coffee" class="predictive-search__item link link--text ">
+                    Coffee
+                  </a>
+                </li><li>
+                  <a href="/search?options%5Bprefix%5D=last&amp;q=Protein+powder" class="predictive-search__item link link--text ">
+                    Protein powder
+                  </a>
+                </li></ul>
+          </div>
+        </div><span class="predictive-search-status color-scheme-2 gradient visually-hidden" role="status" aria-hidden="true"></span></form></predictive-search></div><div class="header__icons">
+<link href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-quick-filter.css?v=55629728750808536491788537925" rel="stylesheet" type="text/css" media="all">
+<link href="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/component-compatibility-finder.css?v=158250877407569119911788517195" rel="stylesheet" type="text/css" media="all">
+<lazy-script src="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/quick-filter.js?v=80432217971296558681788460943" defer="defer"></lazy-script>
+<lazy-script src="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/compatibility-finder.js?v=150753472102103077851788876774" defer="defer"></lazy-script>
+
+<compatibility-finder class="compatibility-finder block relative" data-limit="5" data-storage-key="theme-compatibility-finder" data-all-url="/collections/all" data-collections="[{&quot;title&quot;: &quot;Bars&quot;,&quot;url&quot;: &quot;\/collections\/bars&quot;,&quot;image&quot;: &quot;\/\/benchmark-food-demo.myshopify.com\/cdn\/shop\/collections\/ChatGPT_Image_Jun_4_2026_04_39_23_PM.png?v=1780587582\u0026width=120&quot;},{&quot;title&quot;: &quot;Cereal&quot;,&quot;url&quot;: &quot;\/collections\/cereal&quot;,&quot;image&quot;: &quot;\/\/benchmark-food-demo.myshopify.com\/cdn\/shop\/collections\/ChatGPT_Image_Jun_4_2026_04_43_00_PM.png?v=1780589725\u0026width=120&quot;},{&quot;title&quot;: &quot;Drinks&quot;,&quot;url&quot;: &quot;\/collections\/drinks&quot;,&quot;image&quot;: &quot;\/\/benchmark-food-demo.myshopify.com\/cdn\/shop\/collections\/ChatGPT_Image_Jun_4_2026_04_33_38_PM.png?v=1780587401\u0026width=120&quot;},{&quot;title&quot;: &quot;Fruit \u0026 Vegetables&quot;,&quot;url&quot;: &quot;\/collections\/fruit-vegetables&quot;,&quot;image&quot;: &quot;\/\/benchmark-food-demo.myshopify.com\/cdn\/shop\/collections\/ChatGPT-Image-Jun-4_-2026_-04_34_36-PM.jpg?v=1780587344\u0026width=120&quot;},{&quot;title&quot;: &quot;Nutrition Supplements&quot;,&quot;url&quot;: &quot;\/collections\/nutrition&quot;,&quot;image&quot;: &quot;\/\/benchmark-food-demo.myshopify.com\/cdn\/shop\/collections\/ChatGPT-Image-Jun-4_-2026_-04_37_42-PM.jpg?v=1780587524\u0026width=120&quot;},{&quot;title&quot;: &quot;Our healthy products&quot;,&quot;url&quot;: &quot;\/collections\/all&quot;,&quot;image&quot;: &quot;\/\/benchmark-food-demo.myshopify.com\/cdn\/shop\/collections\/ChatGPT-Image-Jun-4_-2026_-04_48_30-PM.jpg?v=1780588300\u0026width=120&quot;},{&quot;title&quot;: &quot;Vitamins \u0026 Minerals&quot;,&quot;url&quot;: &quot;\/collections\/vitamins-minerals&quot;,&quot;image&quot;: &quot;\/\/benchmark-food-demo.myshopify.com\/cdn\/shop\/collections\/ChatGPT_Image_Jun_4_2026_04_41_32_PM.png?v=1780587755\u0026width=120&quot;}]" data-add-first-text="Add your first preference" data-add-another-text="Add another preference" data-edit-text="Edit" data-delete-text="Delete" data-save-label="Add" data-save-label-edit="Save" data-count-text="[count] products saved" data-products-text="[count] products" data-products-text-one="1 product" data-collection-view="list" data-require-all-filters="true" data-show-product-count="true">
+  <details id="Details-CompatibilityFinder-sections--24848398909767__header-compatibility_finder_rdVfrt" class="relative">
+    <summary id="Summary-CompatibilityFinder-sections--24848398909767__header-compatibility_finder_rdVfrt" class="compatibility-finder__summary block focus-inset" aria-haspopup="true" role="button" aria-expanded="false" aria-controls="Panel-CompatibilityFinder-sections--24848398909767__header-compatibility_finder_rdVfrt">
+      <div class="header__cta z-1 flex items-center gap-075 whitespace-nowrap color-scheme-2 gradient border-radius-input p-1 pl-15 pr-2 relative">
+        <svg class="icon icon--gluten_free standard-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="34.0" height="34.0" viewBox="0 0 20 20"><path d="M7.06824 12.3516L2.5155 15.5063L1.94594 14.6844L6.49868 11.5296L7.06824 12.3516Z"></path>
+      <path d="M17.5225 5.32178L12.9698 8.47656L12.4002 7.65461L16.953 4.49983L17.5225 5.32178Z"></path>
+      <path d="M9.5 16.5102V7.48755C9.5 7.21141 9.72386 6.98755 10 6.98755C10.2761 6.98755 10.5 7.21141 10.5 7.48755V16.5102C10.5 16.7863 10.2761 17.0102 10 17.0102C9.72386 17.0102 9.5 16.7863 9.5 16.5102Z"></path>
+      <path d="M11.6499 6.16907C12.0653 4.3892 11.1344 2.97716 10.4169 2.35932C10.2112 2.18215 9.90167 2.20154 9.71965 2.403C8.5055 3.74686 8.23998 5.05583 8.46722 6.15655L9.44657 5.95437C9.31065 5.296 9.40373 4.45385 10.1172 3.49217C10.5448 4.04146 10.9158 4.91458 10.6761 5.94184L11.6499 6.16907Z"></path>
+      <path d="M9.23931 5.58007C8.53263 4.97546 7.68892 4.71888 7.10039 4.65047C6.83071 4.61912 6.58528 4.80872 6.54752 5.07758C6.36481 6.37849 6.53802 7.47619 7.01787 8.2605L7.87088 7.73861C7.60135 7.29806 7.43535 6.634 7.48488 5.74907C7.84288 5.85624 8.24246 6.04325 8.58922 6.33992C9.09387 6.77167 9.51495 7.45768 9.51495 8.56389L10.515 8.56389C10.515 7.16257 9.96384 6.19994 9.23931 5.58007Z"></path>
+      <path d="M10.7766 5.7705C11.4833 5.16589 12.327 4.90931 12.9155 4.8409C13.1852 4.80955 13.4307 4.99915 13.4684 5.26801C13.6511 6.56892 13.4779 7.66662 12.9981 8.45093L12.145 7.92903C12.4146 7.48849 12.5806 6.82443 12.531 5.9395C12.1731 6.04667 11.7735 6.23368 11.4267 6.53035C10.9221 6.9621 10.501 7.64811 10.501 8.75432L9.50098 8.75432C9.50098 7.353 10.0521 6.39037 10.7766 5.7705Z"></path>
+      <path d="M11.1313 8.03618C11.9048 7.51988 12.7731 7.36543 13.3655 7.36747C13.637 7.3684 13.8582 7.58583 13.8637 7.85728C13.8905 9.17069 13.588 10.24 13.0183 10.9617L12.2334 10.3421C12.5534 9.93673 12.7972 9.29711 12.8532 8.41257C12.485 8.47642 12.066 8.61459 11.6864 8.86793C11.134 9.23663 10.6344 9.86771 10.5029 10.9661L9.50995 10.8472C9.67655 9.45581 10.3382 8.56552 11.1313 8.03618Z"></path>
+      <path d="M8.78433 8.01627C7.99185 7.52953 7.11841 7.40795 6.52642 7.43234C6.25515 7.44352 6.04237 7.66914 6.04708 7.9406C6.06991 9.25408 6.41252 10.3112 7.00904 11.0109L7.77002 10.3621C7.43496 9.96912 7.16722 9.33916 7.07786 8.45736C7.44821 8.50727 7.8721 8.62954 8.26096 8.86838C8.82688 9.21597 9.34999 9.82774 9.52286 10.9204L10.5106 10.7641C10.2916 9.37999 9.59682 8.51531 8.78433 8.01627Z"></path>
+      <path d="M10.4487 12.1822C9.29338 10.2297 7.27248 10.0798 6.23288 10.3152C5.96807 10.3752 5.79951 10.6355 5.85315 10.9016C6.11442 12.1981 6.67517 13.079 7.37604 13.6435C8.07111 14.2032 8.86395 14.4197 9.54256 14.4622L9.60513 13.4642C9.08338 13.4315 8.50257 13.2667 8.00326 12.8646C7.59385 12.5349 7.21139 12.0234 6.96619 11.2297C7.77612 11.2096 8.8907 11.5129 9.58803 12.6914L10.4487 12.1822Z"></path>
+      <path d="M9.50482 12.1822C10.6601 10.2297 12.681 10.0798 13.7206 10.3152C13.9854 10.3752 14.154 10.6355 14.1003 10.9016C13.8401 12.1932 13.2951 13.0779 12.6087 13.6485C11.9265 14.2156 11.1444 14.4393 10.4615 14.4821L10.3989 13.4841C10.9164 13.4516 11.4827 13.2842 11.9695 12.8795C12.3704 12.5463 12.7452 12.0292 12.9884 11.2297C12.1784 11.2093 11.0631 11.5123 10.3655 12.6914L9.50482 12.1822Z"></path>
+      <path d="M10 18.4998C14.6944 18.4998 18.5 14.6942 18.5 9.99976C18.5 5.30534 14.6944 1.49976 10 1.49976C5.30558 1.49976 1.5 5.30534 1.5 9.99976C1.5 14.6942 5.30558 18.4998 10 18.4998ZM10 19.4998C15.2467 19.4998 19.5 15.2465 19.5 9.99976C19.5 4.75305 15.2467 0.499756 10 0.499756C4.75329 0.499756 0.5 4.75305 0.5 9.99976C0.5 15.2465 4.75329 19.4998 10 19.4998Z" fill-rule="evenodd"></path></svg><div class="header__cta-text"><p class="m-0 lh-13 t6"><strong>MY PREFERENCES</strong></p><p class="m-0 lh-13 opacity-80 t6">Pick your tastes or allergies.</p></div>
+<div class="cart-count-bubble compatibility-finder__count z-1 font-bold js-cf-count" hidden="">
+            <span aria-hidden="true">0</span>
+            <span class="visually-hidden">0 products saved</span>
+          </div></div>
+    </summary>
+
+    <div id="Panel-CompatibilityFinder-sections--24848398909767__header-compatibility_finder_rdVfrt" class="compatibility-finder__panel header__submenu global-settings-popup custom-scrollbar absolute color-scheme-f6756e6f-fabf-4451-8646-50d3f83c525e gradient motion-reduce custom-scrollbar t4" style="--inputs-radius: 8px;--inputs-radius-outset: 8px;--buttons-radius: 8px;--buttons-radius-outset: 8px;--cf-radius: 8px;--cf-tag-indent: 1.4rem;" tabindex="-1">
+      <div class="compatibility-finder__header flex items-center gap-1">
+        <p class="compatibility-finder__title t3 font-bold m-0 grow min-w-0 overflow-hidden whitespace-nowrap js-cf-title">My Preferences</p>
+
+        <button type="button" class="compatibility-finder__back link link--text flex items-center grow min-w-0 p-0 text-left decoration-none js-cf-back" hidden=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" focusable="false" class="icon icon-arrow" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M268 112l144 144-144 144M392 256H100" class="stroke-width-standard"></path>
+</svg><span>Back</span>
+        </button>
+
+        <button type="button" class="compatibility-finder__close flex items-center justify-center shrink-0 ml-auto js-cf-close" aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-close" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
+</svg></button>
+      </div><div class="compatibility-finder__onboarding rte t6 opacity-80 js-cf-onboarding">
+          <p>Tell us what you like and what you avoid. We’ll highlight products with your preferences as you browse the store.</p>
+        </div><div class="compatibility-finder__list color-scheme-2 flex flex-col gap-075 js-cf-list"><div class="compatibility-finder__item"><div class="compatibility-finder__entry compatibility-finder__entry--placeholder flex items-center opacity-70"><button type="button" class="compatibility-finder__entry-main flex items-center gap-1 grow min-w-0 text-left" data-action="add"><span class="compatibility-finder__entry-name grow overflow-hidden whitespace-nowrap t5">Add your first preference</span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-plus compatibility-finder__plus shrink-0" fill="none" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M256 112v288M400 256H112"></path>
+</svg></button></div></div></div>
+
+      <div class="compatibility-finder__form color-scheme-2 js-cf-form" hidden="">
+        <quick-filter class="compatibility-finder__filters" data-mode="filter" data-emit-only="true" data-hide-product-count="true" data-search-min-items="15" data-collection-url="https://benchmark-food-demo.myshopify.com/collections/all">
+          <div class="quick-filter__inner t4 flex flex-col gap-075">
+<div class="quick-filter__select-container loading">
+      <div class="select text-left">
+        <label class="visually-hidden" for="CompatibilityFinder-sections--24848398909767__header-compatibility_finder_rdVfrt-1">Choose a preference</label>
+        <select id="CompatibilityFinder-sections--24848398909767__header-compatibility_finder_rdVfrt-1" data-index="1" class="js-filter-select-1 select__select t4" placeholder="Choose a preference" data-filter-label="dietary preferences">
+          <option class="quick-filter__select-label" value="">Choose a preference</option>
+        </select>
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+
+
+<span class="loading__spinner">
+  <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+  </svg>
+</span>
+</div>
+    </div><div class="flex items-center gap-075">
+              <button type="submit" disabled="disabled" class="js-filter-submit button button--primary grow t5">
+                <span class="js-cf-save-label">Add</span>
+              </button>
+
+              <button type="button" disabled="disabled" class="js-cf-clear button button--secondary shrink-0 t5">
+                Clear
+              </button>
+            </div>
+          </div>
+        </quick-filter>
+      </div>
+
+      <template class="js-cf-icon-template"></template>
+      <template class="js-cf-edit-template"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-note" viewBox="0 0 512 512">
+  <path d="M384 224v184a40 40 0 01-40 40H104a40 40 0 01-40-40V168a40 40 0 0140-40h167.48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
+  <path d="M459.94 53.25a16.06 16.06 0 00-23.22-.56L424.35 65a8 8 0 000 11.31l11.34 11.32a8 8 0 0011.34 0l12.06-12c6.1-6.09 6.67-16.01.85-22.38zM399.34 90L218.82 270.2a9 9 0 00-2.31 3.93L208.16 299a3.91 3.91 0 004.86 4.86l24.85-8.35a9 9 0 003.93-2.31L422 112.66a9 9 0 000-12.66l-9.95-10a9 9 0 00-12.71 0z"></path>
+</svg></template>
+      <template class="js-cf-delete-template"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-remove" viewBox="0 0 512 512">
+  <path d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
+  <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 112h352"></path>
+  <path d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
+</svg></template>
+      <template class="js-cf-plus-template"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-plus" fill="none" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M256 112v288M400 256H112"></path>
+</svg></template>
+      <template class="js-cf-chevron-template"><svg class="icon icon--chevron_right custom-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 512 512">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M184 112l144 144-144 144" class="fill-none stroke-width-32"></path>
+    </svg></template>
+      <template class="js-cf-spinner-template">
+
+<span class="loading__spinner">
+  <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+  </svg>
+</span>
+</template>
+    </div>
+  </details>
+</compatibility-finder>
+<a href="https://benchmark-food-demo.myshopify.com/customer_authentication/redirect?locale=en&amp;region_country=GB" class="header__icon header__icon--account link focus-inset small-hide">
+            <account-icon><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-account" viewBox="0 0 512 512">
+  <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
+  <path d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
+</svg>
+</account-icon>
+            <span class="visually-hidden">My Account</span>
+          </a><a href="/pages/contact" class="header__icon header__icon--custom link focus-inset" title="Get in touch"><svg class="icon icon--chat_bubbles custom-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+        <path d="M431 320.6c-1-3.6 1.2-8.6 3.3-12.2a33.68 33.68 0 012.1-3.1A162 162 0 00464 215c.3-92.2-77.5-167-173.7-167-83.9 0-153.9 57.1-170.3 132.9a160.7 160.7 0 00-3.7 34.2c0 92.3 74.8 169.1 171 169.1 15.3 0 35.9-4.6 47.2-7.7s22.5-7.2 25.4-8.3a26.44 26.44 0 019.3-1.7 26 26 0 0110.1 2l56.7 20.1a13.52 13.52 0 003.9 1 8 8 0 008-8 12.85 12.85 0 00-.5-2.7z" stroke-linecap="round" stroke-miterlimit="10" class="fill-none stroke-width-standard"></path><path d="M66.46 232a146.23 146.23 0 006.39 152.67c2.31 3.49 3.61 6.19 3.21 8s-11.93 61.87-11.93 61.87a8 8 0 002.71 7.68A8.17 8.17 0 0072 464a7.26 7.26 0 002.91-.6l56.21-22a15.7 15.7 0 0112 .2c18.94 7.38 39.88 12 60.83 12A159.21 159.21 0 00284 432.11" stroke-linecap="round" stroke-miterlimit="10" class="fill-none stroke-width-standard"></path>
+    </svg></a><a href="/cart" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble" data-no-instant="" role="button" aria-haspopup="dialog"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon icon-cart" aria-hidden="true" focusable="false">
+  <circle cx="176" cy="416" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></circle>
+  <circle cx="400" cy="416" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></circle>
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M48 80h64l48 272h256"></path>
+  <path d="M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></path>
+</svg><span class="visually-hidden">Cart</span></a>
+    </div>
+  </header><nav class="header__inline-menu header__inline-menu--hide-on-scroll color-scheme-2 gradient border-bottom lg:flex lg:justify-center">
+      <div class="page-width">
+      <custom-nav>
+      <ul class="list-menu list-menu--inline list-menu--merged  lg:justify-center" role="list"><li><a id="HeaderMenu-home" href="/" class="header__menu-item list-menu__item link link--text focus-inset t4 font-medium" aria-current="page">
+              <span class="header__active-menu-item">Home</span>
+              </a></li><li><header-menu class="block">
+                <details id="Details-HeaderMenu-2" class="mega-menu">
+                  <summary id="HeaderMenu-shop" class="header__menu-item list-menu__item link focus-inset" role="button" aria-expanded="false" aria-controls="MegaMenu-Content-2">
+                    <a href="/collections/all" class="header__summary-link t4 font-medium">Shop</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                  </summary>
+<div id="MegaMenu-Content-2" class="mega-menu__content color-scheme-8 custom-scrollbar gradient motion-reduce global-settings-popup" tabindex="-1">
+  <div class="page-width"><div class="mega-menu__grid" style="grid-template-columns:  3fr 3fr ">
+        <div>
+          <ul class="mega-menu__list p-0 t5" style="--mega-menu-columns: 3;" role="list"><li>
+                  <a id="HeaderMenu-shop-vitamins-minerals" href="/collections/vitamins-minerals" class="mega-menu__link mega-menu__link--level-2 link">Vitamins &amp; Minerals</a><ul class="list-unstyled" role="list"><li>
+                          <a id="HeaderMenu-shop-vitamins-minerals-fibre-fuel-smoothie-boost" href="/products/fibre-fuel-smoothie-boost-berry-300g" class="mega-menu__link link">Fibre Fuel Smoothie Boost</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-vitamins-minerals-omega-3-dha-capsules" href="/products/omega-3-dha-capsules-from-algae-oil-30-tabs" class="mega-menu__link link">Omega 3 DHA capsules</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-vitamins-minerals-truefuel-protein-milkshake" href="/products/truefuel-lean-protein-milkshake" class="mega-menu__link link">Truefuel Protein Milkshake</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-vitamins-minerals-high-strength-turmeric" href="/products/high-strength-turmeric-600mg-with-black-pepper-90-capsules" class="mega-menu__link link">High Strength Turmeric</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-vitamins-minerals-fibre-fuel-smoothie-berry" href="/products/fibre-fuel-smoothie-boost-berry-300g" class="mega-menu__link link">Fibre Fuel Smoothie Berry</a>
+                        </li></ul></li><li>
+                  <a id="HeaderMenu-shop-nutrition" href="/collections/nutrition" class="mega-menu__link mega-menu__link--level-2 link">Nutrition</a><ul class="list-unstyled" role="list"><li>
+                          <a id="HeaderMenu-shop-nutrition-live-probiotic-course" href="/products/live-probiotic-course-4x500ml" class="mega-menu__link link">Live Probiotic Course</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-nutrition-glowwell-hair-skin-nails" href="/products/glowwell-hair-skin-nails-complex" class="mega-menu__link link">GlowWell Hair, Skin &amp; Nails</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-nutrition-sunvies-acai-powder" href="/products/sunvies-acai-powder-125g" class="mega-menu__link link stickerified">
+          <span class="sticker-wrapper-above"></span>
+          <span>
+            <span class="sticker-text">Sunvies Acai Powder</span>
+            <span class="sticker-wrapper-inline"><span class="sticker-spacer"></span><span class="sticker sticker-header_RgByXQ sticker--rounded sticker--inline text-body">
+          <span>NEW</span>
+        </span></span>
+          </span>
+          <span class="sticker-wrapper-below"></span>
+        </a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-nutrition-fibre-fuel-smoothie-boost" href="/products/fibre-fuel-smoothie-boost-berry-300g" class="mega-menu__link link">Fibre Fuel Smoothie Boost</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-nutrition-high-protein-cereal-cinnamon" href="/products/high-protein-cereal-cinnamon-250g" class="mega-menu__link link">High Protein Cereal Cinnamon</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-nutrition-essential-fairtrade-bananas" href="/products/essential-fairtrade-bananas" class="mega-menu__link link">Essential Fairtrade Bananas</a>
+                        </li></ul></li><li>
+                  <a id="HeaderMenu-shop-cereal" href="/collections/cereal" class="mega-menu__link mega-menu__link--level-2 link">Cereal</a><ul class="list-unstyled" role="list"><li>
+                          <a id="HeaderMenu-shop-cereal-high-protein-cereal-cinnamon" href="/products/high-protein-cereal-cinnamon-250g" class="mega-menu__link link">High Protein Cereal Cinnamon</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-cereal-renew-cereal-cinnamon" href="/products/renew-cereal-cinnamon-crunch-250g" class="mega-menu__link link">Renew Cereal - Cinnamon</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-cereal-summit-bar-vanilla-almond" href="/products/summit-bar-white-chocolate-macadmia-nut-68g" class="mega-menu__link link">Summit Bar Vanilla &amp; Almond</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-cereal-botaniq-cereal-bar" href="/products/botaniq-cookie-dough-protein-bar-57g" class="mega-menu__link link">Botaniq Cereal Bar</a>
+                        </li></ul></li><li>
+                  <a id="HeaderMenu-shop-bars" href="/collections/bars" class="mega-menu__link mega-menu__link--level-2 link">Bars</a><ul class="list-unstyled" role="list"><li>
+                          <a id="HeaderMenu-shop-bars-botaniq-protein-bar" href="/products/botaniq-cookie-dough-protein-bar-57g" class="mega-menu__link link">Botaniq Protein Bar</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-bars-ripe-caramel-protein-bar" href="/products/dark-chocolate-salted-caramel-protein-bar-49g" class="mega-menu__link link">Ripe Caramel Protein Bar</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-bars-rippl-peanut-booster" href="/products/rippl-caramel-chocolate-peanut-protein-booster-50g" class="mega-menu__link link">Rippl Peanut Booster</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-bars-summit-bar-vanilla" href="/products/summit-bar-white-chocolate-macadmia-nut-68g" class="mega-menu__link link stickerified">
+          <span class="sticker-wrapper-above"></span>
+          <span>
+            <span class="sticker-text">Summit Bar Vanilla</span>
+            <span class="sticker-wrapper-inline"><span class="sticker-spacer"></span><span class="sticker sticker-header_gpc76h sticker--rounded sticker--inline text-body">
+          <span>SALE</span>
+        </span></span>
+          </span>
+          <span class="sticker-wrapper-below"></span>
+        </a>
+                        </li></ul></li><li>
+                  <a id="HeaderMenu-shop-drinks" href="/collections/drinks" class="mega-menu__link mega-menu__link--level-2 link">Drinks</a><ul class="list-unstyled" role="list"><li>
+                          <a id="HeaderMenu-shop-drinks-coconut-water" href="/products/coconut-water-1l" class="mega-menu__link link">Coconut Water</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-drinks-fevert-organic-craft-cider" href="/products/fevert-organic-premium-craft-cider-5-vol-500ml" class="mega-menu__link link">Fevert Organic Craft Cider</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-drinks-sunny-mango-lemonade" href="/products/sunny-mango-lemonade-591ml" class="mega-menu__link link">Sunny Mango Lemonade</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-drinks-vina-del-rio-wine" href="/products/vina-del-rio-wine-no-added-sulphur-14-vol-70cl" class="mega-menu__link link">Vina Del Rio Wine</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-drinks-no-caffeine-coffee-alternative" href="/products/organic-no-caffeine-coffee-alternative-100g" class="mega-menu__link link">No Caffeine Coffee Alternative</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-drinks-omega-3-dha" href="/products/omega-3-dha-capsules-from-algae-oil-30-tabs" class="mega-menu__link link">Omega 3 DHA</a>
+                        </li></ul></li><li>
+                  <a id="HeaderMenu-shop-fruit-vegetables" href="/collections/fruit-vegetables" class="mega-menu__link mega-menu__link--level-2 link">Fruit &amp; Vegetables</a><ul class="list-unstyled" role="list"><li>
+                          <a id="HeaderMenu-shop-fruit-vegetables-blush-pears-loose" href="/products/blush-pears-loose" class="mega-menu__link link">Blush Pears Loose</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-fruit-vegetables-broccoli-crown" href="/products/broccoli-crown" class="mega-menu__link link">Broccoli Crown</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-fruit-vegetables-classic-vine-tomatoes" href="/products/tomatoes" class="mega-menu__link link">Classic Vine Tomatoes</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-fruit-vegetables-easy-peeler-oranges" href="/products/easy-peeler-oranges" class="mega-menu__link link">Easy Peeler Oranges</a>
+                        </li><li>
+                          <a id="HeaderMenu-shop-fruit-vegetables-fairtrade-bananas" href="/products/essential-fairtrade-bananas" class="mega-menu__link link">Fairtrade Bananas</a>
+                        </li></ul></li></ul>
+        </div>
+      
+
+<div class="mega-promos mega-promos--text_promo mega_promos--separator mega_promos--separator-right flex flex-col" data-nosnippet=""><div class="promo-card--grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+<div class="promo-card promo-card--text w-full" style="--ratio-percent: 125.0%;--color-accent: var(--color-foreground);">
+    
+      <a href="/collections/bestsellers" class="promo-card--text-container w-full">
+    
+
+      <div class="w-full"><div class="mb-15 last-child:mb-0"><div class="image-overlay promo-image overflow-hidden  hover-zoom ratio"><img class="promo-image img-cover" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/kimia-kazemi-Ok0v4HfXWrA-unsplash.jpg?v=1745141706&amp;width=810" style="object-position: 50.0% 50.0%" alt="A hand holds a spoon above a glass dessert cup layered with yogurt, granola, and fresh strawberries and blueberries." loading="lazy" fetchpriority="low" width="405" height="610"></div></div><div class="promo-card--text__heading mb-05 last-child:mb-0">Healthy inspiration</div><div class="promo-card--text__text rte mb-05 last-child:mb-0">Browse our range of healthy ingredients to inspire your next workout.
+</div></div>
+
+    
+      </a>
+    
+  </div>
+
+<div class="promo-card promo-card--text w-full" style="--ratio-percent: 125.0%;--color-accent: var(--color-foreground);">
+    
+      <a href="/collections/bestsellers" class="promo-card--text-container w-full">
+    
+
+      <div class="w-full"><div class="mb-15 last-child:mb-0"><div class="image-overlay promo-image overflow-hidden  hover-zoom ratio"><img class="promo-image img-cover" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-19_-2025_-06_38_02-PM.jpg?v=1745094947&amp;width=810" style="object-position: 50.0% 50.0%" alt="Yellow protein powder, black coffee bag, fresh broccoli, and corn are displayed on a green backdrop with bold branding." loading="lazy" fetchpriority="low" width="405" height="405"></div></div><div class="promo-card--text__heading mb-05 last-child:mb-0">Explore our range</div><div class="promo-card--text__text rte mb-05 last-child:mb-0">Supplements, Protein, Groceries, Coffee? We've got you covered.
+</div></div>
+
+    
+      </a>
+    
+  </div>
+
+
+
+
+
+
+</div></div></div></div>
+</div>
+</details>
+              </header-menu></li><li><header-menu class="block">
+                <details id="Details-HeaderMenu-3" class="mega-menu">
+                  <summary id="HeaderMenu-drinks" class="header__menu-item list-menu__item link focus-inset" role="button" aria-expanded="false" aria-controls="MegaMenu-Content-3">
+                    <a href="/collections/drinks" class="header__summary-link t4 font-medium">Drinks</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                  </summary>
+<div id="MegaMenu-Content-3" class="mega-menu__content color-scheme-8 custom-scrollbar gradient motion-reduce global-settings-popup" tabindex="-1">
+  <div class="page-width"><div class="mega-menu__grid" style="grid-template-columns:   6fr ">
+
+<div class="mega-promos mega-promos--image_promo flex flex-col" data-nosnippet=""><div class="promo-card--grid" style="--overlay-opacity: 0.16;grid-template-columns: repeat(5, minmax(0, 1fr));">
+
+    <a href="/collections/drinks" class="promo-card promo-card--image promo last-child:mb-0 flex hover-zoom relative justify-center items-end" style="--ratio-percent: 125.0%;">
+  
+
+    <div class="promo-image image-overlay overflow-hidden w-full relative ratio"><img class="promo-image img-cover" style="object-position: 50.0% 50.0%" srcset="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-8_-2025_-07_17_22-AM.jpg?v=1744093212&amp;width=648 648w, //benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-8_-2025_-07_17_22-AM.jpg?v=1744093212&amp;width=324 324w" sizes="(max-width: 749.98px) 162px, 324px" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-8_-2025_-07_17_22-AM.jpg?v=1744093212&amp;width=648" alt="" loading="lazy" fetchpriority="low" width="324" height="324"></div>
+
+    
+      <div class="rte z-2 color-inherit lh-13 text-heading text-center h5-size absolute" style="--color-foreground: 255,255,255;color: #ffffff;padding: 1em">
+        <p>Wine</p>
+      </div>
+    
+
+  
+    </a>
+  
+
+
+    <a href="/collections/drinks" class="promo-card promo-card--image promo last-child:mb-0 flex hover-zoom relative justify-center items-end" style="--ratio-percent: 125.0%;">
+  
+
+    <div class="promo-image image-overlay overflow-hidden w-full relative ratio"><img class="promo-image img-cover" style="object-position: 46.2026% 60.038%" srcset="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-8_-2025_-05_17_04-PM_e22e4b57-40d7-4714-9f2d-29ea60b99318.jpg?v=1745146902&amp;width=648 648w, //benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-8_-2025_-05_17_04-PM_e22e4b57-40d7-4714-9f2d-29ea60b99318.jpg?v=1745146902&amp;width=324 324w" sizes="(max-width: 749.98px) 162px, 324px" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-8_-2025_-05_17_04-PM_e22e4b57-40d7-4714-9f2d-29ea60b99318.jpg?v=1745146902&amp;width=648" alt="Clear glass bottle of bright yellow turmeric shots labeled &quot;Radiance,&quot; with a glass and turmeric root in the background." loading="lazy" fetchpriority="low" width="324" height="332"></div>
+
+    
+      <div class="rte z-2 color-inherit lh-13 text-heading text-center h5-size absolute" style="--color-foreground: 255,255,255;color: #ffffff;padding: 1em">
+        <p>Health Shots</p>
+      </div>
+    
+
+  
+    </a>
+  
+
+
+    <a href="/collections/drinks" class="promo-card promo-card--image promo last-child:mb-0 flex hover-zoom relative justify-center items-end" style="--ratio-percent: 125.0%;">
+  
+
+    <div class="promo-image image-overlay overflow-hidden w-full relative ratio"><img class="promo-image img-cover" style="object-position: 50.0% 50.0%" srcset="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-8_-2025_-08_04_51-AM.jpg?v=1744096136&amp;width=648 648w, //benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-8_-2025_-08_04_51-AM.jpg?v=1744096136&amp;width=324 324w" sizes="(max-width: 749.98px) 162px, 324px" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-8_-2025_-08_04_51-AM.jpg?v=1744096136&amp;width=648" alt="" loading="lazy" fetchpriority="low" width="324" height="324"></div>
+
+    
+      <div class="rte z-2 color-inherit lh-13 text-heading text-center h5-size absolute" style="--color-foreground: 255,255,255;color: #ffffff;padding: 1em">
+        <p>Coconut Water</p>
+      </div>
+    
+
+  
+    </a>
+  
+
+
+    <a href="/collections/drinks" class="promo-card promo-card--image promo last-child:mb-0 flex hover-zoom relative justify-center items-end" style="--ratio-percent: 125.0%;">
+  
+
+    <div class="promo-image image-overlay overflow-hidden w-full relative ratio"><img class="promo-image img-cover" style="object-position: 50.0% 50.0%" srcset="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-9_-2025_-01_25_22-PM.jpg?v=1744201880&amp;width=648 648w, //benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-9_-2025_-01_25_22-PM.jpg?v=1744201880&amp;width=324 324w" sizes="(max-width: 749.98px) 162px, 324px" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-9_-2025_-01_25_22-PM.jpg?v=1744201880&amp;width=648" alt="" loading="lazy" fetchpriority="low" width="324" height="324"></div>
+
+    
+      <div class="rte z-2 color-inherit lh-13 text-heading text-center h5-size absolute" style="--color-foreground: 255,255,255;color: #ffffff;padding: 1em">
+        <p>Coffee</p>
+      </div>
+    
+
+  
+    </a>
+  
+
+
+    <a href="/collections/drinks" class="promo-card promo-card--image promo last-child:mb-0 flex hover-zoom relative justify-center items-end" style="--ratio-percent: 125.0%;">
+  
+
+    <div class="promo-image image-overlay overflow-hidden w-full relative ratio"><img class="promo-image img-cover" style="object-position: 50.0% 50.0%" srcset="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-7_-2025_-10_03_57-PM.jpg?v=1744059885&amp;width=648 648w, //benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-7_-2025_-10_03_57-PM.jpg?v=1744059885&amp;width=324 324w" sizes="(max-width: 749.98px) 162px, 324px" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/ChatGPT-Image-Apr-7_-2025_-10_03_57-PM.jpg?v=1744059885&amp;width=648" alt="" loading="lazy" fetchpriority="low" width="324" height="324"></div>
+
+    
+      <div class="rte z-2 color-inherit lh-13 text-heading text-center h5-size absolute" style="--color-foreground: 255,255,255;color: #ffffff;padding: 1em">
+        <p>Cider</p>
+      </div>
+    
+
+  
+    </a>
+  
+
+
+
+</div></div></div></div>
+</div>
+</details>
+              </header-menu></li><li><a id="HeaderMenu-brands" href="/pages/shop-by-brand" class="header__menu-item list-menu__item link link--text focus-inset t4 font-medium">
+              <span>Brands</span>
+              </a></li><li><a id="HeaderMenu-deals" href="/collections/deals" class="header__menu-item list-menu__item link link--text focus-inset t4 font-medium">
+              <span>Deals</span>
+              </a></li><li><a id="HeaderMenu-about-us" href="/pages/about-us" class="header__menu-item list-menu__item link link--text focus-inset t4 font-medium">
+              <span>About Us</span>
+              </a></li><li><a id="HeaderMenu-our-services" href="/pages/our-services" class="header__menu-item list-menu__item link link--text focus-inset t4 font-medium">
+              <span>Our Services</span>
+              </a></li><li><a id="HeaderMenu-blog" href="/blogs/daily-dose" class="header__menu-item list-menu__item link link--text focus-inset t4 font-medium">
+              <span>Blog</span>
+              </a></li><li><a id="HeaderMenu-faqs" href="/pages/faqs" class="header__menu-item list-menu__item link link--text focus-inset t4 font-medium">
+              <span>FAQs</span>
+              </a></li><li><a id="HeaderMenu-contact" href="/pages/contact" class="header__menu-item list-menu__item link link--text focus-inset t4 font-medium">
+              <span>Contact</span>
+              </a></li><li><header-menu class="block">
+                <details id="Details-HeaderMenu-11" class="mega-menu">
+                  <summary id="HeaderMenu-theme-features" class="header__menu-item list-menu__item link focus-inset" role="button" aria-expanded="false" aria-controls="MegaMenu-Content-11">
+                    <a href="#" class="header__summary-link t4 font-medium">Theme Features</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 512 512">
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M112 184l144 144 144-144" stroke-width="48"></path>
+</svg>
+                  </summary>
+<div id="MegaMenu-Content-11" class="mega-menu__content color-scheme-8 custom-scrollbar gradient motion-reduce global-settings-popup" tabindex="-1">
+  <div class="page-width"><div class="mega-menu__grid" style="grid-template-columns:  3fr 3fr ">
+        <div>
+          <ul class="mega-menu__list p-0 t5" style="--mega-menu-columns: 3;" role="list"><li>
+                  <a id="HeaderMenu-theme-features-product-page" href="/products/renew-cereal-cinnamon-crunch-250g" class="mega-menu__link mega-menu__link--level-2 link">Product Page</a><ul class="list-unstyled" role="list"><li>
+                          <a id="HeaderMenu-theme-features-product-page-slider" href="/products/renew-cereal-cinnamon-crunch-250g" class="mega-menu__link link">Slider</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-product-page-one-column" href="/products/coconut-water-1l?view=feature-one-column" class="mega-menu__link link">One column</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-product-page-two-column" href="/products/summit-bar-white-chocolate-macadmia-nut-68g?view=two-column" class="mega-menu__link link">Two column</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-product-page-collage" href="/products/summit-bar-white-chocolate-macadmia-nut-68g?view=feature-collage" class="mega-menu__link link">Collage</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-product-page-high-converting" href="/products/coconut-water-1l?view=feature-high-converting" class="mega-menu__link link stickerified">
+          <span class="sticker-wrapper-above"></span>
+          <span>
+            <span class="sticker-text">High converting</span>
+            <span class="sticker-wrapper-inline"><span class="sticker-spacer"></span><span class="sticker sticker-header_nK7aje sticker--pill sticker--inline text-body">
+          <span>NEW</span>
+        </span></span>
+          </span>
+          <span class="sticker-wrapper-below"></span>
+        </a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-product-page-back-in-stock-notification" href="/products/avocado" class="mega-menu__link link">Back in stock notification</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-product-page-bulk-order" href="/products/lean-protein-smooth-vanilla-500g" class="mega-menu__link link">Bulk order</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-product-page-enquiry" href="/products/coconut-water-1l?view=enquire" class="mega-menu__link link">Enquiry</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-product-page-preorder" href="/products/renew-cereal-cinnamon-crunch-250g?view=preorder" class="mega-menu__link link">Preorder</a>
+                        </li></ul></li><li>
+                  <a id="HeaderMenu-theme-features-collection-page" href="/collections/drinks" class="mega-menu__link mega-menu__link--level-2 link">Collection page</a><ul class="list-unstyled" role="list"><li>
+                          <a id="HeaderMenu-theme-features-collection-page-minimal" href="/collections/drinks?view=feature-no-image" class="mega-menu__link link">Minimal</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-collection-page-side-image" href="/collections/cereal" class="mega-menu__link link">Side image</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-collection-page-banner-image" href="/collections/fruit-vegetables?view=feature-banner-image" class="mega-menu__link link">Banner image</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-collection-page-sub-collections" href="/collections/all?view=feature-sub-collections" class="mega-menu__link link">Sub-collections</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-collection-page-flash-sales" href="/collections/flash-sales" class="mega-menu__link link">Flash sales</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-collection-page-black-friday-deals" href="/collections/deals" class="mega-menu__link link">Black Friday/Deals</a>
+                        </li></ul></li><li>
+                  <a id="HeaderMenu-theme-features-pages" href="#" class="mega-menu__link mega-menu__link--level-2 link">Pages</a><ul class="list-unstyled" role="list"><li>
+                          <a id="HeaderMenu-theme-features-pages-book-a-nutritionist" href="/pages/our-services#shopify-section-template--25591518626119__contact_form_fCfLLT" class="mega-menu__link link">Book a nutritionist</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-pages-about-us" href="/pages/about-us" class="mega-menu__link link">About us</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-pages-brands" href="/pages/shop-by-brand" class="mega-menu__link link">Brands</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-pages-contact" href="/pages/contact" class="mega-menu__link link">Contact</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-pages-faqs" href="/pages/faqs" class="mega-menu__link link">FAQs</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-pages-services" href="/pages/our-services" class="mega-menu__link link">Services</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-pages-store-locator" href="/pages/store-locator" class="mega-menu__link link">Store locator</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-pages-collections-list" href="/collections" class="mega-menu__link link">Collections list</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-pages-blog-landing-page" href="/blogs/daily-dose" class="mega-menu__link link">Blog landing page</a>
+                        </li><li>
+                          <a id="HeaderMenu-theme-features-pages-blog-post" href="/blogs/daily-dose/the-best-healthy-ish-treats-in-our-store-right-now" class="mega-menu__link link">Blog post</a>
+                        </li></ul></li></ul>
+        </div>
+      
+
+<div class="mega-promos mega-promos--text_promo flex flex-col" data-nosnippet=""><div class="promo-card--grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+<div class="promo-card promo-card--text w-full" style="--ratio-percent: 75.18796992481202%;--color-accent: 51,65,46;">
+    
+      <a href="/products/renew-cereal-cinnamon-crunch-250g" class="promo-card--text-container w-full">
+    
+
+      <div class="w-full"><div class="mb-15 last-child:mb-0"><div class="image-overlay promo-image overflow-hidden  hover-zoom ratio"><img class="promo-image img-cover" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/32y39cye4th568kk3wx01736k5bn.jpg?v=1780589153&amp;width=810" style="object-position: 50.0% 50.0%" alt="A vibrant assortment of fresh fruits and vegetables displayed alongside a cup of coffee and a bowl of granola." loading="lazy" fetchpriority="low" width="405" height="304"></div></div><div class="promo-card--text__heading mb-05 last-child:mb-0">AI-era product pages.</div><div class="promo-card--text__text rte mb-05 last-child:mb-0">With AI commerce, shoppers join further down the funnel - so your product page matters more than ever.
+</div></div>
+
+    
+      </a>
+    
+  </div>
+
+<div class="promo-card promo-card--text w-full" style="--ratio-percent: 75.18796992481202%;--color-accent: 114,70,127;">
+    
+      <a href="/collections/cereal" class="promo-card--text-container w-full">
+    
+
+      <div class="w-full"><div class="mb-15 last-child:mb-0"><div class="image-overlay promo-image overflow-hidden  hover-zoom ratio"><img class="promo-image img-cover" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/24kg2zs9k3xtsykpsju8vnn83sjr.png?v=1780589173&amp;width=810" style="object-position: 50.0% 50.0%" alt="Nutritional interface showing product details, icons for dietary features, and nutritional facts in a clean layout." loading="lazy" fetchpriority="low" width="405" height="304"></div></div><div class="promo-card--text__heading mb-05 last-child:mb-0">SEO-optimized collection pages.</div><div class="promo-card--text__text rte mb-05 last-child:mb-0">SEO starts with structure - a rich collection page helps shoppers and search engines understand your range.
+</div></div>
+
+    
+      </a>
+    
+  </div>
+
+
+
+
+
+
+</div></div></div><div class="mega-menu__grid mega-menu__grid--below" style="grid-template-columns: repeat(6, minmax(0, 1fr));">
+              <div class="mega-menu__grid" style="grid-column: span 6">
+<div class="mega-promos mega-promos--image_promo flex flex-col" data-nosnippet=""><div class="promo-card--grid" style="--overlay-opacity: 0.02;grid-template-columns: repeat(1, minmax(0, 1fr));">
+
+    <a href="/pages/icons" class="promo-card promo-card--image promo last-child:mb-0 flex hover-zoom relative justify-start items-center" style="--ratio-percent: 11.794871794871796%;">
+  
+
+    <div class="promo-image image-overlay overflow-hidden w-full relative" style="padding-bottom: 11.794871794871796%;"><img class="promo-image img-cover" style="object-position: 32.9216% 39.7494%" srcset="//benchmark-food-demo.myshopify.com/cdn/shop/files/peakChatGPT-Image-Jun-6_-2026_-05_24_10-PM.jpg?v=1780764968&amp;width=3240 3240w, //benchmark-food-demo.myshopify.com/cdn/shop/files/peakChatGPT-Image-Jun-6_-2026_-05_24_10-PM.jpg?v=1780764968&amp;width=1620 1620w" sizes="(max-width: 749.98px) 810px, 1620px" src="//benchmark-food-demo.myshopify.com/cdn/shop/files/peakChatGPT-Image-Jun-6_-2026_-05_24_10-PM.jpg?v=1780764968&amp;width=3240" alt="A variety of white icons, such as a camera and gaming controller, displayed on a dark green grid background." loading="lazy" fetchpriority="low" width="1620" height="192"></div>
+
+    
+      <div class="rte z-2 color-inherit lh-13 text-heading text-left h4-size absolute" style="--color-foreground: 255,255,255;color: #ffffff;padding: 1.8em">
+        <p>Explore 200+ theme icons</p>
+      </div>
+    
+
+  
+    </a>
+  
+
+
+
+
+
+
+
+</div></div></div>
+            </div></div>
+</div>
+</details>
+              </header-menu></li></ul>
+    </custom-nav>
+      </div>
+    </nav></sticky-header>
+
+<script src="//benchmark-food-demo.myshopify.com/cdn/shop/t/2/assets/cart-notification.js?v=42122508943999334541771321752" defer="defer"></script>
+<cart-notification>
+  <template class="deferred">
+  <div class="cart-notification-wrapper page-width">
+    <div id="cart-notification" class="cart-notification focus-inset color-scheme-1 gradient" aria-modal="true" aria-label="Added to your cart" role="dialog" tabindex="-1">
+      <div class="cart-notification__body">
+        <div class="cart-notification__header flex items-center">
+          <p class="text-heading cart-notification__heading t2 text-body font-bold"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-checkmark" aria-hidden="true" focusable="false" viewBox="0 0 512 512">
+  <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"></path>
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 176L217.6 336 160 272"></path>
+</svg>Added to your cart
+          </p>
+          <button type="button" class="cart-notification__close modal__close-button link link--text focus-inset" aria-label="Close">
+            <svg class="icon icon-close" aria-hidden="true" focusable="false">
+              <use href="#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div id="cart-notification-product"></div>
+      </div>
+
+      <div class="cart-notification__links border-top flex w-full gap-1 color-scheme-2 gradient">
+        <div>
+          <a href="/cart" id="cart-notification-button" class="button button--secondary button--full-width js-view-cart" data-no-instant="">View cart</a>
+        </div>
+        <div>
+          <form class="w-full" action="/cart" method="post" id="cart-notification-form">
+            <button class="button button--primary button--full-width" name="checkout">
+              Checkout
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </template>
+</cart-notification>
+<style data-shopify="">
+  .cart-notification {
+    display: none;
+  }
+</style>
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "OnlineStore",
+      "name": "Peak Food",
+      "url": "https:\/\/benchmark-food-demo.myshopify.com",
+      
+        "logo": "https:\/\/benchmark-food-demo.myshopify.com\/cdn\/shop\/files\/peak5.png?v=1752614293\u0026width=500",
+      
+      "sameAs": [
+        "",
+        "",
+        "https:\/\/pinterest.com\/shopify",
+        "https:\/\/instagram.com\/shopify",
+        "https:\/\/tiktok.com\/shopify",
+        "",
+        "",
+        "",
+        "",
+        "https:\/\/whatsapp.com\/shopify",
+        "",
+        ""
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Peak Food",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https:\/\/benchmark-food-demo.myshopify.com\/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "url": "https:\/\/benchmark-food-demo.myshopify.com"
+    }
+  </script>
+</div>
