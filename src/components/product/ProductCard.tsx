@@ -84,18 +84,39 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         ──────────────────────────────────────────────────────────── */}
         <div className="relative aspect-portrait w-full overflow-hidden bg-[#F6F2EC]">
           <Link href={`/product/${product.slug}`} className="block w-full h-full focus:outline-none">
-            <img
-              src={images.primary}
-              alt={product.name}
-              className="w-full h-full object-cover object-center group-hover:scale-105 group-hover:opacity-0 transition-all duration-500 ease-out"
-              loading="lazy"
-            />
-            <img
-              src={images.secondary}
-              alt={`${product.name} alternate view`}
-              className="absolute inset-0 w-full h-full object-cover object-center scale-105 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
-              loading="lazy"
-            />
+            {images.primary ? (
+              <>
+                <img
+                  src={images.primary}
+                  alt={product.name}
+                  className="w-full h-full object-cover object-center group-hover:scale-105 group-hover:opacity-0 transition-all duration-500 ease-out"
+                  loading="lazy"
+                />
+                <img
+                  src={images.secondary || images.primary}
+                  alt={`${product.name} alternate view`}
+                  className="absolute inset-0 w-full h-full object-cover object-center scale-105 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
+                  loading="lazy"
+                />
+              </>
+            ) : (
+              <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-b from-[#F7F3ED] to-[#EFE9DF] group-hover:scale-102 transition-transform duration-500">
+                <div className="w-16 h-16 rounded-full bg-white/80 border border-[#D9CDBF] flex items-center justify-center shadow-sm mb-3">
+                  <span className="font-serif text-2xl font-bold text-[#1E3A2F]">
+                    {product.name.charAt(0)}
+                  </span>
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#776D66] block">
+                  {product.form.toUpperCase()} · SMALL BATCH
+                </span>
+                <span className="font-serif text-xs font-semibold text-[#211D1A] mt-1 max-w-[140px] leading-tight line-clamp-2">
+                  {product.name}
+                </span>
+                <span className="text-[9px] text-[#A84D35] font-semibold mt-2 px-2 py-0.5 rounded-full bg-white/70 border border-[#E6DFD5]">
+                  Authentic Prep
+                </span>
+              </div>
+            )}
           </Link>
 
           {/* Top-Left: Stage / Safety Badge */}

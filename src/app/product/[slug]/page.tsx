@@ -150,13 +150,32 @@ export default function ProductDetailPage({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left: Sticky Image Gallery & Botanical Badges */}
           <div className="lg:col-span-6 lg:sticky lg:top-24 space-y-4">
-            {/* Main 3:4 Aspect Portrait Image Container */}
-            <div className="relative aspect-portrait w-full rounded-[16px] bg-[#F6F2EC] border border-[#E6DFD5] overflow-hidden shadow-sm">
-              <img
-                src={images[activeImageIdx]}
-                alt={product.name}
-                className="w-full h-full object-cover object-center transition-all duration-300"
-              />
+            {/* Main 3:4 Aspect Portrait Presentation Container */}
+            <div className="relative aspect-portrait w-full rounded-[16px] bg-[#F6F2EC] border border-[#E6DFD5] overflow-hidden shadow-sm flex flex-col items-center justify-center p-8 text-center bg-gradient-to-b from-[#F7F3ED] to-[#EFE9DF]">
+              {images.length > 0 && images[activeImageIdx] ? (
+                <img
+                  src={images[activeImageIdx]}
+                  alt={product.name}
+                  className="w-full h-full object-cover object-center transition-all duration-300"
+                />
+              ) : (
+                <div className="flex flex-col items-center justify-center h-full">
+                  <div className="w-24 h-24 rounded-full bg-white/90 border border-[#D9CDBF] flex items-center justify-center shadow-sm mb-4">
+                    <span className="font-serif text-4xl font-bold text-[#1E3A2F]">
+                      {product.name.charAt(0)}
+                    </span>
+                  </div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#776D66] block">
+                    {product.form.toUpperCase()} · SMALL BATCH
+                  </span>
+                  <span className="font-serif text-xl font-bold text-[#211D1A] mt-2 max-w-[260px] leading-snug">
+                    {product.name}
+                  </span>
+                  <span className="text-xs text-[#A84D35] font-semibold mt-3 px-3.5 py-1 rounded-full bg-white border border-[#E6DFD5]">
+                    A2 Bilona Cow Ghee & Whole Spices
+                  </span>
+                </div>
+              )}
 
               {/* Stage Pill Overlay */}
               <div className="absolute top-4 left-4 z-10">
@@ -174,21 +193,23 @@ export default function ProductDetailPage({
               )}
             </div>
 
-            {/* Thumbnail Strip */}
-            <div className="grid grid-cols-3 gap-3">
-              {images.map((img, idx) => (
-                <button
-                  key={idx}
-                  type="button"
-                  onClick={() => setActiveImageIdx(idx)}
-                  className={`aspect-portrait rounded-lg overflow-hidden border-2 transition-all ${
-                    activeImageIdx === idx ? 'border-[#1E3A2F] ring-2 ring-[#1E3A2F]/20' : 'border-[#E6DFD5] opacity-70 hover:opacity-100'
-                  }`}
-                >
-                  <img src={img} alt="Thumbnail" className="w-full h-full object-cover" />
-                </button>
-              ))}
-            </div>
+            {/* Thumbnail Strip (if gallery exists) */}
+            {images.length > 1 && (
+              <div className="grid grid-cols-3 gap-3">
+                {images.map((img, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setActiveImageIdx(idx)}
+                    className={`aspect-portrait rounded-lg overflow-hidden border-2 transition-all ${
+                      activeImageIdx === idx ? 'border-[#1E3A2F] ring-2 ring-[#1E3A2F]/20' : 'border-[#E6DFD5] opacity-70 hover:opacity-100'
+                    }`}
+                  >
+                    <img src={img} alt="Thumbnail" className="w-full h-full object-cover" />
+                  </button>
+                ))}
+              </div>
+            )}
 
             {/* Purity & Sourcing Guarantee Strip */}
             <div className="grid grid-cols-3 gap-3 pt-2 text-center text-xs">
@@ -435,12 +456,13 @@ export default function ProductDetailPage({
                     onChange={(e) => setFbtIncluded(e.target.checked)}
                     className="w-4 h-4 text-[#1E3A2F] rounded border-[#D9CDBF] focus:ring-[#1E3A2F]"
                   />
-                  <div className="w-12 h-14 rounded overflow-hidden bg-[#F6F2EC] shrink-0 border border-[#E6DFD5]">
-                    <img
-                      src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=200&q=80"
-                      alt={fbtItem.name}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="w-12 h-14 rounded overflow-hidden bg-[#F6F2EC] shrink-0 border border-[#E6DFD5] flex flex-col items-center justify-center p-1.5 text-center bg-gradient-to-b from-[#FAF7F2] to-[#EFE9DF]">
+                    <span className="font-serif text-xs font-bold text-[#1E3A2F]">
+                      {fbtItem.name.charAt(0)}
+                    </span>
+                    <span className="text-[7px] uppercase tracking-wider text-[#776D66] font-bold">
+                      Pair
+                    </span>
                   </div>
                   <div className="flex-1">
                     <h4 className="font-serif text-xs font-bold text-[#211D1A]">

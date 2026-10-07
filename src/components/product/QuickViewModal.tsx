@@ -79,19 +79,28 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({ product, onClose
           <X className="w-5 h-5" />
         </button>
 
-        {/* Left: Product Image */}
+        {/* Left: Product Representation */}
         <div className="md:w-1/2 bg-[#F6F2EC] p-6 flex items-center justify-center relative">
-          <div className="aspect-portrait w-full rounded-card overflow-hidden shadow-sm border border-[#E6DFD5]">
-            <img
-              src={getImage()}
-              alt={product.name}
-              className="w-full h-full object-cover object-center"
-            />
+          <div className="aspect-portrait w-full rounded-card overflow-hidden shadow-sm border border-[#E6DFD5] flex flex-col items-center justify-center p-8 text-center bg-gradient-to-b from-[#F7F3ED] to-[#EFE9DF]">
+            <div className="w-20 h-20 rounded-full bg-white/90 border border-[#D9CDBF] flex items-center justify-center shadow-sm mb-4">
+              <span className="font-serif text-3xl font-bold text-[#1E3A2F]">
+                {product.name.charAt(0)}
+              </span>
+            </div>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#776D66] block">
+              {product.form.toUpperCase()} · SMALL BATCH
+            </span>
+            <span className="font-serif text-base font-bold text-[#211D1A] mt-2 max-w-[180px] leading-snug">
+              {product.name}
+            </span>
+            <span className="text-[10px] text-[#A84D35] font-semibold mt-3 px-3 py-1 rounded-full bg-white border border-[#E6DFD5]">
+              Authentic Kitchen Formulation
+            </span>
           </div>
           {/* Badge */}
           <div className="absolute top-8 left-8">
             <span className="rounded-full bg-[#1E3A2F] text-white px-3 py-1 text-[11px] font-bold tracking-wide uppercase shadow-sm">
-              Doctor Verified
+              Clinical Safety Gate
             </span>
           </div>
         </div>

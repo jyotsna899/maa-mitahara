@@ -435,12 +435,13 @@ export default function NutritionFinderPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {fallbackProducts.map((p) => (
                     <div key={p.id} className="rounded-card border border-[#E6DFD5] p-3.5 bg-[#FAF7F2]">
-                      <div className="aspect-portrait w-full rounded overflow-hidden bg-white mb-2">
-                        <img
-                          src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=400&q=80"
-                          alt={p.name}
-                          className="w-full h-full object-cover"
-                        />
+                      <div className="aspect-portrait w-full rounded overflow-hidden bg-white mb-2 flex flex-col items-center justify-center p-3 text-center border border-[#E6DFD5]">
+                        <span className="font-serif text-lg font-bold text-[#1E3A2F]">
+                          {p.name.charAt(0)}
+                        </span>
+                        <span className="text-[9px] uppercase tracking-wider text-[#776D66] mt-0.5 font-bold">
+                          {p.form}
+                        </span>
                       </div>
                       <h4 className="font-serif text-xs font-bold text-[#211D1A] line-clamp-1">
                         {p.name}

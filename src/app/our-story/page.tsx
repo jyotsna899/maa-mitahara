@@ -28,12 +28,19 @@ export default function OurStoryPage() {
         {/* 2. Split Story & Image */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           <div className="lg:col-span-6 relative">
-            <div className="relative rounded-[16px] overflow-hidden border border-[#E6DFD5] bg-[#F6F2EC] shadow-md aspect-portrait">
-              <img
-                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80"
-                alt="Founder and Maternal Heritage"
-                className="w-full h-full object-cover object-center"
-              />
+            <div className="relative rounded-[16px] overflow-hidden border border-[#D9CDBF] bg-gradient-to-br from-[#FAF7F2] to-[#EFE9DF] shadow-md p-8 sm:p-10 flex flex-col justify-between min-h-[380px]">
+              <div className="space-y-4">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A2F] px-3 py-1 rounded-full bg-white border border-[#D9CDBF] inline-block">
+                  Authentic Heritage & Living Wisdom
+                </span>
+                <blockquote className="font-serif text-2xl sm:text-3xl font-medium text-[#211D1A] leading-snug">
+                  “When I became a mother, I saw how centuries of sacred Jaapa wisdom were being lost to fast convenience and synthetic supplements.”
+                </blockquote>
+              </div>
+              <div className="pt-6 border-t border-[#D9CDBF]/60 flex items-center justify-between text-xs text-[#776D66]">
+                <span className="font-semibold text-[#211D1A]">Handcrafted to Order</span>
+                <span>Pure A2 Bilona Ghee · 0% Refined Sugar</span>
+              </div>
             </div>
           </div>
 

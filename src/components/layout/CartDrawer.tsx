@@ -106,12 +106,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose, cart })
                   key={item.id}
                   className="flex gap-3.5 p-3 rounded-card border border-[#E6DFD5] bg-[#FAF7F2]/60 hover:bg-[#FAF7F2] transition-colors"
                 >
-                  <div className="w-16 h-20 rounded-[6px] overflow-hidden bg-white shrink-0 border border-[#E6DFD5]">
-                    <img
-                      src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=200&q=80"
-                      alt={item.name}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="w-16 h-20 rounded-[6px] overflow-hidden bg-white shrink-0 border border-[#E6DFD5] flex flex-col items-center justify-center p-2 text-center bg-gradient-to-b from-[#FAF7F2] to-[#EFE9DF]">
+                    <span className="font-serif text-sm font-bold text-[#1E3A2F]">
+                      {item.name.replace('[Custom Jaapa Box] ', '').charAt(0)}
+                    </span>
+                    <span className="text-[8px] uppercase tracking-wider text-[#776D66] font-bold mt-0.5">
+                      Prep
+                    </span>
                   </div>
 
                   <div className="flex-1 flex flex-col justify-between">

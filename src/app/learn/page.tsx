@@ -71,12 +71,13 @@ export default function LearnPage() {
                 className="group rounded-card border border-[#E6DFD5] bg-white overflow-hidden shadow-sm hover:border-[#1E3A2F] hover:shadow-md transition-all flex flex-col justify-between"
               >
                 <div>
-                  <div className="aspect-[16/10] w-full overflow-hidden bg-[#FAF7F2]">
-                    <img
-                      src={art.image}
-                      alt={art.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
+                  <div className="aspect-[16/10] w-full p-6 bg-gradient-to-br from-[#FAF7F2] to-[#EFE9DF] border-b border-[#E6DFD5] flex flex-col justify-between">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-[#776D66] bg-white/80 self-start px-2.5 py-0.5 rounded-full border border-[#D9CDBF]">
+                      {art.tag.split('·')[0].trim()}
+                    </span>
+                    <div className="font-serif text-xl italic font-normal text-[#1E3A2F]">
+                      Maa Mitahara Journal
+                    </div>
                   </div>
                   <div className="p-6">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
