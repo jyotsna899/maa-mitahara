@@ -112,112 +112,112 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="flex flex-col bg-[#FAF7F2] text-[#211D1A] overflow-hidden selection:bg-[#1E3A2F] selection:text-white">
+    <div className="flex flex-col bg-[#FAF6F0] text-[#26211E] overflow-hidden selection:bg-[#244235] selection:text-white">
       {/* ────────────────────────────────────────────────────────────
           1. PEAK FULL-WIDTH EDITORIAL HERO (Wellness Rhythm)
       ──────────────────────────────────────────────────────────── */}
-      <section className="relative bg-[#FAF7F2] py-14 sm:py-20 lg:py-24 border-b border-[#E6DFD5] overflow-hidden">
+      <section className="relative bg-[#FAF6F0] py-14 sm:py-20 lg:py-24 border-b border-[#E8DFD3] overflow-hidden">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-6">
               {/* Active Trimester Pill */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#D9CDBF] bg-white px-3.5 py-1 text-xs font-semibold text-[#211D1A] shadow-xs">
-                <span className="w-2 h-2 rounded-full bg-[#1E3A2F] animate-pulse" />
+              <div className="inline-flex items-center gap-2 rounded-full border border-[#F3D8CD] bg-[#F8EBE6] px-3.5 py-1 text-xs font-semibold text-[#26211E] shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-[#C86D51] animate-pulse" />
                 <span>Trimester Guidance</span>
-                <span className="text-[#D9CDBF]">·</span>
-                <span className="text-[#1E3A2F] font-bold">
+                <span className="text-[#DBCEBF]">·</span>
+                <span className="text-[#C86D51] font-bold">
                   {currentStageDef.title} ({currentStageDef.weekRange})
                 </span>
               </div>
 
               {/* Headline with Flux Clean Modern Display Typography */}
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#1D1D1D] leading-[1.12]">
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#26211E] leading-[1.12]">
                 Fuel your body. <br />
-                Nourish your <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">journey</span>.
+                Nourish your <span className="underline decoration-[#E89D82] decoration-4 underline-offset-8 font-normal text-[#C86D51]">journey</span>.
               </h1>
 
               {/* Subtitle */}
-              <p className="text-sm sm:text-base text-[#574F49] leading-relaxed max-w-2xl font-normal">
+              <p className="text-sm sm:text-base text-[#574D45] leading-relaxed max-w-2xl font-normal">
                 Doctor-reviewed Ayurvedic recipes handcrafted for every gestational trimester and the 40-day postpartum Jaapa recovery. Slow-roasted in certified A2 Bilona cow ghee, whole dry fruits, and zero refined sugar.
               </p>
 
-              {/* Dual CTA Action Row - Flux 13px radius buttons */}
+              {/* Dual CTA Action Row - Motherly 13px radius buttons */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
                 <Link
                   href="/quiz"
-                  className="inline-flex items-center justify-center gap-2.5 rounded-[13px] bg-[#1E3A2F] hover:bg-[#152820] text-white px-7 py-3.5 text-xs sm:text-sm font-bold tracking-wide shadow-sm hover:shadow transition-all group"
+                  className="inline-flex items-center justify-center gap-2.5 rounded-[13px] bg-[#244235] hover:bg-[#172B22] text-white px-7 py-3.5 text-xs sm:text-sm font-bold tracking-wide shadow-xs hover:shadow transition-all group"
                 >
-                  <Sparkles className="w-4 h-4 text-[#9DBDA6] group-hover:rotate-12 transition-transform" />
+                  <Sparkles className="w-4 h-4 text-[#A1C3B2] group-hover:rotate-12 transition-transform" />
                   <span>Find My Trimester Plan (2 Mins)</span>
                 </Link>
 
                 <button
                   type="button"
                   onClick={openSelector}
-                  className="inline-flex items-center justify-center gap-2 rounded-[13px] border border-[#1D1D1D] bg-white hover:bg-[#FAF7F2] text-[#1D1D1D] px-7 py-3.5 text-xs sm:text-sm font-bold tracking-wide shadow-xs transition-all"
+                  className="inline-flex items-center justify-center gap-2 rounded-[13px] border border-[#C86D51] bg-[#F8EBE6] hover:bg-[#F3D8CD] text-[#C86D51] px-7 py-3.5 text-xs sm:text-sm font-bold tracking-wide shadow-xs transition-all"
                 >
                   <span>Explore 6 Stages</span>
-                  <ChevronRight className="w-4 h-4 text-[#776D66]" />
+                  <ChevronRight className="w-4 h-4 text-[#C86D51]" />
                 </button>
               </div>
 
               {/* Purity Guarantee Trust Chips */}
-              <div className="pt-4 border-t border-[#E6DFD5] flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-[#776D66]">
+              <div className="pt-4 border-t border-[#E8DFD3] flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-[#776B61]">
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#1E3A2F]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#244235]" />
                   <span>Obstetrician Safety Reviewed</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#1E3A2F]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#244235]" />
                   <span>0% White Sugar · Jaggery Sweetened</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#1E3A2F]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#244235]" />
                   <span>Fresh Fortnightly Small Batches</span>
                 </div>
               </div>
             </div>
 
-            {/* Right: Peak-Inspired Hero Merchandising Showcase */}
+            {/* Right: Motherly Blush Hero Merchandising Showcase */}
             <div className="lg:col-span-5 relative">
-              <div className="rounded-[20px] border border-[#D9CDBF] bg-gradient-to-b from-[#FAF7F2] to-[#EAE3D6] shadow-lg p-7 sm:p-9 flex flex-col justify-between min-h-[440px]">
+              <div className="rounded-[20px] border border-[#F3D8CD] bg-gradient-to-b from-[#F8EBE6] to-[#FAF6F0] shadow-sm p-7 sm:p-9 flex flex-col justify-between min-h-[440px]">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A2F] px-3 py-1 rounded-full bg-white border border-[#D9CDBF] inline-block shadow-xs">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-[#C86D51] px-3 py-1 rounded-full bg-white border border-[#F3D8CD] inline-block shadow-xs">
                       Spotlight Formulation
                     </span>
-                    <span className="text-xs font-semibold text-[#C85A32]">
+                    <span className="text-xs font-semibold text-[#C86D51]">
                       1st Trimester Gentle Start
                     </span>
                   </div>
 
-                  <div className="font-serif text-2xl sm:text-3xl font-medium text-[#211D1A] leading-snug">
+                  <div className="font-display text-2xl sm:text-3xl font-bold text-[#26211E] leading-snug">
                     Gentle Citrus &amp; Raw Cacao. <br />
-                    <span className="italic font-normal text-[#1E3A2F]">Morning stomach ease.</span>
+                    <span className="underline decoration-[#E89D82] decoration-2 underline-offset-4 font-normal text-[#C86D51]">Morning stomach ease.</span>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-[#66615D] leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#574D45] leading-relaxed">
                     Formulated specifically for early gestational nausea, sensitive palates, and cellular magnesium support.
                   </p>
                 </div>
 
                 {/* Interactive Anchor Card */}
-                <div className="p-4 rounded-xl bg-white/95 backdrop-blur-md border border-[#E6DFD5] shadow-sm flex items-center justify-between mt-6">
+                <div className="p-4 rounded-xl bg-white/95 backdrop-blur-md border border-[#E8DFD3] shadow-xs flex items-center justify-between mt-6">
                   <div className="min-w-0 pr-3">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#1E3A2F] block">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#244235] block">
                       Recommended Formulation
                     </span>
-                    <h3 className="font-serif text-sm font-bold text-[#211D1A] mt-0.5 truncate">
+                    <h3 className="font-display text-sm font-bold text-[#26211E] mt-0.5 truncate">
                       Orange &amp; Cacao Laddu
                     </h3>
-                    <p className="text-[11px] text-[#776D66]">
+                    <p className="text-[11px] text-[#776B61]">
                       ₹190 (Trial) · 0% Preservatives
                     </p>
                   </div>
                   <Link
                     href="/product/orange-and-cacao-laddu"
-                    className="p-2.5 rounded-full bg-[#1E3A2F] text-white hover:bg-[#152820] transition-colors shrink-0 shadow-sm"
+                    className="p-2.5 rounded-full bg-[#244235] text-white hover:bg-[#172B22] transition-colors shrink-0 shadow-xs"
                     aria-label="View product details"
                   >
                     <ArrowRight className="w-4 h-4" />

@@ -62,17 +62,17 @@ export const Header: React.FC = () => {
     : [];
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-[#FAF7F0] border-b border-[#E6DFD1] shadow-sm">
+    <header className="sticky top-0 z-40 w-full bg-[#FAF6F0] border-b border-[#E8DFD3] shadow-xs">
       {/* ────────────────────────────────────────────────────────────
           1. PEAK ANNOUNCEMENT / UTILITY BAR
       ──────────────────────────────────────────────────────────── */}
-      <div className="bg-[#1E3A2F] text-[#FAF7F0] px-4 py-1.5 text-[11px] font-medium tracking-wide">
+      <div className="bg-[#244235] text-[#FAF6F0] px-4 py-1.5 text-[11px] font-medium tracking-wide">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex flex-col sm:flex-row items-center justify-between gap-1 text-center sm:text-left">
           <div className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#9DBDA6] animate-pulse" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#A1C3B2] animate-pulse" />
             <span className="font-semibold text-white">Free delivery to your door for orders over ₹999.</span>
-            <span className="hidden md:inline text-[#6FA08C]">·</span>
-            <span className="hidden md:inline text-[#E1ECE6]">Doctor-reviewed superfoods, zero refined sugar & zero preservatives!</span>
+            <span className="hidden md:inline text-[#71A18A]">·</span>
+            <span className="hidden md:inline text-[#E8F1EC]">Doctor-reviewed superfoods, zero refined sugar & zero preservatives!</span>
           </div>
 
           <div className="flex items-center gap-4 text-[#E1ECE6] text-[11px]">
@@ -439,12 +439,12 @@ export const Header: React.FC = () => {
               )}
             </div>
 
-            {/* 4. Find My Plan (Peak Highlight Pill) */}
+            {/* 4. Find My Plan (Motherly Warm Terracotta Pill) */}
             <Link
               href="/quiz"
-              className="inline-flex items-center gap-1.5 rounded-full bg-[#1E3A2F] text-white px-4 py-1 text-xs font-bold hover:bg-[#152820] shadow-sm transition-all"
+              className="inline-flex items-center gap-1.5 rounded-full bg-[#C86D51] text-white px-4 py-1 text-xs font-bold hover:bg-[#A54B33] shadow-xs transition-all"
             >
-              <Sparkles className="w-3.5 h-3.5 text-[#9DBDA6]" />
+              <Sparkles className="w-3.5 h-3.5 text-[#F8EBE6]" />
               <span>Find My Plan</span>
             </Link>
 

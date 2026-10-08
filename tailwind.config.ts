@@ -10,68 +10,68 @@ const config: Config = {
     extend: {
       colors: {
         ivory: {
-          50: '#FBF9F5', // Primary background
-          100: '#F5F1E9',
+          50: '#FAF6F0', // Warm almond cream primary background
+          100: '#F4ECE2',
         },
         cream: {
-          50: '#FAF7F0',
-          100: '#F3EFE6', // Card backgrounds
-          200: '#E6DFD1', // Subtle borders
-          300: '#D9CDBF',
-          400: '#C2B1A0',
+          50: '#FAF6F0',
+          100: '#F4ECE2', // Card backgrounds
+          200: '#E8DFD3', // Soft warm sand borders
+          300: '#DBCEBF',
+          400: '#C4B2A0',
         },
         'earth-green': {
-          50: '#F2F6F4',
-          100: '#E1ECE6',
-          200: '#C5D8CF',
-          300: '#9DBEB0',
-          400: '#6FA08C',
-          500: '#4D826E',
-          600: '#3A6856',
-          700: '#284A3D',
-          800: '#1E3A2F', // Main brand CTA
-          900: '#152820', // Dark contrast
-          950: '#0B1712',
+          50: '#F0F5F2',
+          100: '#E8F1EC',
+          200: '#C8DCD1',
+          300: '#A1C3B2',
+          400: '#71A18A',
+          500: '#4D8068',
+          600: '#396551',
+          700: '#2A4B3C',
+          800: '#244235', // Deep nurturing eucalyptus green
+          900: '#172B22',
+          950: '#0E1C16',
         },
         sage: {
-          50: '#EEF3EF', // Botanical & doctor quote tint
-          100: '#DEE8E0',
-          200: '#BFD3C4',
-          300: '#9DBDA6',
-          400: '#7AA387',
-          500: '#5B7B68', // Secondary
-          600: '#486252',
-          700: '#394D41',
+          50: '#EEF4F0', // Soft maternal botanical tint
+          100: '#DCE8E1',
+          200: '#BCD4C6',
+          300: '#9CBDAB',
+          400: '#7AA38D',
+          500: '#5B7B6B',
+          600: '#486255',
+          700: '#394D43',
         },
         terracotta: {
-          50: '#FDF6F3',
-          100: '#F9ECE5',
-          200: '#F2D7CB',
-          300: '#E7B8A4',
-          400: '#D99178',
-          500: '#C25B40',
-          600: '#A84D35', // Accent
-          700: '#8A3B26',
-          800: '#6D2F1E',
+          50: '#FDF7F5',
+          100: '#F8EBE6', // Soft motherly blush
+          200: '#F3D8CD',
+          300: '#E8B6A4',
+          400: '#DB8F76',
+          500: '#C86D51', // Warm maternal terracotta accent
+          600: '#A54B33',
+          700: '#873924',
+          800: '#692918',
         },
         peach: {
-          50: '#FCF7F3',
-          100: '#F5E6DD', // Highlight
-          200: '#EED9CD',
-          300: '#E2C2B0',
-          400: '#D3A38C',
+          50: '#FDF6F2',
+          100: '#F8EBE3', // Motherly blush highlight
+          200: '#F1D9CB',
+          300: '#E5C2AE',
+          400: '#D8A48B',
         },
         charcoal: {
-          50: '#F7F6F5',
-          100: '#EDEBE9',
-          200: '#DCD8D4',
-          300: '#BDB6B0',
-          400: '#988F88',
-          500: '#776D66',
-          600: '#574F49', // Muted text
-          700: '#423B36',
-          800: '#2E2824',
-          900: '#211D1A', // Primary typography
+          50: '#F8F6F4',
+          100: '#ECE9E6',
+          200: '#DCD7D2',
+          300: '#BCB5AD',
+          400: '#988E84',
+          500: '#776B61',
+          600: '#574D45',
+          700: '#423932',
+          800: '#2E2722',
+          900: '#26211E', // Soft warm espresso typography
         },
       },
       fontFamily: {

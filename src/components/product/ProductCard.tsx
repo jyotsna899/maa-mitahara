@@ -111,16 +111,21 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, userStageKey 
             )}
           </Link>
 
-          {/* Top-Left: Restrained Stage / Safety Gate Badge */}
+          {/* Top-Left: Soft Motherly Stage / Safety Gate Badge */}
           <div className="absolute top-3 left-3 z-10 pointer-events-none flex flex-col gap-1 items-start">
             {isExcludedFromPregnancy ? (
-              <span className="inline-flex items-center gap-1 rounded-full bg-red-900/95 text-white px-2.5 py-0.5 text-[10px] font-bold backdrop-blur-sm shadow-sm">
+              <span className="inline-flex items-center gap-1 rounded-full bg-red-900/95 text-white px-2.5 py-0.5 text-[10px] font-bold backdrop-blur-sm shadow-xs">
                 <ShieldAlert className="w-3 h-3 text-red-300" />
                 Not for Pregnancy
               </span>
             ) : (
-              <span className="inline-flex items-center rounded-full bg-white/95 text-[#1E3A2F] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider shadow-sm border border-[#E6DFD5]">
+              <span className="inline-flex items-center rounded-full bg-[#F8EBE6]/95 text-[#C86D51] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider shadow-xs border border-[#F3D8CD]">
                 {stageDisplayLabel}
+              </span>
+            )}
+            {product.isHero && (
+              <span className="inline-flex items-center rounded-full bg-[#E8F1EC]/95 text-[#244235] px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-wider border border-[#C8DCD1]">
+                Obstetrician Choice
               </span>
             )}
           </div>
@@ -130,30 +135,30 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, userStageKey 
             <button
               type="button"
               onClick={handleOpenQuickView}
-              className="w-8 h-8 rounded-full bg-white/95 hover:bg-white text-[#211D1A] shadow-md flex items-center justify-center transition-all hover:scale-110"
+              className="w-8 h-8 rounded-full bg-white/95 hover:bg-white text-[#26211E] shadow-sm flex items-center justify-center transition-all hover:scale-110 border border-[#E8DFD3]"
               aria-label="Quick View"
               title="Quick view product specs"
             >
-              <Eye className="w-3.5 h-3.5 text-[#211D1A]" />
+              <Eye className="w-3.5 h-3.5 text-[#26211E]" />
             </button>
           </div>
 
-          {/* Desktop Eurus Slide-Up Quick Add Bar */}
+          {/* Desktop Slide-Up Quick Add Bar (Motherly Deep Eucalyptus / Terracotta Accent) */}
           <div className="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 hidden sm:block z-20">
             <button
               type="button"
               onClick={handleQuickAdd}
               disabled={isExcludedFromPregnancy}
-              className="w-full bg-[#1E3A2F] hover:bg-[#152820] text-white py-2.5 px-3 text-xs font-semibold rounded-[6px] tracking-wider uppercase transition-colors flex items-center justify-center gap-2 shadow-md disabled:opacity-50"
+              className="w-full bg-[#244235] hover:bg-[#172B22] text-white py-2.5 px-3 text-xs font-semibold rounded-[10px] tracking-wider uppercase transition-all flex items-center justify-center gap-2 shadow-sm disabled:opacity-50"
             >
               {added ? (
                 <>
-                  <Check className="w-3.5 h-3.5 text-[#9DBEA0]" />
+                  <Check className="w-3.5 h-3.5 text-[#A1C3B2]" />
                   <span>Added to Cart</span>
                 </>
               ) : (
                 <>
-                  <ShoppingBag className="w-3.5 h-3.5" />
+                  <ShoppingBag className="w-3.5 h-3.5 text-[#E8F1EC]" />
                   <span>Quick Add · ₹{currentVariant.price}</span>
                 </>
               )}
@@ -166,10 +171,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, userStageKey 
               type="button"
               onClick={handleQuickAdd}
               disabled={isExcludedFromPregnancy}
-              className="w-8 h-8 rounded-full bg-[#1E3A2F] text-white shadow-md flex items-center justify-center disabled:opacity-50"
+              className="w-8 h-8 rounded-full bg-[#244235] text-white shadow-sm flex items-center justify-center disabled:opacity-50"
               aria-label="Quick add"
             >
-              {added ? <Check className="w-3.5 h-3.5 text-[#9DBEA0]" /> : <ShoppingBag className="w-3.5 h-3.5" />}
+              {added ? <Check className="w-3.5 h-3.5 text-[#A1C3B2]" /> : <ShoppingBag className="w-3.5 h-3.5" />}
             </button>
           </div>
         </div>

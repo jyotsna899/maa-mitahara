@@ -9,13 +9,23 @@ export interface ProductImageSet {
   gallery: string[];
 }
 
+const PRODUCT_IMAGE_MAP: Record<string, string> = {
+  'orange-and-cacao-laddu': '/images/products/orange-and-cacao-laddu.png',
+  'multigrain-laddu': '/images/products/multigrain-laddu.png',
+  'multigrain-laddu-postnatal': '/images/products/multigrain-laddu-postnatal.png',
+  'dryfruit-laddu': '/images/products/dryfruit-laddu.png',
+  'gond-giri-laddu': '/images/products/gond-giri-laddu.png',
+  'dana-methi-laddu': '/images/products/dana-methi-laddu.png',
+  'coffee-and-badam-laddu': '/images/products/coffee-and-badam-laddu.png',
+  'healthy-delights-ashwagandha-laddu': '/images/products/healthy-delights-ashwagandha-laddu.png',
+  'healthy-delights-safed-musli-laddu': '/images/products/healthy-delights-safed-musli-laddu.png',
+};
+
 export function getProductImages(slug: string): ProductImageSet {
-  // Currently authentic brand photography packs are under verification and ingestion.
-  // We explicitly return null / empty gallery so the product cards render elegant,
-  // high-craft editorial badges and category iconography instead of deceptive random stock photos.
+  const imagePath = PRODUCT_IMAGE_MAP[slug] || '/images/products/sample-pouch.png';
   return {
-    primary: null,
+    primary: imagePath,
     secondary: null,
-    gallery: [],
+    gallery: [imagePath],
   };
 }
