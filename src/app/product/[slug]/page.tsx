@@ -130,16 +130,20 @@ export default function ProductDetailPage({
 
   return (
     <div className="bg-[#FAF7F2] text-[#211D1A]">
-      {/* Breadcrumb Bar */}
+      {/* Breadcrumb Bar (Stage -> Need -> Product Hierarchy) */}
       <div className="border-b border-[#E6DFD5] bg-white py-3">
-        <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center gap-2 text-xs text-[#776D66]">
-          <Link href="/" className="hover:text-[#211D1A]">Home</Link>
+        <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex items-center gap-2 text-xs text-[#776D66] overflow-x-auto scrollbar-none">
+          <Link href="/" className="hover:text-[#1E3A2F]">Home</Link>
           <span>/</span>
-          <Link href={`/stage/${primaryStageKey.replace('_', '-')}`} className="hover:text-[#211D1A]">
-            {primaryStageKey.replace('_', ' ')}
+          <Link href="/products" className="hover:text-[#1E3A2F]">All Formulations</Link>
+          <span>/</span>
+          <Link href={`/stage/${primaryStageKey.replace('_', '-')}`} className="hover:text-[#1E3A2F] whitespace-nowrap">
+            {STAGES[primaryStageKey]?.title || primaryStageKey.replace('_', ' ')}
           </Link>
           <span>/</span>
-          <span className="font-semibold text-[#211D1A] truncate">{product.name}</span>
+          <span className="font-semibold text-[#211D1A] truncate">
+            {product.name.replace(/\s*\((Mom to Be|Postnatal Edition|Mom-to-Be)\)/gi, '').trim()}
+          </span>
         </div>
       </div>
 
@@ -254,8 +258,22 @@ export default function ProductDetailPage({
 
             {/* Product Title & Stage Benefit */}
             <div>
+              <div className="flex items-center gap-2 mb-1.5">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#C85A32]">
+                  {product.needTags[0]?.replace('_', ' ').toUpperCase()}
+                </span>
+                <span className="text-[#D9CDBF]">·</span>
+                <span className="text-xs font-semibold text-[#1E3A2F]">
+                  {STAGES[primaryStageKey]?.title || primaryStageKey}
+                </span>
+                {product.canonicalGroupId && (
+                  <span className="text-[10px] text-[#776D66] bg-white px-2 py-0.5 rounded-full border border-[#E6DFD5]">
+                    Canonical Recipe
+                  </span>
+                )}
+              </div>
               <h1 className="font-serif text-3xl sm:text-4xl font-bold text-[#211D1A] tracking-tight">
-                {product.name}
+                {product.name.replace(/\s*\((Mom to Be|Postnatal Edition|Mom-to-Be)\)/gi, '').trim()}
               </h1>
               <p className="mt-2 text-sm text-[#1E3A2F] font-semibold leading-relaxed">
                 {product.stageBenefitSummary}

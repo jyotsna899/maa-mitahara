@@ -159,8 +159,18 @@ export const Header: React.FC = () => {
                 className="absolute left-0 right-0 top-full mt-1.5 z-50 rounded-xl border border-[#D9CDBF] bg-white p-3 shadow-xl animate-in fade-in duration-150"
                 onMouseLeave={() => setSearchFocused(false)}
               >
-                <div className="text-[10px] uppercase font-bold tracking-wider text-[#776D66] mb-2 px-1">
-                  Suggested Products
+                <div className="flex items-center justify-between text-[10px] uppercase font-bold tracking-wider text-[#776D66] mb-2 px-1">
+                  <span>Suggested Formulations</span>
+                  <Link
+                    href={`/products?q=${encodeURIComponent(searchQuery)}`}
+                    onClick={() => {
+                      setSearchFocused(false);
+                      setSearchQuery('');
+                    }}
+                    className="text-[#1E3A2F] hover:underline normal-case"
+                  >
+                    View All &rarr;
+                  </Link>
                 </div>
                 {searchResults.length > 0 ? (
                   <div className="space-y-1.5">
@@ -174,17 +184,21 @@ export const Header: React.FC = () => {
                         }}
                         className="flex items-center justify-between p-2 rounded-lg hover:bg-[#F3EFE6] transition-colors text-xs"
                       >
-                        <div>
-                          <div className="font-bold text-[#211D1A]">{p.name}</div>
-                          <div className="text-[11px] text-[#776D66]">{p.stageBenefitSummary}</div>
+                        <div className="pr-3">
+                          <div className="font-bold text-[#211D1A]">
+                            {p.name.replace(/\s*\((Mom to Be|Postnatal Edition|Mom-to-Be)\)/gi, '').trim()}
+                          </div>
+                          <div className="text-[11px] text-[#776D66] line-clamp-1">
+                            <span className="font-semibold text-[#1E3A2F]">{p.stageTags[0].replace('_', ' ')}</span> · {p.stageBenefitSummary}
+                          </div>
                         </div>
-                        <span className="font-bold text-[#1E3A2F]">₹{p.variants[0].price}</span>
+                        <span className="font-bold text-[#1E3A2F] shrink-0">₹{p.variants[0].price}</span>
                       </Link>
                     ))}
                   </div>
                 ) : (
                   <div className="p-3 text-center text-xs text-[#776D66]">
-                    No products found for "{searchQuery}".
+                    No formulations found for &ldquo;{searchQuery}&rdquo;.
                   </div>
                 )}
               </div>
@@ -386,6 +400,13 @@ export const Header: React.FC = () => {
                   <div className="text-[10px] uppercase font-bold text-[#776D66] tracking-wider px-2 py-1">
                     Catalogue Formats
                   </div>
+                  <Link
+                    href="/products"
+                    onClick={() => setActiveMegaMenu(null)}
+                    className="block rounded-lg px-3 py-2 text-xs font-bold text-[#1E3A2F] bg-[#EEF3EF] hover:bg-[#E3ECE5] mb-1"
+                  >
+                    All Formulations (Stage & Need)
+                  </Link>
                   <Link
                     href="/stage/second-trimester"
                     onClick={() => setActiveMegaMenu(null)}
