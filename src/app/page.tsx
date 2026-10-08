@@ -763,69 +763,31 @@ export default function HomePage() {
 
 
       {/* ────────────────────────────────────────────────────────────
-          6. RECOMMENDED PRODUCTS (Peak Merchandising Grid)
+          6. BESTSELLER FORMULATIONS (Peak Merchandising Grid)
       ──────────────────────────────────────────────────────────── */}
       <section className="py-16 sm:py-20 lg:py-24 bg-white border-b border-[#E6DFD5]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           {/* Section Header */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
-            <div>
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
-                Trimester-Matched Formulations
-              </span>
-              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight">
-                Start with <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">one</span>. Build from <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">there</span>.
-              </h2>
-            </div>
-
-            {/* Collection Filter Tabs */}
-            <div className="flex flex-wrap items-center gap-2 border-b border-[#E6DFD5] pb-2 md:pb-0">
-              <button
-                onClick={() => setActiveCollectionTab('stage')}
-                className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
-                  activeCollectionTab === 'stage'
-                    ? 'bg-[#1E3A2F] text-white shadow-sm'
-                    : 'bg-[#FAF7F2] text-[#66615D] hover:text-[#211D1A]'
-                }`}
-              >
-                {currentStageDef.title} Fits
-              </button>
-              <button
-                onClick={() => setActiveCollectionTab('bestsellers')}
-                className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
-                  activeCollectionTab === 'bestsellers'
-                    ? 'bg-[#1E3A2F] text-white shadow-sm'
-                    : 'bg-[#FAF7F2] text-[#66615D] hover:text-[#211D1A]'
-                }`}
-              >
-                Bestsellers
-              </button>
-              <button
-                onClick={() => setActiveCollectionTab('jaapa')}
-                className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
-                  activeCollectionTab === 'jaapa'
-                    ? 'bg-[#1E3A2F] text-white shadow-sm'
-                    : 'bg-[#FAF7F2] text-[#66615D] hover:text-[#211D1A]'
-                }`}
-              >
-                Postpartum Jaapa
-              </button>
-              <button
-                onClick={() => setActiveCollectionTab('nausea')}
-                className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
-                  activeCollectionTab === 'nausea'
-                    ? 'bg-[#1E3A2F] text-white shadow-sm'
-                    : 'bg-[#FAF7F2] text-[#66615D] hover:text-[#211D1A]'
-                }`}
-              >
-                1st Tri Nausea
-              </button>
-            </div>
+          <div className="max-w-3xl mb-10">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[#C86D51] block mb-2">
+              Maa Mitahara Bestsellers
+            </span>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#26211E] tracking-tight">
+              Our Most Loved <span className="underline decoration-[#E89D82] decoration-4 underline-offset-8 font-normal text-[#C86D51]">Maternal Formulations</span>.
+            </h2>
+            <p className="mt-2.5 text-xs sm:text-sm text-[#574D45] leading-relaxed">
+              Doctor-reviewed traditional recipes slow-roasted in curd-churned A2 bilona cow ghee, whole dry fruits, and zero refined sugar.
+            </p>
           </div>
 
-          {/* 4-Column Product Grid */}
+          {/* 4-Column Bestseller Product Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {tabProducts.map((product) => (
+            {[
+              PRODUCTS.find((p) => p.slug === 'gond-giri-laddu') || PRODUCTS[0],
+              PRODUCTS.find((p) => p.slug === 'orange-and-cacao-laddu') || PRODUCTS[1],
+              PRODUCTS.find((p) => p.slug === 'multigrain-laddu') || PRODUCTS[2],
+              PRODUCTS.find((p) => p.slug === 'dryfruit-laddu') || PRODUCTS[3],
+            ].map((product) => (
               <ProductCard
                 key={product.id}
                 product={product}
@@ -837,11 +799,11 @@ export default function HomePage() {
           {/* Bottom Discovery Link */}
           <div className="mt-12 text-center">
             <Link
-              href={`/stage/${currentStageDef.slug}`}
-              className="inline-flex items-center gap-2 rounded-full border border-[#211D1A] bg-white hover:bg-[#FAF7F2] text-[#211D1A] px-8 py-3 text-xs font-bold uppercase tracking-wider transition-all shadow-sm"
+              href="/products"
+              className="inline-flex items-center gap-2 rounded-full border border-[#244235] bg-[#244235] hover:bg-[#172B22] text-white px-8 py-3.5 text-xs font-bold uppercase tracking-wider transition-all shadow-xs"
             >
-              <span>View All {currentStageDef.title} Formulations</span>
-              <ArrowRight className="w-4 h-4 text-[#776D66]" />
+              <span>Explore All Formulations</span>
+              <ArrowRight className="w-4 h-4 text-[#A1C3B2]" />
             </Link>
           </div>
         </div>
