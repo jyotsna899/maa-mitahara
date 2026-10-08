@@ -81,9 +81,9 @@ export const Header: React.FC = () => {
               <span>Medical Help</span>
             </Link>
             <span className="text-[#3A6856]">|</span>
-            <Link href="/quiz" className="hover:text-white flex items-center gap-1 transition-colors">
+            <Link href="/profile" className="hover:text-white flex items-center gap-1 transition-colors">
               <User className="w-3 h-3 text-[#9DBDA6]" />
-              <span>My Plan</span>
+              <span>My Profile</span>
             </Link>
             <span className="text-[#3A6856]">|</span>
             <span className="font-semibold text-white">India (INR ₹, EN)</span>
@@ -448,22 +448,28 @@ export const Header: React.FC = () => {
               <span>Find My Plan</span>
             </Link>
 
-            {/* 5. Clinical Advisory */}
+            {/* 5. My Profile */}
+            <Link href="/profile" className="hover:text-[#1E3A2F] text-[#244235] transition-colors py-1.5 flex items-center gap-1 font-bold">
+              <User className="w-3.5 h-3.5 text-[#C86D51]" />
+              <span>My Profile</span>
+            </Link>
+
+            {/* 6. Clinical Advisory */}
             <Link href="/doctors" className="hover:text-[#1E3A2F] transition-colors py-1.5">
               Clinical Advisory
             </Link>
 
-            {/* 6. Learn */}
+            {/* 7. Learn */}
             <Link href="/learn" className="hover:text-[#1E3A2F] transition-colors py-1.5">
               Maternal Journal
             </Link>
 
-            {/* 7. Our Story */}
+            {/* 8. Our Story */}
             <Link href="/our-story" className="hover:text-[#1E3A2F] transition-colors py-1.5">
               Our Story
             </Link>
 
-            {/* 8. Where to Buy */}
+            {/* 9. Where to Buy */}
             <Link href="/where-to-buy" className="hover:text-[#1E3A2F] transition-colors py-1.5">
               Where to Buy
             </Link>
