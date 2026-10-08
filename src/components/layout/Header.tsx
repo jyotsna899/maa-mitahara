@@ -99,7 +99,7 @@ export const Header: React.FC = () => {
           {/* Brand Logo */}
           <div className="flex items-center gap-3 shrink-0">
             <Link href="/" className="group flex flex-col focus:outline-none">
-              <span className="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-[#211D1A] group-hover:text-[#1E3A2F] transition-colors">
+              <span className="font-display text-2xl sm:text-3xl font-bold tracking-tight text-[#1D1D1D] group-hover:text-[#1E3A2F] transition-colors">
                 Maa Mitahara
               </span>
               <span className="text-[9px] tracking-widest text-[#776D66] uppercase font-semibold">

@@ -11,11 +11,16 @@
 }
 
 body {
-  background-color: #FBF9F5;
-  color: #211D1A;
+  background-color: #FAF7F2;
+  color: #1D1D1D;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
 }
 
 /* Peak smooth transitions */

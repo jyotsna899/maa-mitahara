@@ -131,22 +131,22 @@ export default function HomePage() {
                 </span>
               </div>
 
-              {/* Headline with Peak Signature Editorial Italic Word */}
-              <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#211D1A] leading-[1.12]">
+              {/* Headline with Flux Clean Modern Display Typography */}
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#1D1D1D] leading-[1.12]">
                 Fuel your body. <br />
-                Nourish your <span className="italic font-normal text-[#1E3A2F]">journey</span>.
+                Nourish your <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">journey</span>.
               </h1>
 
               {/* Subtitle */}
-              <p className="text-sm sm:text-base text-[#66615D] leading-relaxed max-w-2xl font-normal">
+              <p className="text-sm sm:text-base text-[#574F49] leading-relaxed max-w-2xl font-normal">
                 Doctor-reviewed Ayurvedic recipes handcrafted for every gestational trimester and the 40-day postpartum Jaapa recovery. Slow-roasted in certified A2 Bilona cow ghee, whole dry fruits, and zero refined sugar.
               </p>
 
-              {/* Dual CTA Action Row */}
+              {/* Dual CTA Action Row - Flux 13px radius buttons */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
                 <Link
                   href="/quiz"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1E3A2F] hover:bg-[#152820] text-white px-7 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md transition-all group"
+                  className="inline-flex items-center justify-center gap-2.5 rounded-[13px] bg-[#1E3A2F] hover:bg-[#152820] text-white px-7 py-3.5 text-xs sm:text-sm font-bold tracking-wide shadow-sm hover:shadow transition-all group"
                 >
                   <Sparkles className="w-4 h-4 text-[#9DBDA6] group-hover:rotate-12 transition-transform" />
                   <span>Find My Trimester Plan (2 Mins)</span>
@@ -155,7 +155,7 @@ export default function HomePage() {
                 <button
                   type="button"
                   onClick={openSelector}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-[#211D1A] bg-white hover:bg-[#FAF7F2] text-[#211D1A] px-7 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-sm transition-all"
+                  className="inline-flex items-center justify-center gap-2 rounded-[13px] border border-[#1D1D1D] bg-white hover:bg-[#FAF7F2] text-[#1D1D1D] px-7 py-3.5 text-xs sm:text-sm font-bold tracking-wide shadow-xs transition-all"
                 >
                   <span>Explore 6 Stages</span>
                   <ChevronRight className="w-4 h-4 text-[#776D66]" />
@@ -279,8 +279,8 @@ export default function HomePage() {
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
                 Stage-First Discovery
               </span>
-              <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-[#211D1A] tracking-tight">
-                Where are you in your <span className="italic font-normal text-[#1E3A2F]">journey</span>?
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight">
+                Where are you in your <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">journey</span>?
               </h2>
             </div>
             <button
@@ -298,7 +298,7 @@ export default function HomePage() {
                 key={s.key}
                 href={`/stage/${s.slug}`}
                 onClick={() => setStage(s.key)}
-                className={`group rounded-[16px] border bg-white p-6 transition-all duration-300 hover:shadow-md hover:border-[#1E3A2F] flex flex-col justify-between ${
+                className={`group rounded-[14px] border bg-white p-6 transition-all duration-300 hover:shadow-md hover:border-[#1E3A2F] flex flex-col justify-between ${
                   s.key === activeStageKey
                     ? 'ring-2 ring-[#1E3A2F] border-[#1E3A2F]'
                     : 'border-[#E6DFD5]'
@@ -316,7 +316,7 @@ export default function HomePage() {
                     )}
                   </div>
 
-                  <h3 className="font-serif text-lg font-bold text-[#211D1A] group-hover:text-[#1E3A2F] transition-colors">
+                  <h3 className="font-display text-xl font-bold text-[#1D1D1D] group-hover:text-[#1E3A2F] transition-colors">
                     {s.title}
                   </h3>
 
@@ -343,28 +343,28 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Left Craft Card */}
             <div className="lg:col-span-5">
-              <div className="rounded-[20px] border border-[#D9CDBF] bg-[#FAF7F2] p-8 sm:p-10 space-y-6">
+              <div className="rounded-[16px] border border-[#D9CDBF] bg-[#FAF7F2] p-8 sm:p-10 space-y-6">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A2F] px-3 py-1 rounded-full bg-white border border-[#D9CDBF] inline-block">
                   Sacred Sourcing
                 </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#211D1A] leading-snug">
+                <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#1D1D1D] leading-snug">
                   Pure Bilona Cow Ghee. <br />
-                  <span className="italic font-normal text-[#1E3A2F]">Slow-roasted whole seeds.</span>
+                  <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">Slow-roasted whole seeds.</span>
                 </h3>
-                <p className="text-xs sm:text-sm text-[#66615D] leading-relaxed">
+                <p className="text-xs sm:text-sm text-[#574F49] leading-relaxed">
                   We reject chemical preservatives and hydrogenated fats. Each formulation is slow-roasted in curd-churned A2 desi cow ghee to ensure optimal bioavailability of fat-soluble vitamins for mother and baby.
                 </p>
 
                 <div className="space-y-3 pt-2">
-                  <div className="flex items-center gap-3 text-xs text-[#211D1A] font-semibold">
+                  <div className="flex items-center gap-3 text-xs text-[#1D1D1D] font-semibold">
                     <CheckCircle2 className="w-4 h-4 text-[#1E3A2F] shrink-0" />
                     <span>Traditional Brass &amp; Iron Vessel Roasting</span>
                   </div>
-                  <div className="flex items-center gap-3 text-xs text-[#211D1A] font-semibold">
+                  <div className="flex items-center gap-3 text-xs text-[#1D1D1D] font-semibold">
                     <CheckCircle2 className="w-4 h-4 text-[#1E3A2F] shrink-0" />
                     <span>0% Refined Sugar, Boora or High-Fructose Syrup</span>
                   </div>
-                  <div className="flex items-center gap-3 text-xs text-[#211D1A] font-semibold">
+                  <div className="flex items-center gap-3 text-xs text-[#1D1D1D] font-semibold">
                     <CheckCircle2 className="w-4 h-4 text-[#1E3A2F] shrink-0" />
                     <span>NABL Lab Re-Validation on Raw Sourcing</span>
                   </div>
@@ -377,30 +377,30 @@ export default function HomePage() {
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block">
                 Ayurvedic Maternal Science
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#211D1A] tracking-tight leading-tight">
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight leading-tight">
                 Pure ingredients. <br />
-                <span className="italic font-normal text-[#1E3A2F]">Simple rituals.</span>
+                <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">Simple rituals.</span>
               </h2>
-              <p className="text-sm sm:text-base text-[#66615D] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#574F49] leading-relaxed">
                 Traditional Indian postpartum and prenatal wisdom understood maternal recovery long before modern packaged snacks existed. We restore that sacred knowledge with clinical obstetrician governance.
               </p>
 
               {/* 3 Value Pillars */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-                <div className="p-4 rounded-xl border border-[#E6DFD5] bg-[#FAF7F2]">
-                  <h4 className="font-serif font-bold text-sm text-[#211D1A]">Steady Energy</h4>
+                <div className="p-4 rounded-[12px] border border-[#E6DFD5] bg-[#FAF7F2]">
+                  <h4 className="font-display font-bold text-sm text-[#1D1D1D]">Steady Energy</h4>
                   <p className="text-xs text-[#776D66] mt-1">
                     Complex whole millets prevent sugar spikes and afternoon fatigue.
                   </p>
                 </div>
-                <div className="p-4 rounded-xl border border-[#E6DFD5] bg-[#FAF7F2]">
-                  <h4 className="font-serif font-bold text-sm text-[#211D1A]">Pelvic Strength</h4>
+                <div className="p-4 rounded-[12px] border border-[#E6DFD5] bg-[#FAF7F2]">
+                  <h4 className="font-display font-bold text-sm text-[#1D1D1D]">Pelvic Strength</h4>
                   <p className="text-xs text-[#776D66] mt-1">
                     Pure Acacia Gond (edible gum) lubricates joints and lower back recovery.
                   </p>
                 </div>
-                <div className="p-4 rounded-xl border border-[#E6DFD5] bg-[#FAF7F2]">
-                  <h4 className="font-serif font-bold text-sm text-[#211D1A]">Gentle Digestion</h4>
+                <div className="p-4 rounded-[12px] border border-[#E6DFD5] bg-[#FAF7F2]">
+                  <h4 className="font-display font-bold text-sm text-[#1D1D1D]">Gentle Digestion</h4>
                   <p className="text-xs text-[#776D66] mt-1">
                     Cardamom and light dry fruits respect sensitive gastric balance.
                   </p>
@@ -416,44 +416,44 @@ export default function HomePage() {
       ──────────────────────────────────────────────────────────── */}
       <section className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] border-b border-[#E6DFD5]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-          <div className="rounded-[20px] border border-[#D9CDBF] bg-white p-8 sm:p-12 shadow-sm relative overflow-hidden">
+          <div className="rounded-[16px] border border-[#D9CDBF] bg-white p-8 sm:p-12 shadow-xs relative overflow-hidden">
             <div className="max-w-3xl space-y-6">
               <div className="inline-flex items-center gap-2 rounded-full bg-[#EEF3EF] px-3.5 py-1 text-xs font-bold text-[#1E3A2F]">
                 <Sparkles className="w-3.5 h-3.5 text-[#1E3A2F]" />
                 <span>Personal Nutrition Finder · PRD Clinical Engine</span>
               </div>
 
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#211D1A] tracking-tight leading-tight">
-                2 Minutes. 5 Questions. <span className="italic font-normal text-[#1E3A2F]">Zero guesswork.</span>
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight leading-tight">
+                2 Minutes. 5 Questions. <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">Zero guesswork.</span>
               </h2>
 
-              <p className="text-sm sm:text-base text-[#66615D] leading-relaxed">
+              <p className="text-sm sm:text-base text-[#574F49] leading-relaxed">
                 Every pregnancy is biologically unique. Rather than generic multivitamins, our algorithm assesses your gestational week, nausea tolerance, iron levels, and dietary flags to generate a doctor-reviewed nutritional protocol.
               </p>
 
               {/* 4-Step Process Breakdown */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
-                <div className="p-3.5 rounded-lg bg-[#FAF7F2] border border-[#E6DFD5]">
+                <div className="p-3.5 rounded-[10px] bg-[#FAF7F2] border border-[#E6DFD5]">
                   <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 1</span>
-                  <div className="font-bold text-xs text-[#211D1A] mt-0.5">Motherhood Stage</div>
+                  <div className="font-bold text-xs text-[#1D1D1D] mt-0.5">Motherhood Stage</div>
                   <p className="text-[10px] text-[#776D66] mt-0.5">Weeks 1 to 40+ or Jaapa</p>
                 </div>
 
-                <div className="p-3.5 rounded-lg bg-[#FAF7F2] border border-[#E6DFD5]">
+                <div className="p-3.5 rounded-[10px] bg-[#FAF7F2] border border-[#E6DFD5]">
                   <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 2</span>
-                  <div className="font-bold text-xs text-[#211D1A] mt-0.5">Primary Symptoms</div>
+                  <div className="font-bold text-xs text-[#1D1D1D] mt-0.5">Primary Symptoms</div>
                   <p className="text-[10px] text-[#776D66] mt-0.5">Nausea, fatigue, cramps</p>
                 </div>
 
-                <div className="p-3.5 rounded-lg bg-[#FAF7F2] border border-[#E6DFD5]">
+                <div className="p-3.5 rounded-[10px] bg-[#FAF7F2] border border-[#E6DFD5]">
                   <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 3</span>
-                  <div className="font-bold text-xs text-[#211D1A] mt-0.5">Clinical Safety</div>
+                  <div className="font-bold text-xs text-[#1D1D1D] mt-0.5">Clinical Safety</div>
                   <p className="text-[10px] text-[#776D66] mt-0.5">Gestational diabetes &amp; allergens</p>
                 </div>
 
-                <div className="p-3.5 rounded-lg bg-[#FAF7F2] border border-[#E6DFD5]">
+                <div className="p-3.5 rounded-[10px] bg-[#FAF7F2] border border-[#E6DFD5]">
                   <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 4</span>
-                  <div className="font-bold text-xs text-[#211D1A] mt-0.5">Doctor Plan</div>
+                  <div className="font-bold text-xs text-[#1D1D1D] mt-0.5">Doctor Plan</div>
                   <p className="text-[10px] text-[#776D66] mt-0.5">Daily routine &amp; serving advice</p>
                 </div>
               </div>
@@ -461,7 +461,7 @@ export default function HomePage() {
               <div className="pt-2">
                 <Link
                   href="/quiz"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#1E3A2F] hover:bg-[#152820] text-white px-8 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md transition-all"
+                  className="inline-flex items-center gap-2 rounded-[13px] bg-[#1E3A2F] hover:bg-[#152820] text-white px-8 py-3.5 text-xs sm:text-sm font-bold tracking-wide shadow-sm hover:shadow transition-all"
                 >
                   <span>Start Nutrition Finder (Free)</span>
                   <ArrowRight className="w-4 h-4 text-[#9DBDA6]" />
@@ -483,8 +483,8 @@ export default function HomePage() {
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
                 Trimester-Matched Formulations
               </span>
-              <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-[#211D1A] tracking-tight">
-                Start with <span className="italic font-normal text-[#1E3A2F]">one</span>. Build from <span className="italic font-normal text-[#1E3A2F]">there</span>.
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight">
+                Start with <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">one</span>. Build from <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">there</span>.
               </h2>
             </div>
 
@@ -566,37 +566,37 @@ export default function HomePage() {
             <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
               Foundational Standards
             </span>
-            <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-[#211D1A] tracking-tight">
-              Why <span className="italic font-normal text-[#1E3A2F]">Maa Mitahara</span> is different.
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight">
+              Why <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">Maa Mitahara</span> is different.
             </h2>
-            <p className="text-xs sm:text-sm text-[#66615D] mt-2">
+            <p className="text-xs sm:text-sm text-[#574F49] mt-2">
               Comparing authentic clinical maternal nutrition against commercial synthetics and unstandardized preparations.
             </p>
           </div>
 
           {/* Comparison Table */}
-          <div className="rounded-[16px] border border-[#E6DFD5] bg-white overflow-hidden shadow-sm">
+          <div className="rounded-[14px] border border-[#E6DFD5] bg-white overflow-hidden shadow-xs">
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse text-xs sm:text-sm">
                 <thead>
                   <tr className="border-b border-[#E6DFD5] bg-[#FAF7F2]">
-                    <th className="py-4 px-5 font-bold text-[#211D1A] w-2/5">
+                    <th className="py-4 px-5 font-bold text-[#1D1D1D] w-2/5 font-display">
                       Clinical Standard &amp; Formulation Metric
                     </th>
-                    <th className="py-4 px-5 font-bold text-[#1E3A2F] bg-[#EEF3EF] w-1/5 text-center">
+                    <th className="py-4 px-5 font-bold text-[#1E3A2F] bg-[#EEF3EF] w-1/5 text-center font-display">
                       Maa Mitahara
                     </th>
-                    <th className="py-4 px-5 font-semibold text-[#66615D] w-1/5 text-center">
+                    <th className="py-4 px-5 font-semibold text-[#66615D] w-1/5 text-center font-display">
                       Commercial Brands
                     </th>
-                    <th className="py-4 px-5 font-semibold text-[#66615D] w-1/5 text-center">
+                    <th className="py-4 px-5 font-semibold text-[#66615D] w-1/5 text-center font-display">
                       Market Laddus
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#E6DFD5]">
                   <tr>
-                    <td className="py-3.5 px-5 font-medium text-[#211D1A]">
+                    <td className="py-3.5 px-5 font-medium text-[#1D1D1D]">
                       1. Trimester-Specific Stage Differentiation
                     </td>
                     <td className="py-3.5 px-5 text-center bg-[#EEF3EF]/50 font-bold text-[#1E3A2F]">
@@ -611,7 +611,7 @@ export default function HomePage() {
                   </tr>
 
                   <tr>
-                    <td className="py-3.5 px-5 font-medium text-[#211D1A]">
+                    <td className="py-3.5 px-5 font-medium text-[#1D1D1D]">
                       2. Refined Sugar &amp; Artificial Sweeteners
                     </td>
                     <td className="py-3.5 px-5 text-center bg-[#EEF3EF]/50 font-bold text-[#1E3A2F]">
@@ -626,7 +626,7 @@ export default function HomePage() {
                   </tr>
 
                   <tr>
-                    <td className="py-3.5 px-5 font-medium text-[#211D1A]">
+                    <td className="py-3.5 px-5 font-medium text-[#1D1D1D]">
                       3. Cow Ghee Grade &amp; Purity Base
                     </td>
                     <td className="py-3.5 px-5 text-center bg-[#EEF3EF]/50 font-bold text-[#1E3A2F]">
@@ -641,7 +641,7 @@ export default function HomePage() {
                   </tr>
 
                   <tr>
-                    <td className="py-3.5 px-5 font-medium text-[#211D1A]">
+                    <td className="py-3.5 px-5 font-medium text-[#1D1D1D]">
                       4. Obstetrician Safety &amp; Dosage Verification
                     </td>
                     <td className="py-3.5 px-5 text-center bg-[#EEF3EF]/50 font-bold text-[#1E3A2F]">
@@ -671,8 +671,8 @@ export default function HomePage() {
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
                 Clinical Safety Governance
               </span>
-              <h2 className="font-serif text-2xl sm:text-4xl font-bold text-[#211D1A] tracking-tight">
-                Our Medical <span className="italic font-normal text-[#1E3A2F]">Advisory</span> Panel.
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1D1D1D] tracking-tight">
+                Our Medical <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">Advisory</span> Panel.
               </h2>
             </div>
             <Link
@@ -688,14 +688,14 @@ export default function HomePage() {
             {DOCTORS.map((doc) => (
               <div
                 key={doc.id}
-                className="rounded-[16px] border border-[#E6DFD5] bg-[#FAF7F2] p-6 space-y-4 hover:border-[#1E3A2F] transition-colors"
+                className="rounded-[14px] border border-[#E6DFD5] bg-[#FAF7F2] p-6 space-y-4 hover:border-[#1E3A2F] transition-colors"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-[#1E3A2F] text-white font-serif font-bold text-base flex items-center justify-center shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-[#1E3A2F] text-white font-display font-bold text-base flex items-center justify-center shrink-0">
                     {doc.name.split(' ')[1]?.charAt(0) || 'D'}
                   </div>
                   <div>
-                    <h3 className="font-serif text-base font-bold text-[#211D1A]">
+                    <h3 className="font-display text-base font-bold text-[#1D1D1D]">
                       {doc.name}
                     </h3>
                     <div className="text-[11px] font-semibold text-[#1E3A2F]">
@@ -704,12 +704,12 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="text-xs text-[#66615D] leading-relaxed">
+                <div className="text-xs text-[#574F49] leading-relaxed">
                   {doc.bio}
                 </div>
 
                 <div className="pt-3 border-t border-[#E6DFD5] text-[11px] text-[#776D66]">
-                  <span className="font-bold text-[#211D1A] block">Clinical Review Scope:</span>
+                  <span className="font-bold text-[#1D1D1D] block font-display">Clinical Review Scope:</span>
                   <span>{doc.reviewScope}</span>
                 </div>
               </div>
@@ -728,8 +728,8 @@ export default function HomePage() {
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
                 Real Mother Experiences
               </span>
-              <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-[#211D1A] tracking-tight">
-                In their <span className="italic font-normal text-[#1E3A2F]">own</span> words.
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight">
+                In their <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">own</span> words.
               </h2>
             </div>
 
@@ -762,9 +762,9 @@ export default function HomePage() {
             {testimonials.map((t, idx) => (
               <div
                 key={t.id}
-                className={`rounded-[16px] border bg-white p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 ${
+                className={`rounded-[14px] border bg-white p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 ${
                   activeTestimonialIdx === idx
-                    ? 'border-[#1E3A2F] shadow-md ring-1 ring-[#1E3A2F]/20'
+                    ? 'border-[#1E3A2F] shadow-sm ring-1 ring-[#1E3A2F]/20'
                     : 'border-[#E6DFD5]'
                 }`}
               >
@@ -779,13 +779,13 @@ export default function HomePage() {
                     </span>
                   </div>
 
-                  <p className="font-serif text-sm sm:text-base text-[#211D1A] leading-relaxed italic">
+                  <p className="text-sm sm:text-base text-[#1D1D1D] leading-relaxed">
                     “{t.quote}”
                   </p>
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-[#E6DFD5] space-y-1">
-                  <div className="font-bold text-xs text-[#211D1A]">{t.author}</div>
+                  <div className="font-bold text-xs text-[#1D1D1D] font-display">{t.author}</div>
                   <div className="text-[11px] text-[#776D66]">{t.role} · {t.city}</div>
                   <div className="text-[11px] text-[#1E3A2F] font-semibold pt-1">
                     Purchased: {t.productName}
@@ -805,17 +805,17 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Left Craft Card */}
             <div className="lg:col-span-5">
-              <div className="rounded-[20px] border border-[#D9CDBF] bg-gradient-to-br from-[#FAF7F2] to-[#EAE3D6] shadow-sm p-8 sm:p-10 flex flex-col justify-between min-h-[360px]">
+              <div className="rounded-[16px] border border-[#D9CDBF] bg-gradient-to-br from-[#FAF7F2] to-[#EAE3D6] shadow-xs p-8 sm:p-10 flex flex-col justify-between min-h-[360px]">
                 <div className="space-y-4">
                   <span className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A2F] px-3 py-1 rounded-full bg-white border border-[#D9CDBF] inline-block">
                     Living Heritage
                   </span>
-                  <div className="font-serif text-2xl sm:text-3xl font-medium text-[#211D1A] leading-snug">
+                  <div className="font-display text-2xl sm:text-3xl font-bold text-[#1D1D1D] leading-snug">
                     “Care that honors traditional recipes and maternal safety.”
                   </div>
                 </div>
                 <div className="pt-6 border-t border-[#D9CDBF]/60 text-xs text-[#776D66] space-y-1">
-                  <div className="font-bold text-[#211D1A]">Handcrafted to order</div>
+                  <div className="font-bold text-[#1D1D1D] font-display">Handcrafted to order</div>
                   <div>Small batches · 100% Traditional Bilona Cow Ghee</div>
                 </div>
               </div>
@@ -826,19 +826,19 @@ export default function HomePage() {
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block">
                 Founding Journey
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#211D1A] tracking-tight leading-tight">
-                “I started Maa Mitahara for the <span className="italic font-normal text-[#1E3A2F]">care</span> I couldn’t find.”
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight leading-tight">
+                “I started Maa Mitahara for the <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">care</span> I couldn’t find.”
               </h2>
-              <p className="text-sm text-[#66615D] leading-relaxed">
+              <p className="text-sm text-[#574F49] leading-relaxed">
                 When I became a mother, I discovered a heartbreaking gap: traditional postpartum wisdom was slipping away into fading memory, while modern market shelves were overflowing with synthetic capsules and high-sugar commercial products.
               </p>
-              <p className="text-sm text-[#66615D] leading-relaxed">
+              <p className="text-sm text-[#574F49] leading-relaxed">
                 Together with certified obstetricians, Ayurvedic physicians, and regional gaushalas, we standardized my grandmother’s handwritten Jaapa recipes. Today, every laddu is handcrafted to order in small batches—preserving traditional sacred nourishment with the clinical rigor every mother deserves.
               </p>
               <div className="pt-2">
                 <Link
                   href="/our-story"
-                  className="inline-flex items-center gap-2 rounded-full border border-[#211D1A] bg-white hover:bg-[#FAF7F2] text-[#211D1A] px-7 py-3 text-xs font-bold uppercase tracking-wider shadow-sm transition-all"
+                  className="inline-flex items-center gap-2 rounded-[13px] border border-[#1D1D1D] bg-white hover:bg-[#FAF7F2] text-[#1D1D1D] px-7 py-3 text-xs font-bold tracking-wide shadow-xs transition-all"
                 >
                   <span>Read Our Full Story</span>
                   <ArrowRight className="w-4 h-4 text-[#776D66]" />
@@ -857,16 +857,16 @@ export default function HomePage() {
           <span className="text-[11px] font-bold uppercase tracking-widest text-[#1E3A2F]">
             Begin Your Maternal Care Journey
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#211D1A] tracking-tight leading-tight">
-            Nourish yourself with <span className="italic font-normal text-[#1E3A2F]">reverence</span> and clinical rigour.
+          <h2 className="font-display text-3xl sm:text-5xl font-bold text-[#1D1D1D] tracking-tight leading-tight">
+            Nourish yourself with <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">reverence</span> and clinical rigour.
           </h2>
-          <p className="text-sm sm:text-base text-[#66615D] max-w-xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base text-[#574F49] max-w-xl mx-auto leading-relaxed">
             Take our two-minute Nutrition Finder to receive your personalized trimester protocol, or browse doctor-reviewed formulations matched to your current gestational stage.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/quiz"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1E3A2F] hover:bg-[#152820] text-white px-8 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md transition-all group"
+              className="inline-flex items-center justify-center gap-2 rounded-[13px] bg-[#1E3A2F] hover:bg-[#152820] text-white px-8 py-3.5 text-xs sm:text-sm font-bold tracking-wide shadow-sm hover:shadow transition-all group"
             >
               <Sparkles className="w-4 h-4 text-[#9DBDA6] group-hover:rotate-12 transition-transform" />
               <span>Take Free Nutrition Quiz</span>
@@ -875,7 +875,7 @@ export default function HomePage() {
             <button
               type="button"
               onClick={openSelector}
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-[#211D1A] bg-white hover:bg-[#FAF7F2] text-[#211D1A] px-8 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-sm transition-all"
+              className="inline-flex items-center justify-center gap-2 rounded-[13px] border border-[#1D1D1D] bg-white hover:bg-[#FAF7F2] text-[#1D1D1D] px-8 py-3.5 text-xs sm:text-sm font-bold tracking-wide shadow-xs transition-all"
             >
               <span>Explore By Trimester</span>
               <ChevronRight className="w-4 h-4 text-[#776D66]" />
