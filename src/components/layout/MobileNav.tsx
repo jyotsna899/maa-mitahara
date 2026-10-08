@@ -44,15 +44,15 @@ export const MobileNav: React.FC = () => {
           </span>
         </button>
 
-        {/* 3. Browse / Shop */}
+        {/* 3. Browse / Formulations */}
         <Link
-          href="/kits"
+          href="/products"
           className={`flex flex-col items-center justify-center py-1.5 rounded-peak transition-colors ${
-            isShop ? 'text-earth-green-800 font-bold' : 'text-charcoal-500 hover:text-charcoal-900'
+            pathname.startsWith('/products') ? 'text-[#1E3A2F] font-bold' : 'text-[#776D66] hover:text-[#211D1A]'
           }`}
         >
           <LayoutGrid className="w-5 h-5 mb-0.5" />
-          <span className="text-[10px]">Kits & Food</span>
+          <span className="text-[10px]">All Products</span>
         </Link>
 
         {/* 4. Doctors */}
