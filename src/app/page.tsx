@@ -179,48 +179,30 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right: Motherly Blush Hero Merchandising Showcase */}
+            {/* Right: All-Products Packet Collection Showcase Image */}
             <div className="lg:col-span-5 relative">
-              <div className="rounded-[20px] border border-[#F3D8CD] bg-gradient-to-b from-[#F8EBE6] to-[#FAF6F0] shadow-sm p-7 sm:p-9 flex flex-col justify-between min-h-[440px]">
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-[#C86D51] px-3 py-1 rounded-full bg-white border border-[#F3D8CD] inline-block shadow-xs">
-                      Spotlight Formulation
+              <div className="relative rounded-[20px] overflow-hidden border border-[#E8DFD3] bg-white shadow-md group">
+                <img
+                  src="/images/mitahara-all-products-hero.png"
+                  alt="Maa Mitahara Traditional Maternal Superfoods Packet Collection"
+                  className="w-full h-auto object-cover object-center group-hover:scale-102 transition-transform duration-500 ease-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-4 left-4 right-4 z-10 flex items-center justify-between bg-white/95 backdrop-blur-md p-3.5 rounded-[12px] border border-[#E8DFD3] shadow-xs">
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#C86D51] block">
+                      Authentic Recipe Packets
                     </span>
-                    <span className="text-xs font-semibold text-[#C86D51]">
-                      1st Trimester Gentle Start
-                    </span>
-                  </div>
-
-                  <div className="font-display text-2xl sm:text-3xl font-bold text-[#26211E] leading-snug">
-                    Gentle Citrus &amp; Raw Cacao. <br />
-                    <span className="underline decoration-[#E89D82] decoration-2 underline-offset-4 font-normal text-[#C86D51]">Morning stomach ease.</span>
-                  </div>
-
-                  <p className="text-xs sm:text-sm text-[#574D45] leading-relaxed">
-                    Formulated specifically for early gestational nausea, sensitive palates, and cellular magnesium support.
-                  </p>
-                </div>
-
-                {/* Interactive Anchor Card */}
-                <div className="p-4 rounded-xl bg-white/95 backdrop-blur-md border border-[#E8DFD3] shadow-xs flex items-center justify-between mt-6">
-                  <div className="min-w-0 pr-3">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#244235] block">
-                      Recommended Formulation
-                    </span>
-                    <h3 className="font-display text-sm font-bold text-[#26211E] mt-0.5 truncate">
-                      Orange &amp; Cacao Laddu
+                    <h3 className="font-display text-xs font-bold text-[#26211E]">
+                      Explore All Stage Formulations
                     </h3>
-                    <p className="text-[11px] text-[#776B61]">
-                      ₹190 (Trial) · 0% Preservatives
-                    </p>
                   </div>
                   <Link
-                    href="/product/orange-and-cacao-laddu"
-                    className="p-2.5 rounded-full bg-[#244235] text-white hover:bg-[#172B22] transition-colors shrink-0 shadow-xs"
-                    aria-label="View product details"
+                    href="/products"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#244235] text-white text-xs font-bold hover:bg-[#172B22] transition-colors shadow-xs shrink-0"
                   >
-                    <ArrowRight className="w-4 h-4" />
+                    <span>View All</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
               </div>
