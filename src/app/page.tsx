@@ -658,66 +658,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ────────────────────────────────────────────────────────────
-          5. NUTRITION FINDER HERO MODULE (Peak Guided Interactive Experience)
-      ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] border-b border-[#E6DFD5]">
-        <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-          <div className="rounded-[16px] border border-[#D9CDBF] bg-white p-8 sm:p-12 shadow-xs relative overflow-hidden">
-            <div className="max-w-3xl space-y-6">
-              <div className="inline-flex items-center gap-2 rounded-full bg-[#EEF3EF] px-3.5 py-1 text-xs font-bold text-[#1E3A2F]">
-                <Sparkles className="w-3.5 h-3.5 text-[#1E3A2F]" />
-                <span>Personal Nutrition Finder · PRD Clinical Engine</span>
-              </div>
-
-              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight leading-tight">
-                2 Minutes. 5 Questions. <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">Zero guesswork.</span>
-              </h2>
-
-              <p className="text-sm sm:text-base text-[#574F49] leading-relaxed">
-                Every pregnancy is biologically unique. Rather than generic multivitamins, our algorithm assesses your gestational week, nausea tolerance, iron levels, and dietary flags to generate a doctor-reviewed nutritional protocol.
-              </p>
-
-              {/* 4-Step Process Breakdown */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
-                <div className="p-3.5 rounded-[10px] bg-[#FAF7F2] border border-[#E6DFD5]">
-                  <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 1</span>
-                  <div className="font-bold text-xs text-[#1D1D1D] mt-0.5">Motherhood Stage</div>
-                  <p className="text-[10px] text-[#776D66] mt-0.5">Weeks 1 to 40+ or Jaapa</p>
-                </div>
-
-                <div className="p-3.5 rounded-[10px] bg-[#FAF7F2] border border-[#E6DFD5]">
-                  <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 2</span>
-                  <div className="font-bold text-xs text-[#1D1D1D] mt-0.5">Primary Symptoms</div>
-                  <p className="text-[10px] text-[#776D66] mt-0.5">Nausea, fatigue, cramps</p>
-                </div>
-
-                <div className="p-3.5 rounded-[10px] bg-[#FAF7F2] border border-[#E6DFD5]">
-                  <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 3</span>
-                  <div className="font-bold text-xs text-[#1D1D1D] mt-0.5">Clinical Safety</div>
-                  <p className="text-[10px] text-[#776D66] mt-0.5">Gestational diabetes &amp; allergens</p>
-                </div>
-
-                <div className="p-3.5 rounded-[10px] bg-[#FAF7F2] border border-[#E6DFD5]">
-                  <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 4</span>
-                  <div className="font-bold text-xs text-[#1D1D1D] mt-0.5">Doctor Plan</div>
-                  <p className="text-[10px] text-[#776D66] mt-0.5">Daily routine &amp; serving advice</p>
-                </div>
-              </div>
-
-              <div className="pt-2">
-                <Link
-                  href="/quiz"
-                  className="inline-flex items-center gap-2 rounded-[13px] bg-[#1E3A2F] hover:bg-[#152820] text-white px-8 py-3.5 text-xs sm:text-sm font-bold tracking-wide shadow-sm hover:shadow transition-all"
-                >
-                  <span>Start Nutrition Finder (Free)</span>
-                  <ArrowRight className="w-4 h-4 text-[#9DBDA6]" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ────────────────────────────────────────────────────────────
           6. RECOMMENDED PRODUCTS (Peak Merchandising Grid)
