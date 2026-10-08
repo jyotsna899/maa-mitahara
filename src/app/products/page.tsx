@@ -104,8 +104,8 @@ export default function AllProductsPage() {
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-1">
                 Stage-First Product Catalogue
               </span>
-              <h1 className="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-[#211D1A]">
-                Nourishment by <span className="italic font-normal text-[#1E3A2F]">Stage & Need</span>.
+              <h1 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-[#1D1D1D]">
+                Nourishment by <span className="italic font-normal text-[#1E3A2F]">Stage &amp; Need</span>.
               </h1>
               <p className="mt-2 text-sm sm:text-base text-[#66615D] max-w-2xl leading-relaxed">
                 Explore doctor-reviewed Ayurvedic recipes handcrafted with A2 Bilona cow ghee, whole dry fruits, and zero refined sugar. Filter by gestational stage or physiological need.

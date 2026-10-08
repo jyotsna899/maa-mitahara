@@ -385,17 +385,17 @@ export default function ProductDetailPage({
                   {stageDef?.title || primaryStageKey.replace('_', ' ')}
                 </span>
               </div>
-              <h1 className="font-serif text-3xl sm:text-4xl font-bold text-[#211D1A] tracking-tight">
+              <h1 className="font-display text-3xl sm:text-4xl font-bold text-[#1D1D1D] tracking-tight">
                 {cleanTitle}
               </h1>
-              <p className="mt-2.5 text-sm sm:text-base text-[#1E3A2F] font-semibold leading-relaxed">
+              <p className="mt-2.5 text-sm sm:text-base text-[#1E3A2F] font-semibold leading-relaxed font-sans">
                 {product.stageBenefitSummary}
               </p>
             </div>
 
             {/* 3. Price Display & Dynamic Price per 100g */}
             <div className="flex items-baseline gap-3 pb-4 border-b border-[#E6DFD5]">
-              <span className="font-serif text-3xl sm:text-4xl font-bold text-[#211D1A]">
+              <span className="font-display text-3xl sm:text-4xl font-bold text-[#1D1D1D]">
                 ₹{effectivePrice}
               </span>
               {isSubscription && (

@@ -76,7 +76,8 @@ const config: Config = {
       },
       fontFamily: {
         serif: ['var(--font-serif)', 'Playfair Display', 'Georgia', 'serif'],
-        sans: ['var(--font-sans)', 'Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'Josefin Sans', 'Plus Jakarta Sans', 'sans-serif'],
+        sans: ['var(--font-sans)', 'Jost', 'Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         'peak-sm': '0 1px 3px rgba(33, 29, 26, 0.04), 0 1px 2px rgba(33, 29, 26, 0.02)',

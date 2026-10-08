@@ -193,13 +193,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, userStageKey 
 
             {/* Question 3: What is the product? */}
             <Link href={`/product/${product.slug}`} className="block focus:outline-none">
-              <h3 className="font-serif text-sm sm:text-[15px] font-bold text-[#211D1A] group-hover:text-[#1E3A2F] transition-colors line-clamp-1 leading-snug">
+              <h3 className="font-display text-[15px] sm:text-base font-bold tracking-tight text-[#1D1D1D] group-hover:text-[#1E3A2F] transition-colors line-clamp-1 leading-snug">
                 {cleanDisplayName}
               </h3>
             </Link>
 
             {/* Question 5: Why should I click it? (Concise benefit summary) */}
-            <p className="mt-1 text-xs text-[#66615D] line-clamp-2 leading-relaxed">
+            <p className="mt-1 text-xs text-[#574F49] line-clamp-2 leading-relaxed font-sans">
               {product.stageBenefitSummary}
             </p>
 
