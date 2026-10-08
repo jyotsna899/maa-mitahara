@@ -30,6 +30,7 @@ import {
   Info,
   Calendar,
   Flame,
+  SlidersHorizontal,
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -252,67 +253,223 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────
-          3. STAGE CARDS (PRD Stage-First Hierarchy: STAGE -> NEED -> PRODUCT)
+          3. PHASE-BY-PHASE MATERNAL CARE MATRIX (STAGE -> NEED -> PRODUCT)
       ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] border-b border-[#E6DFD5]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#FAF6F0] border-b border-[#E8DFD3]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
-            <div>
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
-                Stage-First Discovery
+          {/* Section Header */}
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
+            <div className="max-w-3xl">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#C86D51] block mb-2">
+                Stage-First Biological Nutrition
               </span>
-              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight">
-                Where are you in your <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">journey</span>?
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#26211E] tracking-tight">
+                Nourishment matched to <span className="underline decoration-[#E89D82] decoration-4 underline-offset-8 font-normal text-[#C86D51]">every phase</span>.
               </h2>
+              <p className="mt-3 text-xs sm:text-sm text-[#574D45] leading-relaxed">
+                Each gestational phase demands distinct biological nutrients. Explore the exact nutritional science required at each stage—and the doctor-reviewed formulations handcrafted for it.
+              </p>
             </div>
+
             <button
               onClick={openSelector}
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1E3A2F] hover:underline"
+              className="inline-flex items-center gap-2 rounded-full border border-[#C86D51] bg-[#F8EBE6] hover:bg-[#F3D8CD] text-[#C86D51] px-5 py-2.5 text-xs font-bold transition-all shrink-0 shadow-xs"
             >
-              <span>Switch Active Stage Window</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+              <SlidersHorizontal className="w-3.5 h-3.5" />
+              <span>Select Active Trimester ({currentStageDef.title})</span>
             </button>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {STAGE_LIST.map((s) => (
-              <Link
-                key={s.key}
-                href={`/stage/${s.slug}`}
-                onClick={() => setStage(s.key)}
-                className={`group rounded-[14px] border bg-white p-6 transition-all duration-300 hover:shadow-md hover:border-[#1E3A2F] flex flex-col justify-between ${
-                  s.key === activeStageKey
-                    ? 'ring-2 ring-[#1E3A2F] border-[#1E3A2F]'
-                    : 'border-[#E6DFD5]'
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#FAF7F2] text-[#776D66] border border-[#E6DFD5]">
-                      {s.weekRange}
-                    </span>
-                    {s.key === activeStageKey && (
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-[#1E3A2F] bg-[#EEF3EF] px-2 py-0.5 rounded-full">
-                        Active Stage
-                      </span>
-                    )}
+          {/* Vertical Stacked Phase Segments */}
+          <div className="space-y-10">
+            {[
+              {
+                key: 'trying_to_conceive',
+                badge: 'PHASE 01 · PRE-CONCEPTION',
+                title: 'Trying to Conceive',
+                weekRange: 'Pre-pregnancy Preparation (3 to 6 Months Prior)',
+                shortDesc: 'Foundational nourishment and hormonal equilibrium to cultivate an optimal reproductive environment before conception.',
+                nutritionHighlights: [
+                  { title: 'Cellular Micronutrients', detail: 'Folate, Zinc & B-complex precursors for egg quality & reproductive vitality.' },
+                  { title: 'Hormonal Warmth', detail: 'Gentle digestive warming spices to balance Vata and promote uterine circulation.' },
+                  { title: 'Clean Energy Base', detail: '0% refined sugars or synthetic maltodextrins to prevent glucose spikes.' },
+                ],
+                doctorNote: 'Clinical Review: Free from pregnancy-held heating herbs like Acacia Gond.',
+                matchedProducts: [
+                  PRODUCTS.find((p) => p.slug === 'multigrain-laddu') || PRODUCTS[1],
+                  PRODUCTS.find((p) => p.slug === 'dryfruit-laddu') || PRODUCTS[2],
+                ],
+                stageSlug: 'trying-to-conceive',
+              },
+              {
+                key: 'first_trimester',
+                badge: 'PHASE 02 · WEEKS 1 TO 13',
+                title: '1st Trimester Care',
+                weekRange: 'Weeks 1 to 13 of Pregnancy',
+                shortDesc: 'Gentle, light formulations crafted specifically for early morning nausea, sensitive palates, and cellular embryonic formation.',
+                nutritionHighlights: [
+                  { title: 'Morning Stomach Ease', detail: 'Cold-pressed citrus zest & raw Peruvian cacao calm early morning gastric reflex.' },
+                  { title: 'Cellular Magnesium Support', detail: 'Bioavailable magnesium to relieve early muscular fatigue & pelvic cramps.' },
+                  { title: '0% Heavy Heating Herbs', detail: 'Strictly restricts Acacia Gond & Methi during early embryonic attachment.' },
+                ],
+                doctorNote: 'Obstetrician Protocol: Formulated for maximum stomach tolerance & zero aroma triggers.',
+                matchedProducts: [
+                  PRODUCTS.find((p) => p.slug === 'orange-and-cacao-laddu') || PRODUCTS[0],
+                ],
+                stageSlug: 'first-trimester',
+              },
+              {
+                key: 'second_trimester',
+                badge: 'PHASE 03 · WEEKS 14 TO 27',
+                title: '2nd Trimester Growth',
+                weekRange: 'Weeks 14 to 27 of Pregnancy',
+                shortDesc: 'Sustained energy, dietary iron, and calcium support during the golden trimester of rapid fetal skeletal growth.',
+                nutritionHighlights: [
+                  { title: 'Multi-Millet Skeletal Matrix', detail: 'Sprouted Ragi, Jowar & Bajra supply bioavailable calcium & plant protein.' },
+                  { title: 'Blood-Building Iron', detail: 'Supports expanding maternal blood volume & cellular oxygen delivery.' },
+                  { title: 'A2 Bilona Cow Ghee', detail: 'Slow-roasted in curd-churned ghee to ensure vitamin A, D, E, K absorption.' },
+                ],
+                doctorNote: 'Serving Guide: 1 Laddu daily with warm cow milk at 4 PM to prevent afternoon energy slumps.',
+                matchedProducts: [
+                  PRODUCTS.find((p) => p.slug === 'multigrain-laddu') || PRODUCTS[1],
+                ],
+                stageSlug: 'second-trimester',
+              },
+              {
+                key: 'third_trimester',
+                badge: 'PHASE 04 · WEEKS 28 TO DELIVERY',
+                title: '3rd Trimester Vitality',
+                weekRange: 'Weeks 28 to Delivery',
+                shortDesc: 'Concentrated natural dry fruits, healthy essential fatty acids, and pelvic stamina for the final trimester and labor readiness.',
+                nutritionHighlights: [
+                  { title: 'Essential DHA & EPA Precursors', detail: 'Crushed almonds, walnuts & pistachios fuel late-stage fetal brain growth.' },
+                  { title: 'Labor Stamina Reserves', detail: 'Date & jaggery natural carbohydrates build maternal physical endurance.' },
+                  { title: 'Digestive Fiber Smoothness', detail: 'Whole seed fiber eases late-stage gastric pressure & constipation.' },
+                ],
+                doctorNote: 'Clinical Guard: 0% refined sugar to maintain safe glycemic balance before delivery.',
+                matchedProducts: [
+                  PRODUCTS.find((p) => p.slug === 'dryfruit-laddu') || PRODUCTS[2],
+                ],
+                stageSlug: 'third-trimester',
+              },
+              {
+                key: 'postpartum',
+                badge: 'PHASE 05 · DAY 1 TO 12 MONTHS',
+                title: 'Postpartum & Lactation (Jaapa)',
+                weekRange: 'Day 1 to 12 Months Post-Delivery',
+                shortDesc: 'Sacred traditional Jaapa recovery staples to restore lower back strength, lubricate pelvic joints, and enrich breast milk.',
+                nutritionHighlights: [
+                  { title: 'Acacia Gond (Edible Gum)', detail: 'Fried Babul Gond lubricates spinal joints & accelerates pelvic recovery.' },
+                  { title: 'Dana Methi Galactagogues', detail: 'Roasted fenugreek stimulates prolactin release for steady nursing supply.' },
+                  { title: 'Uterine Involution Support', detail: 'Warming traditional spices assist natural post-birth internal cleansing.' },
+                ],
+                doctorNote: 'Post-Delivery Protocol: Recommended from Day 3 onwards for 40 days of restorative Jaapa care.',
+                matchedProducts: [
+                  PRODUCTS.find((p) => p.slug === 'gond-giri-laddu') || PRODUCTS[3],
+                  PRODUCTS.find((p) => p.slug === 'dana-methi-laddu') || PRODUCTS[4],
+                ],
+                stageSlug: 'postpartum',
+              },
+            ].map((phase, idx) => {
+              const isCurrentActive = activeStageKey === phase.key;
+              return (
+                <div
+                  key={phase.key}
+                  className={`rounded-[20px] border bg-white p-6 sm:p-8 lg:p-10 shadow-sm transition-all duration-300 relative ${
+                    isCurrentActive
+                      ? 'border-[#C86D51] ring-2 ring-[#C86D51]/30'
+                      : 'border-[#E8DFD3]'
+                  }`}
+                >
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                    {/* LEFT SIDE: Nutrition Needed & Phase Science */}
+                    <div className="lg:col-span-7 space-y-5">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="inline-flex items-center rounded-full bg-[#F8EBE6] text-[#C86D51] px-3 py-1 text-[10px] font-bold uppercase tracking-wider border border-[#F3D8CD]">
+                          {phase.badge}
+                        </span>
+                        {isCurrentActive && (
+                          <span className="inline-flex items-center gap-1 rounded-full bg-[#E8F1EC] text-[#244235] px-3 py-1 text-[10px] font-bold uppercase tracking-wider border border-[#C8DCD1]">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#244235] animate-pulse" />
+                            Your Active Trimester
+                          </span>
+                        )}
+                      </div>
+
+                      <div>
+                        <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#26211E]">
+                          {phase.title}
+                        </h3>
+                        <span className="text-xs font-semibold text-[#C86D51] mt-0.5 block">
+                          {phase.weekRange}
+                        </span>
+                        <p className="text-xs sm:text-sm text-[#574D45] mt-2 leading-relaxed">
+                          {phase.shortDesc}
+                        </p>
+                      </div>
+
+                      {/* Nutrition Needed Points */}
+                      <div className="space-y-2.5 pt-1">
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-[#244235] block">
+                          Essential Biological Nutrition Needed:
+                        </span>
+                        <div className="space-y-2">
+                          {phase.nutritionHighlights.map((nh, nIdx) => (
+                            <div key={nIdx} className="flex items-start gap-2.5 text-xs text-[#26211E]">
+                              <CheckCircle2 className="w-4 h-4 text-[#C86D51] shrink-0 mt-0.5" />
+                              <div>
+                                <strong className="font-bold text-[#26211E]">{nh.title}: </strong>
+                                <span className="text-[#574D45]">{nh.detail}</span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Doctor Safety Note Box */}
+                      <div className="p-3 rounded-xl bg-[#E8F1EC] border border-[#C8DCD1] text-xs text-[#244235] flex items-center gap-2">
+                        <Stethoscope className="w-4 h-4 shrink-0 text-[#244235]" />
+                        <span className="font-medium">{phase.doctorNote}</span>
+                      </div>
+
+                      {/* Explore Stage Button */}
+                      <div className="pt-2">
+                        <Link
+                          href={`/stage/${phase.stageSlug}`}
+                          onClick={() => setStage(phase.key as StageKey)}
+                          className="inline-flex items-center gap-2 text-xs font-bold text-[#244235] hover:text-[#C86D51] group transition-colors"
+                        >
+                          <span>Explore Full {phase.title} Protocol</span>
+                          <ArrowRight className="w-4 h-4 text-[#C86D51] group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* RIGHT SIDE: Related Formulations with Packet Images */}
+                    <div className="lg:col-span-5 bg-[#FAF6F0] p-5 sm:p-6 rounded-card border border-[#E8DFD3] space-y-3">
+                      <div className="flex items-center justify-between border-b border-[#E8DFD3] pb-2">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-[#244235]">
+                          Phase Formulation{phase.matchedProducts.length > 1 ? 's' : ''}
+                        </span>
+                        <span className="text-[10px] text-[#776B61] font-medium">
+                          Handcrafted to Order
+                        </span>
+                      </div>
+
+                      <div className={`grid gap-4 ${phase.matchedProducts.length > 1 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
+                        {phase.matchedProducts.map((product) => (
+                          <ProductCard
+                            key={product.id}
+                            product={product}
+                            userStageKey={phase.key}
+                          />
+                        ))}
+                      </div>
+                    </div>
                   </div>
-
-                  <h3 className="font-display text-xl font-bold text-[#1D1D1D] group-hover:text-[#1E3A2F] transition-colors">
-                    {s.title}
-                  </h3>
-
-                  <p className="text-xs text-[#66615D] mt-2 leading-relaxed line-clamp-2">
-                    {s.shortDescription}
-                  </p>
                 </div>
-
-                <div className="mt-6 pt-4 border-t border-[#E6DFD5] flex items-center justify-between text-xs font-semibold text-[#1E3A2F]">
-                  <span>Explore Stage Formulations</span>
-                  <ChevronRight className="w-4 h-4 text-[#D9CDBF] group-hover:text-[#1E3A2F] group-hover:translate-x-1 transition-all" />
-                </div>
-              </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
