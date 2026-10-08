@@ -23,6 +23,13 @@ import {
   Leaf,
   Heart,
   BookOpen,
+  Wheat,
+  Activity,
+  Check,
+  Stethoscope,
+  Info,
+  Calendar,
+  Flame,
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -35,10 +42,9 @@ export default function HomePage() {
   // Quick View modal state
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
 
-  // Tabbed Collection State ("Start with one. Build from there.")
+  // Filter products for the tabbed collection ("Start with one. Build from there.")
   const [activeCollectionTab, setActiveCollectionTab] = useState<'stage' | 'bestsellers' | 'jaapa' | 'nausea'>('stage');
 
-  // Filter products for the tabbed collection
   const getTabProducts = () => {
     switch (activeCollectionTab) {
       case 'stage':
@@ -61,69 +67,79 @@ export default function HomePage() {
 
   const tabProducts = getTabProducts();
 
+  // Hero Spotlight Hero Formulation (Peak Style)
+  const heroSpotlightProduct =
+    PRODUCTS.find((p) => p.slug === 'orange-and-cacao-laddu') ||
+    PRODUCTS.find((p) => p.isHero) ||
+    PRODUCTS[0];
+
   // Real Customer Reviews State
   const [activeTestimonialIdx, setActiveTestimonialIdx] = useState(0);
   const testimonials = [
     {
       id: 1,
-      quote: "During my 2nd trimester, I suffered from severe fatigue and leg cramps. The Multigrain Laddu became my mandatory 4 PM ritual. Knowing it's reviewed by obstetricians and made with pure bilona ghee gave me total peace of mind.",
-      author: "Pooja Sharma",
-      role: "Mother of twin boys · 2nd Trimester Care",
-      city: "New Delhi",
+      quote:
+        'During my 2nd trimester, I suffered from severe fatigue and leg cramps. The Multigrain Laddu became my mandatory 4 PM ritual. Knowing it is reviewed by obstetricians and made with pure bilona ghee gave me total peace of mind.',
+      author: 'Pooja Sharma',
+      role: 'Mother of twin boys · 2nd Trimester Care',
+      city: 'New Delhi',
       rating: 5,
-      productName: "Multigrain Laddu (Mom-to-Be)",
-      productSlug: "multigrain-laddu",
+      productName: 'Multigrain Laddu (Mom-to-Be)',
+      productSlug: 'multigrain-laddu',
     },
     {
       id: 2,
-      quote: "Finding pure, unadulterated Gond Laddus in Bangalore for my Jaapa was impossible until I found Maa Mitahara. The texture, freshness, and absence of white sugar made my 40-day recovery so smooth.",
-      author: "Sneha Reddy",
-      role: "Postpartum Mother · 40-Day Jaapa Journey",
-      city: "Bengaluru",
+      quote:
+        'Finding pure, unadulterated Gond Laddus for my Jaapa was impossible until I found Maa Mitahara. The crunch of edible gum, freshness, and absence of white sugar made my 40-day recovery smooth and deeply restorative.',
+      author: 'Sneha Reddy',
+      role: 'Postpartum Mother · 40-Day Jaapa Journey',
+      city: 'Bengaluru',
       rating: 5,
-      productName: "Gond Giri & Meva Laddu",
-      productSlug: "gond-giri-laddu",
+      productName: 'Gond Giri Laddu',
+      productSlug: 'gond-giri-laddu',
     },
     {
       id: 3,
-      quote: "First trimester nausea made almost all prenatal vitamins and powders unbearable. The Orange & Cacao Laddu was gentle on my palate and settled my morning gastric reflex wonderfully.",
-      author: "Dr. Ananya Mathur",
-      role: "Expectant Mother & Dental Surgeon · 1st Trimester",
-      city: "Mumbai",
+      quote:
+        'First trimester nausea made almost all prenatal tablets unbearable. The Orange & Cacao Laddu was gentle on my palate, settled my early morning reflex, and provided sustained energy without sudden crashes.',
+      author: 'Dr. Ananya Mathur',
+      role: 'Expectant Mother & Dental Surgeon · 1st Trimester',
+      city: 'Mumbai',
       rating: 5,
-      productName: "Orange & Cacao Laddu",
-      productSlug: "orange-and-cacao-laddu",
+      productName: 'Orange & Cacao Laddu',
+      productSlug: 'orange-and-cacao-laddu',
     },
   ];
 
   return (
     <div className="flex flex-col bg-[#FAF7F2] text-[#211D1A] overflow-hidden selection:bg-[#1E3A2F] selection:text-white">
       {/* ────────────────────────────────────────────────────────────
-          1. HERO / CORE PROPOSITION
+          1. PEAK FULL-WIDTH EDITORIAL HERO (Wellness Rhythm)
       ──────────────────────────────────────────────────────────── */}
-      <section className="relative bg-[#FAF7F2] py-12 sm:py-20 lg:py-24 border-b border-[#E6DFD5]">
+      <section className="relative bg-[#FAF7F2] py-14 sm:py-20 lg:py-24 border-b border-[#E6DFD5] overflow-hidden">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-6">
-              {/* Micro Stage Pill */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#D9CDBF] bg-white px-3.5 py-1 text-xs font-semibold text-[#211D1A] shadow-sm">
+              {/* Active Trimester Pill */}
+              <div className="inline-flex items-center gap-2 rounded-full border border-[#D9CDBF] bg-white px-3.5 py-1 text-xs font-semibold text-[#211D1A] shadow-xs">
                 <span className="w-2 h-2 rounded-full bg-[#1E3A2F] animate-pulse" />
-                <span>Active Trimester Guidance</span>
+                <span>Trimester Guidance</span>
                 <span className="text-[#D9CDBF]">·</span>
                 <span className="text-[#1E3A2F] font-bold">
                   {currentStageDef.title} ({currentStageDef.weekRange})
                 </span>
               </div>
 
-              {/* Large Headline with Signature Editorial Italic Word */}
+              {/* Headline with Peak Signature Editorial Italic Word */}
               <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#211D1A] leading-[1.12]">
-                The sacred <span className="italic font-normal text-[#1E3A2F]">ritual</span> your body’s been asking for.
+                Fuel your body. <br />
+                Nourish your <span className="italic font-normal text-[#1E3A2F]">journey</span>.
               </h1>
 
-              {/* Body Subtitle */}
-              <p className="text-sm sm:text-base text-[#66615D] leading-relaxed max-w-2xl">
-                Doctor-reviewed Ayurvedic superfoods formulated for every gestational trimester and the 40-day postpartum Jaapa journey. Handcrafted with A2 Bilona cow ghee, whole dry fruits, and zero refined sugar.
+              {/* Subtitle */}
+              <p className="text-sm sm:text-base text-[#66615D] leading-relaxed max-w-2xl font-normal">
+                Doctor-reviewed Ayurvedic recipes handcrafted for every gestational trimester and the 40-day postpartum Jaapa recovery. Slow-roasted in certified A2 Bilona cow ghee, whole dry fruits, and zero refined sugar.
               </p>
 
               {/* Dual CTA Action Row */}
@@ -133,7 +149,7 @@ export default function HomePage() {
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[#1E3A2F] hover:bg-[#152820] text-white px-7 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md transition-all group"
                 >
                   <Sparkles className="w-4 h-4 text-[#9DBDA6] group-hover:rotate-12 transition-transform" />
-                  <span>Find My Plan (2 Mins)</span>
+                  <span>Find My Trimester Plan (2 Mins)</span>
                 </Link>
 
                 <button
@@ -146,15 +162,15 @@ export default function HomePage() {
                 </button>
               </div>
 
-              {/* Hero Clinical Proof Micro-Points */}
+              {/* Purity Guarantee Trust Chips */}
               <div className="pt-4 border-t border-[#E6DFD5] flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-[#776D66]">
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#1E3A2F]" />
-                  <span>Verified by Senior Obstetricians</span>
+                  <span>Obstetrician Safety Reviewed</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#1E3A2F]" />
-                  <span>Central FSSAI Registered</span>
+                  <span>0% White Sugar · Jaggery Sweetened</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#1E3A2F]" />
@@ -163,37 +179,44 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Craft Presentation Card (Zero Stock Photography) */}
+            {/* Right: Peak-Inspired Hero Merchandising Showcase */}
             <div className="lg:col-span-5 relative">
-              <div className="relative rounded-[16px] overflow-hidden border border-[#D9CDBF] bg-gradient-to-br from-[#FAF7F2] to-[#EFE9DF] shadow-xl p-8 sm:p-10 flex flex-col justify-between min-h-[420px]">
+              <div className="rounded-[20px] border border-[#D9CDBF] bg-gradient-to-b from-[#FAF7F2] to-[#EAE3D6] shadow-lg p-7 sm:p-9 flex flex-col justify-between min-h-[440px]">
                 <div className="space-y-4">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A2F] px-3 py-1 rounded-full bg-white border border-[#D9CDBF] inline-block shadow-sm">
-                    Ayurvedic Maternal Science
-                  </span>
-                  <div className="font-serif text-2xl sm:text-3xl font-medium text-[#211D1A] leading-snug">
-                    Pure nourishment. <br />
-                    <span className="italic font-normal text-[#1E3A2F]">Zero shortcuts.</span>
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A2F] px-3 py-1 rounded-full bg-white border border-[#D9CDBF] inline-block shadow-xs">
+                      Spotlight Formulation
+                    </span>
+                    <span className="text-xs font-semibold text-[#C85A32]">
+                      1st Trimester Gentle Start
+                    </span>
                   </div>
+
+                  <div className="font-serif text-2xl sm:text-3xl font-medium text-[#211D1A] leading-snug">
+                    Gentle Citrus &amp; Raw Cacao. <br />
+                    <span className="italic font-normal text-[#1E3A2F]">Morning stomach ease.</span>
+                  </div>
+
                   <p className="text-xs sm:text-sm text-[#66615D] leading-relaxed">
-                    Prepared in traditional brass and cast-iron vessels with certified A2 Desi cow bilona ghee and nutrient-dense botanicals.
+                    Formulated specifically for early gestational nausea, sensitive palates, and cellular magnesium support.
                   </p>
                 </div>
 
-                {/* Floating Stage Card Anchor */}
-                <div className="p-4 rounded-xl bg-white/95 backdrop-blur-md border border-[#E6DFD5] shadow-md flex items-center justify-between mt-6">
-                  <div>
+                {/* Interactive Anchor Card */}
+                <div className="p-4 rounded-xl bg-white/95 backdrop-blur-md border border-[#E6DFD5] shadow-sm flex items-center justify-between mt-6">
+                  <div className="min-w-0 pr-3">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-[#1E3A2F] block">
-                      Recommended For {currentStageDef.title}
+                      Recommended Formulation
                     </span>
-                    <h3 className="font-serif text-sm font-bold text-[#211D1A] mt-0.5">
-                      Gond Giri & Dryfruit Laddu
+                    <h3 className="font-serif text-sm font-bold text-[#211D1A] mt-0.5 truncate">
+                      Orange &amp; Cacao Laddu
                     </h3>
                     <p className="text-[11px] text-[#776D66]">
-                      For Pelvic Strength & Bone Density · ₹540
+                      ₹190 (Trial) · 0% Preservatives
                     </p>
                   </div>
                   <Link
-                    href="/product/gond-giri-laddu"
+                    href="/product/orange-and-cacao-laddu"
                     className="p-2.5 rounded-full bg-[#1E3A2F] text-white hover:bg-[#152820] transition-colors shrink-0 shadow-sm"
                     aria-label="View product details"
                   >
@@ -207,14 +230,54 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────
-          2. FIND MY PLAN + SHOP BY STAGE (6 Pillars)
+          2. PEAK DIETARY & BOTANICAL ICONS STRIP (Peak Visual Reference)
       ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-white border-b border-[#E6DFD5]">
+      <section className="bg-white py-6 border-b border-[#E6DFD5]">
+        <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-center">
+            <div className="p-3 rounded-card bg-[#FAF7F2] border border-[#E6DFD5] flex flex-col items-center justify-center">
+              <Leaf className="w-5 h-5 text-[#1E3A2F] mb-1.5" />
+              <span className="text-xs font-bold text-[#211D1A]">A2 Cow Ghee</span>
+              <span className="text-[10px] text-[#776D66]">Bilona Churned</span>
+            </div>
+            <div className="p-3 rounded-card bg-[#FAF7F2] border border-[#E6DFD5] flex flex-col items-center justify-center">
+              <ShieldCheck className="w-5 h-5 text-[#1E3A2F] mb-1.5" />
+              <span className="text-xs font-bold text-[#211D1A]">0% White Sugar</span>
+              <span className="text-[10px] text-[#776D66]">Jaggery &amp; Dates</span>
+            </div>
+            <div className="p-3 rounded-card bg-[#FAF7F2] border border-[#E6DFD5] flex flex-col items-center justify-center">
+              <Stethoscope className="w-5 h-5 text-[#1E3A2F] mb-1.5" />
+              <span className="text-xs font-bold text-[#211D1A]">Doctor Reviewed</span>
+              <span className="text-[10px] text-[#776D66]">Certified Obstetricians</span>
+            </div>
+            <div className="p-3 rounded-card bg-[#FAF7F2] border border-[#E6DFD5] flex flex-col items-center justify-center">
+              <Truck className="w-5 h-5 text-[#1E3A2F] mb-1.5" />
+              <span className="text-xs font-bold text-[#211D1A]">Fresh Batches</span>
+              <span className="text-[10px] text-[#776D66]">Fortnightly Small Batches</span>
+            </div>
+            <div className="p-3 rounded-card bg-[#FAF7F2] border border-[#E6DFD5] flex flex-col items-center justify-center">
+              <Wheat className="w-5 h-5 text-[#1E3A2F] mb-1.5" />
+              <span className="text-xs font-bold text-[#211D1A]">Whole Millets</span>
+              <span className="text-[10px] text-[#776D66]">Ragi, Jowar, Wheat</span>
+            </div>
+            <div className="p-3 rounded-card bg-[#FAF7F2] border border-[#E6DFD5] flex flex-col items-center justify-center">
+              <Award className="w-5 h-5 text-[#1E3A2F] mb-1.5" />
+              <span className="text-xs font-bold text-[#211D1A]">Central FSSAI</span>
+              <span className="text-[10px] text-[#776D66]">Strict Food Safety</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────────
+          3. STAGE CARDS (PRD Stage-First Hierarchy: STAGE -> NEED -> PRODUCT)
+      ──────────────────────────────────────────────────────────── */}
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] border-b border-[#E6DFD5]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
-                Stage-First Architecture
+                Stage-First Discovery
               </span>
               <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-[#211D1A] tracking-tight">
                 Where are you in your <span className="italic font-normal text-[#1E3A2F]">journey</span>?
@@ -235,13 +298,15 @@ export default function HomePage() {
                 key={s.key}
                 href={`/stage/${s.slug}`}
                 onClick={() => setStage(s.key)}
-                className={`group rounded-card border bg-[#FAF7F2] p-6 transition-all duration-300 hover:bg-white hover:shadow-md hover:border-[#1E3A2F] flex flex-col justify-between ${
-                  s.key === activeStageKey ? 'ring-2 ring-[#1E3A2F] border-[#1E3A2F] bg-white' : 'border-[#E6DFD5]'
+                className={`group rounded-[16px] border bg-white p-6 transition-all duration-300 hover:shadow-md hover:border-[#1E3A2F] flex flex-col justify-between ${
+                  s.key === activeStageKey
+                    ? 'ring-2 ring-[#1E3A2F] border-[#1E3A2F]'
+                    : 'border-[#E6DFD5]'
                 }`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-white text-[#776D66] border border-[#E6DFD5]">
+                    <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#FAF7F2] text-[#776D66] border border-[#E6DFD5]">
                       {s.weekRange}
                     </span>
                     {s.key === activeStageKey && (
@@ -261,7 +326,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-[#E6DFD5] flex items-center justify-between text-xs font-semibold text-[#1E3A2F]">
-                  <span>Explore Stage Products</span>
+                  <span>Explore Stage Formulations</span>
                   <ChevronRight className="w-4 h-4 text-[#D9CDBF] group-hover:text-[#1E3A2F] group-hover:translate-x-1 transition-all" />
                 </div>
               </Link>
@@ -271,57 +336,87 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────
-          3. SHOP BY NEED (5 Targeted Maternal Needs)
+          4. SPLIT EDITORIAL INGREDIENT & NUTRITION STORY (Peak Style)
       ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 bg-[#FAF7F2] border-b border-[#E6DFD5]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white border-b border-[#E6DFD5]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-          <div className="mb-10 text-center max-w-2xl mx-auto">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
-              Symptom-Targeted Nutrition
-            </span>
-            <h2 className="font-serif text-2xl sm:text-4xl font-bold text-[#211D1A] tracking-tight">
-              What does your body <span className="italic font-normal text-[#1E3A2F]">need</span> today?
-            </h2>
-            <p className="text-xs sm:text-sm text-[#66615D] mt-2">
-              Address specific physiological symptoms with doctor-curated natural food remedies.
-            </p>
-          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            {/* Left Craft Card */}
+            <div className="lg:col-span-5">
+              <div className="rounded-[20px] border border-[#D9CDBF] bg-[#FAF7F2] p-8 sm:p-10 space-y-6">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A2F] px-3 py-1 rounded-full bg-white border border-[#D9CDBF] inline-block">
+                  Sacred Sourcing
+                </span>
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#211D1A] leading-snug">
+                  Pure Bilona Cow Ghee. <br />
+                  <span className="italic font-normal text-[#1E3A2F]">Slow-roasted whole seeds.</span>
+                </h3>
+                <p className="text-xs sm:text-sm text-[#66615D] leading-relaxed">
+                  We reject chemical preservatives and hydrogenated fats. Each formulation is slow-roasted in curd-churned A2 desi cow ghee to ensure optimal bioavailability of fat-soluble vitamins for mother and baby.
+                </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {NEED_LIST.slice(0, 6).map((need) => (
-              <Link
-                key={need.key}
-                href={`/need/${need.slug}`}
-                className="group rounded-card border border-[#E6DFD5] bg-white p-5 hover:border-[#1E3A2F] hover:shadow-md transition-all flex flex-col justify-between"
-              >
-                <div>
-                  <h3 className="font-serif text-base font-bold text-[#211D1A] group-hover:text-[#1E3A2F] transition-colors">
-                    {need.title}
-                  </h3>
-                  <div className="mt-1 text-[11px] font-semibold text-[#C85A32]">
-                    Addresses: {need.customerSymptom}
+                <div className="space-y-3 pt-2">
+                  <div className="flex items-center gap-3 text-xs text-[#211D1A] font-semibold">
+                    <CheckCircle2 className="w-4 h-4 text-[#1E3A2F] shrink-0" />
+                    <span>Traditional Brass &amp; Iron Vessel Roasting</span>
                   </div>
-                  <p className="mt-2 text-xs text-[#66615D] leading-relaxed line-clamp-2">
-                    {need.clinicalRationale}
+                  <div className="flex items-center gap-3 text-xs text-[#211D1A] font-semibold">
+                    <CheckCircle2 className="w-4 h-4 text-[#1E3A2F] shrink-0" />
+                    <span>0% Refined Sugar, Boora or High-Fructose Syrup</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-xs text-[#211D1A] font-semibold">
+                    <CheckCircle2 className="w-4 h-4 text-[#1E3A2F] shrink-0" />
+                    <span>NABL Lab Re-Validation on Raw Sourcing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Story & Pillars */}
+            <div className="lg:col-span-7 space-y-6">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block">
+                Ayurvedic Maternal Science
+              </span>
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#211D1A] tracking-tight leading-tight">
+                Pure ingredients. <br />
+                <span className="italic font-normal text-[#1E3A2F]">Simple rituals.</span>
+              </h2>
+              <p className="text-sm sm:text-base text-[#66615D] leading-relaxed">
+                Traditional Indian postpartum and prenatal wisdom understood maternal recovery long before modern packaged snacks existed. We restore that sacred knowledge with clinical obstetrician governance.
+              </p>
+
+              {/* 3 Value Pillars */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                <div className="p-4 rounded-xl border border-[#E6DFD5] bg-[#FAF7F2]">
+                  <h4 className="font-serif font-bold text-sm text-[#211D1A]">Steady Energy</h4>
+                  <p className="text-xs text-[#776D66] mt-1">
+                    Complex whole millets prevent sugar spikes and afternoon fatigue.
                   </p>
                 </div>
-
-                <div className="mt-4 pt-3 border-t border-[#E6DFD5] flex items-center justify-between text-xs font-semibold text-[#1E3A2F]">
-                  <span>View Targeted Formulations</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-[#D9CDBF] group-hover:text-[#1E3A2F] group-hover:translate-x-1 transition-all" />
+                <div className="p-4 rounded-xl border border-[#E6DFD5] bg-[#FAF7F2]">
+                  <h4 className="font-serif font-bold text-sm text-[#211D1A]">Pelvic Strength</h4>
+                  <p className="text-xs text-[#776D66] mt-1">
+                    Pure Acacia Gond (edible gum) lubricates joints and lower back recovery.
+                  </p>
                 </div>
-              </Link>
-            ))}
+                <div className="p-4 rounded-xl border border-[#E6DFD5] bg-[#FAF7F2]">
+                  <h4 className="font-serif font-bold text-sm text-[#211D1A]">Gentle Digestion</h4>
+                  <p className="text-xs text-[#776D66] mt-1">
+                    Cardamom and light dry fruits respect sensitive gastric balance.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ────────────────────────────────────────────────────────────
-          4. NUTRITION FINDER HERO MODULE (PRD Clinical Engine Anchor)
+          5. NUTRITION FINDER HERO MODULE (Peak Guided Interactive Experience)
       ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 bg-white border-b border-[#E6DFD5]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] border-b border-[#E6DFD5]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-          <div className="rounded-[16px] border border-[#D9CDBF] bg-[#FAF7F2] p-8 sm:p-12 shadow-sm relative overflow-hidden">
+          <div className="rounded-[20px] border border-[#D9CDBF] bg-white p-8 sm:p-12 shadow-sm relative overflow-hidden">
             <div className="max-w-3xl space-y-6">
               <div className="inline-flex items-center gap-2 rounded-full bg-[#EEF3EF] px-3.5 py-1 text-xs font-bold text-[#1E3A2F]">
                 <Sparkles className="w-3.5 h-3.5 text-[#1E3A2F]" />
@@ -333,33 +428,33 @@ export default function HomePage() {
               </h2>
 
               <p className="text-sm sm:text-base text-[#66615D] leading-relaxed">
-                Every pregnancy is biologically distinct. Rather than one-size-fits-all supplements, our algorithm assesses your gestational week, nausea tolerance, iron levels, and dietary flags to generate a doctor-reviewed nutritional protocol.
+                Every pregnancy is biologically unique. Rather than generic multivitamins, our algorithm assesses your gestational week, nausea tolerance, iron levels, and dietary flags to generate a doctor-reviewed nutritional protocol.
               </p>
 
               {/* 4-Step Process Breakdown */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
-                <div className="p-3.5 rounded-lg bg-white border border-[#E6DFD5]">
+                <div className="p-3.5 rounded-lg bg-[#FAF7F2] border border-[#E6DFD5]">
                   <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 1</span>
                   <div className="font-bold text-xs text-[#211D1A] mt-0.5">Motherhood Stage</div>
-                  <p className="text-[10px] text-[#776D66] mt-0.5">Weeks 1 to 40+ or Postpartum</p>
+                  <p className="text-[10px] text-[#776D66] mt-0.5">Weeks 1 to 40+ or Jaapa</p>
                 </div>
 
-                <div className="p-3.5 rounded-lg bg-white border border-[#E6DFD5]">
+                <div className="p-3.5 rounded-lg bg-[#FAF7F2] border border-[#E6DFD5]">
                   <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 2</span>
                   <div className="font-bold text-xs text-[#211D1A] mt-0.5">Primary Symptoms</div>
-                  <p className="text-[10px] text-[#776D66] mt-0.5">Nausea, fatigue, cramps, digestion</p>
+                  <p className="text-[10px] text-[#776D66] mt-0.5">Nausea, fatigue, cramps</p>
                 </div>
 
-                <div className="p-3.5 rounded-lg bg-white border border-[#E6DFD5]">
+                <div className="p-3.5 rounded-lg bg-[#FAF7F2] border border-[#E6DFD5]">
                   <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 3</span>
                   <div className="font-bold text-xs text-[#211D1A] mt-0.5">Clinical Safety</div>
-                  <p className="text-[10px] text-[#776D66] mt-0.5">Gestational diabetes & allergens</p>
+                  <p className="text-[10px] text-[#776D66] mt-0.5">Gestational diabetes &amp; allergens</p>
                 </div>
 
-                <div className="p-3.5 rounded-lg bg-white border border-[#E6DFD5]">
+                <div className="p-3.5 rounded-lg bg-[#FAF7F2] border border-[#E6DFD5]">
                   <span className="text-[10px] font-bold text-[#1E3A2F] block">STEP 4</span>
                   <div className="font-bold text-xs text-[#211D1A] mt-0.5">Doctor Plan</div>
-                  <p className="text-[10px] text-[#776D66] mt-0.5">Daily routine & serving advice</p>
+                  <p className="text-[10px] text-[#776D66] mt-0.5">Daily routine &amp; serving advice</p>
                 </div>
               </div>
 
@@ -378,9 +473,9 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────
-          5. RECOMMENDED PRODUCTS (Trimester-Matched Collection)
+          6. RECOMMENDED PRODUCTS (Peak Merchandising Grid)
       ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] border-b border-[#E6DFD5]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white border-b border-[#E6DFD5]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           {/* Section Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
@@ -400,7 +495,7 @@ export default function HomePage() {
                 className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                   activeCollectionTab === 'stage'
                     ? 'bg-[#1E3A2F] text-white shadow-sm'
-                    : 'bg-white text-[#66615D] hover:text-[#211D1A]'
+                    : 'bg-[#FAF7F2] text-[#66615D] hover:text-[#211D1A]'
                 }`}
               >
                 {currentStageDef.title} Fits
@@ -410,7 +505,7 @@ export default function HomePage() {
                 className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                   activeCollectionTab === 'bestsellers'
                     ? 'bg-[#1E3A2F] text-white shadow-sm'
-                    : 'bg-white text-[#66615D] hover:text-[#211D1A]'
+                    : 'bg-[#FAF7F2] text-[#66615D] hover:text-[#211D1A]'
                 }`}
               >
                 Bestsellers
@@ -420,7 +515,7 @@ export default function HomePage() {
                 className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                   activeCollectionTab === 'jaapa'
                     ? 'bg-[#1E3A2F] text-white shadow-sm'
-                    : 'bg-white text-[#66615D] hover:text-[#211D1A]'
+                    : 'bg-[#FAF7F2] text-[#66615D] hover:text-[#211D1A]'
                 }`}
               >
                 Postpartum Jaapa
@@ -430,7 +525,7 @@ export default function HomePage() {
                 className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${
                   activeCollectionTab === 'nausea'
                     ? 'bg-[#1E3A2F] text-white shadow-sm'
-                    : 'bg-white text-[#66615D] hover:text-[#211D1A]'
+                    : 'bg-[#FAF7F2] text-[#66615D] hover:text-[#211D1A]'
                 }`}
               >
                 1st Tri Nausea
@@ -463,9 +558,9 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────
-          6. WHY MAA MITAHARA (Clinical Matrix & Pure Food Principles)
+          7. CLINICAL SAFETY MATRIX (Peak Comparison Table Style)
       ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-white border-b border-[#E6DFD5]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] border-b border-[#E6DFD5]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
@@ -479,38 +574,14 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* 4 Pillars Summary Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
-            <div className="p-5 rounded-card border border-[#E6DFD5] bg-[#FAF7F2]">
-              <Leaf className="w-5 h-5 text-[#1E3A2F] mb-3" />
-              <h4 className="font-serif font-bold text-sm text-[#211D1A]">0% Refined Sugar</h4>
-              <p className="text-xs text-[#776D66] mt-1">Sweetened only with organic jaggery, dates, or natural sugar-free recipes.</p>
-            </div>
-            <div className="p-5 rounded-card border border-[#E6DFD5] bg-[#FAF7F2]">
-              <Award className="w-5 h-5 text-[#1E3A2F] mb-3" />
-              <h4 className="font-serif font-bold text-sm text-[#211D1A]">Pure A2 Bilona Ghee</h4>
-              <p className="text-xs text-[#776D66] mt-1">Grass-fed desi cow ghee slow-churned in traditional clay pots.</p>
-            </div>
-            <div className="p-5 rounded-card border border-[#E6DFD5] bg-[#FAF7F2]">
-              <ShieldCheck className="w-5 h-5 text-[#1E3A2F] mb-3" />
-              <h4 className="font-serif font-bold text-sm text-[#211D1A]">Obstetrician Reviewed</h4>
-              <p className="text-xs text-[#776D66] mt-1">Every recipe evaluated by certified doctors for stage suitability.</p>
-            </div>
-            <div className="p-5 rounded-card border border-[#E6DFD5] bg-[#FAF7F2]">
-              <Truck className="w-5 h-5 text-[#1E3A2F] mb-3" />
-              <h4 className="font-serif font-bold text-sm text-[#211D1A]">Fortnightly Fresh</h4>
-              <p className="text-xs text-[#776D66] mt-1">Handcrafted in small batches without artificial chemical shelf-life extenders.</p>
-            </div>
-          </div>
-
           {/* Comparison Table */}
-          <div className="rounded-card border border-[#E6DFD5] bg-[#FAF7F2] overflow-hidden shadow-sm">
+          <div className="rounded-[16px] border border-[#E6DFD5] bg-white overflow-hidden shadow-sm">
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse text-xs sm:text-sm">
                 <thead>
-                  <tr className="border-b border-[#E6DFD5] bg-white">
+                  <tr className="border-b border-[#E6DFD5] bg-[#FAF7F2]">
                     <th className="py-4 px-5 font-bold text-[#211D1A] w-2/5">
-                      Clinical Standard & Formulation Metric
+                      Clinical Standard &amp; Formulation Metric
                     </th>
                     <th className="py-4 px-5 font-bold text-[#1E3A2F] bg-[#EEF3EF] w-1/5 text-center">
                       Maa Mitahara
@@ -541,7 +612,7 @@ export default function HomePage() {
 
                   <tr>
                     <td className="py-3.5 px-5 font-medium text-[#211D1A]">
-                      2. Refined Sugar & Artificial Sweeteners
+                      2. Refined Sugar &amp; Artificial Sweeteners
                     </td>
                     <td className="py-3.5 px-5 text-center bg-[#EEF3EF]/50 font-bold text-[#1E3A2F]">
                       ✓ 0% Refined Sugar
@@ -556,7 +627,7 @@ export default function HomePage() {
 
                   <tr>
                     <td className="py-3.5 px-5 font-medium text-[#211D1A]">
-                      3. Cow Ghee Grade & Purity Base
+                      3. Cow Ghee Grade &amp; Purity Base
                     </td>
                     <td className="py-3.5 px-5 text-center bg-[#EEF3EF]/50 font-bold text-[#1E3A2F]">
                       ✓ 100% A2 Desi Cow Bilona Ghee
@@ -571,7 +642,7 @@ export default function HomePage() {
 
                   <tr>
                     <td className="py-3.5 px-5 font-medium text-[#211D1A]">
-                      4. Obstetrician Safety & Dosage Verification
+                      4. Obstetrician Safety &amp; Dosage Verification
                     </td>
                     <td className="py-3.5 px-5 text-center bg-[#EEF3EF]/50 font-bold text-[#1E3A2F]">
                       ✓ Evaluated by Named Doctors
@@ -591,9 +662,9 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────
-          7. TRUST / EXPERT CREDIBILITY (Doctor Advisory Panel)
+          8. TRUST & MEDICAL ADVISORY (Doctor Sign-Offs)
       ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 bg-[#FAF7F2] border-b border-[#E6DFD5]">
+      <section className="py-16 sm:py-20 bg-white border-b border-[#E6DFD5]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
             <div>
@@ -608,7 +679,7 @@ export default function HomePage() {
               href="/doctors"
               className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1E3A2F] hover:underline"
             >
-              <span>View Full Clinical Protocol & Sign-Offs</span>
+              <span>View Full Clinical Protocol &amp; Sign-Offs</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
@@ -617,7 +688,7 @@ export default function HomePage() {
             {DOCTORS.map((doc) => (
               <div
                 key={doc.id}
-                className="rounded-card border border-[#E6DFD5] bg-white p-6 space-y-4"
+                className="rounded-[16px] border border-[#E6DFD5] bg-[#FAF7F2] p-6 space-y-4 hover:border-[#1E3A2F] transition-colors"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-[#1E3A2F] text-white font-serif font-bold text-base flex items-center justify-center shrink-0">
@@ -648,9 +719,9 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────
-          8. REAL CUSTOMER FEEDBACK ("In Their Own Words")
+          9. REAL CUSTOMER STORIES ("In Their Own Words")
       ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-white border-b border-[#E6DFD5]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] border-b border-[#E6DFD5]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
@@ -669,7 +740,7 @@ export default function HomePage() {
                 onClick={() =>
                   setActiveTestimonialIdx((prev) => (prev > 0 ? prev - 1 : testimonials.length - 1))
                 }
-                className="w-9 h-9 rounded-full border border-[#D9CDBF] bg-[#FAF7F2] hover:bg-white flex items-center justify-center text-[#211D1A] transition-colors shadow-sm"
+                className="w-9 h-9 rounded-full border border-[#D9CDBF] bg-white hover:bg-[#FAF7F2] flex items-center justify-center text-[#211D1A] transition-colors shadow-xs"
                 aria-label="Previous testimonial"
               >
                 <ChevronLeft className="w-4 h-4" />
@@ -679,7 +750,7 @@ export default function HomePage() {
                 onClick={() =>
                   setActiveTestimonialIdx((prev) => (prev < testimonials.length - 1 ? prev + 1 : 0))
                 }
-                className="w-9 h-9 rounded-full border border-[#D9CDBF] bg-[#FAF7F2] hover:bg-white flex items-center justify-center text-[#211D1A] transition-colors shadow-sm"
+                className="w-9 h-9 rounded-full border border-[#D9CDBF] bg-white hover:bg-[#FAF7F2] flex items-center justify-center text-[#211D1A] transition-colors shadow-xs"
                 aria-label="Next testimonial"
               >
                 <ChevronRight className="w-4 h-4" />
@@ -691,9 +762,9 @@ export default function HomePage() {
             {testimonials.map((t, idx) => (
               <div
                 key={t.id}
-                className={`rounded-card border bg-[#FAF7F2] p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 ${
+                className={`rounded-[16px] border bg-white p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 ${
                   activeTestimonialIdx === idx
-                    ? 'border-[#1E3A2F] shadow-md ring-1 ring-[#1E3A2F]/20 bg-white'
+                    ? 'border-[#1E3A2F] shadow-md ring-1 ring-[#1E3A2F]/20'
                     : 'border-[#E6DFD5]'
                 }`}
               >
@@ -727,16 +798,16 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────
-          9. FOUNDER STORY (Heritage, Roots & Tradition)
+          10. FOUNDER STORY (Heritage, Roots & Tradition)
       ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] border-b border-[#E6DFD5]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white border-b border-[#E6DFD5]">
         <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Left Craft Card */}
             <div className="lg:col-span-5">
-              <div className="relative rounded-[16px] overflow-hidden border border-[#D9CDBF] bg-gradient-to-br from-white to-[#EFE9DF] shadow-md p-8 sm:p-10 flex flex-col justify-between min-h-[360px]">
+              <div className="rounded-[20px] border border-[#D9CDBF] bg-gradient-to-br from-[#FAF7F2] to-[#EAE3D6] shadow-sm p-8 sm:p-10 flex flex-col justify-between min-h-[360px]">
                 <div className="space-y-4">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A2F] px-3 py-1 rounded-full bg-[#FAF7F2] border border-[#D9CDBF] inline-block">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A2F] px-3 py-1 rounded-full bg-white border border-[#D9CDBF] inline-block">
                     Living Heritage
                   </span>
                   <div className="font-serif text-2xl sm:text-3xl font-medium text-[#211D1A] leading-snug">
@@ -774,96 +845,6 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ────────────────────────────────────────────────────────────
-          10. EDUCATIONAL CONTENT ("Slow Reading for Motherhood")
-      ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 bg-white border-b border-[#E6DFD5]">
-        <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
-            <div>
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block mb-2">
-                Maternal Knowledge & Science
-              </span>
-              <h2 className="font-serif text-2xl sm:text-4xl font-bold text-[#211D1A] tracking-tight">
-                Slow reading for <span className="italic font-normal text-[#1E3A2F]">motherhood</span>.
-              </h2>
-            </div>
-            <Link
-              href="/learn"
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1E3A2F] hover:underline"
-            >
-              <span>Explore All Articles</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Link
-              href="/learn"
-              className="group rounded-card border border-[#E6DFD5] bg-[#FAF7F2] overflow-hidden hover:bg-white hover:shadow-md transition-all flex flex-col justify-between"
-            >
-              <div className="p-6 space-y-3">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#1E3A2F] bg-white px-2.5 py-0.5 rounded-full border border-[#E6DFD5] inline-block">
-                  Clinical Guide · 5 Min Read
-                </span>
-                <h3 className="font-serif text-base font-bold text-[#211D1A] group-hover:text-[#1E3A2F] transition-colors leading-snug">
-                  The Truth About Gond in Trimester 1 vs Trimester 3
-                </h3>
-                <p className="text-xs text-[#66615D] leading-relaxed line-clamp-3">
-                  Why traditional heating bioactives must be timed carefully around embryonic development and pelvic preparation.
-                </p>
-              </div>
-              <div className="px-6 pb-6 pt-2 flex items-center text-xs font-bold text-[#1E3A2F]">
-                <span>Read Guide</span>
-                <ChevronRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
-
-            <Link
-              href="/learn"
-              className="group rounded-card border border-[#E6DFD5] bg-[#FAF7F2] overflow-hidden hover:bg-white hover:shadow-md transition-all flex flex-col justify-between"
-            >
-              <div className="p-6 space-y-3">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#1E3A2F] bg-white px-2.5 py-0.5 rounded-full border border-[#E6DFD5] inline-block">
-                  Traditional Science · 7 Min Read
-                </span>
-                <h3 className="font-serif text-base font-bold text-[#211D1A] group-hover:text-[#1E3A2F] transition-colors leading-snug">
-                  The 40-Day Postpartum Jaapa Protocol Explained
-                </h3>
-                <p className="text-xs text-[#66615D] leading-relaxed line-clamp-3">
-                  How sequential nutrition facilitates lochia clearance, uterine contraction, and prolactin stimulation.
-                </p>
-              </div>
-              <div className="px-6 pb-6 pt-2 flex items-center text-xs font-bold text-[#1E3A2F]">
-                <span>Read Guide</span>
-                <ChevronRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
-
-            <Link
-              href="/learn"
-              className="group rounded-card border border-[#E6DFD5] bg-[#FAF7F2] overflow-hidden hover:bg-white hover:shadow-md transition-all flex flex-col justify-between"
-            >
-              <div className="p-6 space-y-3">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-[#1E3A2F] bg-white px-2.5 py-0.5 rounded-full border border-[#E6DFD5] inline-block">
-                  Nutritional Research · 4 Min Read
-                </span>
-                <h3 className="font-serif text-base font-bold text-[#211D1A] group-hover:text-[#1E3A2F] transition-colors leading-snug">
-                  Why A2 Bilona Ghee is the Ideal Vehicle for Fat-Soluble Vitamins
-                </h3>
-                <p className="text-xs text-[#66615D] leading-relaxed line-clamp-3">
-                  Understanding traditional Lipophilic drug delivery and maternal micronutrient absorption in Indian postpartum care.
-                </p>
-              </div>
-              <div className="px-6 pb-6 pt-2 flex items-center text-xs font-bold text-[#1E3A2F]">
-                <span>Read Guide</span>
-                <ChevronRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
           </div>
         </div>
       </section>
