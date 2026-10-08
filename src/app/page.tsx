@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useStage } from '@/context/StageContext';
 import { STAGE_LIST, STAGES } from '@/data/stages';
@@ -45,6 +45,41 @@ export default function HomePage() {
 
   // Quick View modal state
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
+
+  // Background Carousel State for Section 4
+  const carouselSlides = [
+    {
+      id: 1,
+      image: '/images/carousel/bilona-ghee.png',
+      title: 'Pure A2 Bilona Cow Ghee',
+      subtitle: 'Slow-roasted in curd-churned desi cow ghee for maximum nutrient absorption.',
+      badge: '01 · SACRED SOURCING',
+    },
+    {
+      id: 2,
+      image: '/images/carousel/superfoods.png',
+      title: 'Sacred Superfood Botanicals',
+      subtitle: 'Sun-dried Acacia Gond, Dana Methi, organic jaggery, and crushed dry fruits.',
+      badge: '02 · AYURVEDIC SCIENCE',
+    },
+    {
+      id: 3,
+      image: '/images/carousel/maternal-craft.png',
+      title: 'Handcrafted Maternal Rituals',
+      subtitle: 'Small fortnight batches slow-roasted in traditional brass and iron vessels.',
+      badge: '03 · TRADITIONAL RITUALS',
+    },
+  ];
+
+  const [currentSlideIdx, setCurrentSlideIdx] = useState(0);
+
+  // Auto-advance background carousel slide every 5 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlideIdx((prev) => (prev + 1) % carouselSlides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [carouselSlides.length]);
 
   // Complete Package Added feedback state
   const [addedPackages, setAddedPackages] = useState<Record<string, boolean>>({});
@@ -583,73 +618,141 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────
-          4. SPLIT EDITORIAL INGREDIENT & NUTRITION STORY (Peak Style)
+          4. SPLIT EDITORIAL INGREDIENT & NUTRITION STORY WITH BACKGROUND CAROUSEL
       ──────────────────────────────────────────────────────────── */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-white border-b border-[#E6DFD5]">
-        <div className="max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+      <section className="relative py-20 sm:py-28 lg:py-32 overflow-hidden border-b border-[#E8DFD3]">
+        {/* Background Image Carousel Layer with Cross-Fade & Gentle Zoom */}
+        <div className="absolute inset-0 z-0 bg-[#26211E]">
+          {carouselSlides.map((slide, idx) => (
+            <div
+              key={slide.id}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                idx === currentSlideIdx ? 'opacity-100 scale-105' : 'opacity-0 scale-100'
+              } transition-transform duration-[7000ms]`}
+            >
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+          ))}
+
+          {/* Warm Rich Dark Gradient Overlay for Supreme Legibility & Premium Atmosphere */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/75 to-black/80 backdrop-blur-[2px]" />
+        </div>
+
+        {/* Carousel Slide Navigation Controls (Top Right Pills + Arrows) */}
+        <div className="absolute top-6 right-6 sm:top-8 sm:right-12 z-20 flex items-center gap-2 sm:gap-3">
+          {carouselSlides.map((slide, idx) => (
+            <button
+              key={slide.id}
+              type="button"
+              onClick={() => setCurrentSlideIdx(idx)}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-all border ${
+                idx === currentSlideIdx
+                  ? 'bg-[#C86D51] text-white border-[#C86D51] shadow-md scale-105'
+                  : 'bg-black/40 text-white/75 border-white/20 hover:bg-black/60 hover:text-white'
+              }`}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-current" />
+              <span className="hidden sm:inline">{slide.badge}</span>
+              <span className="sm:hidden">0{slide.id}</span>
+            </button>
+          ))}
+
+          <div className="flex items-center gap-1 ml-1 sm:ml-2 border-l border-white/20 pl-2 sm:pl-3">
+            <button
+              type="button"
+              onClick={() => setCurrentSlideIdx((prev) => (prev === 0 ? carouselSlides.length - 1 : prev - 1))}
+              className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center border border-white/20 transition-all"
+              aria-label="Previous slide"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <button
+              type="button"
+              onClick={() => setCurrentSlideIdx((prev) => (prev + 1) % carouselSlides.length)}
+              className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center border border-white/20 transition-all"
+              aria-label="Next slide"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+
+        {/* Content Layer */}
+        <div className="relative z-10 max-w-page mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 text-white">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-            {/* Left Craft Card */}
-            <div className="lg:col-span-5">
-              <div className="rounded-[16px] border border-[#D9CDBF] bg-[#FAF7F2] p-8 sm:p-10 space-y-6">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#1E3A2F] px-3 py-1 rounded-full bg-white border border-[#D9CDBF] inline-block">
-                  Sacred Sourcing
-                </span>
-                <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#1D1D1D] leading-snug">
+            {/* Left Glassmorphism Craft Card */}
+            <div className="lg:col-span-6">
+              <div className="rounded-[24px] border border-white/25 bg-black/40 backdrop-blur-md p-8 sm:p-10 space-y-6 shadow-2xl">
+                <div className="inline-flex items-center gap-2 rounded-full bg-[#F8EBE6] text-[#C86D51] px-3.5 py-1 text-xs font-bold uppercase tracking-wider shadow-xs border border-[#F3D8CD]">
+                  <Sparkles className="w-3.5 h-3.5 text-[#C86D51]" />
+                  <span>{carouselSlides[currentSlideIdx].badge}</span>
+                </div>
+
+                <h3 className="font-display text-3xl sm:text-4xl font-bold text-white leading-snug tracking-tight">
                   Pure Bilona Cow Ghee. <br />
-                  <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">Slow-roasted whole seeds.</span>
+                  <span className="underline decoration-[#C86D51] decoration-4 underline-offset-8 font-normal text-[#F3D8CD]">
+                    Slow-roasted whole seeds.
+                  </span>
                 </h3>
-                <p className="text-xs sm:text-sm text-[#574F49] leading-relaxed">
-                  We reject chemical preservatives and hydrogenated fats. Each formulation is slow-roasted in curd-churned A2 desi cow ghee to ensure optimal bioavailability of fat-soluble vitamins for mother and baby.
+
+                <p className="text-sm text-white/90 leading-relaxed font-light">
+                  We reject chemical preservatives, hydrogenated fats, and refined sugar. Each formulation is slow-roasted in curd-churned A2 desi cow ghee to ensure optimal bioavailability of fat-soluble vitamins (A, D, E, K) for mother and baby.
                 </p>
 
-                <div className="space-y-3 pt-2">
-                  <div className="flex items-center gap-3 text-xs text-[#1D1D1D] font-semibold">
-                    <CheckCircle2 className="w-4 h-4 text-[#1E3A2F] shrink-0" />
-                    <span>Traditional Brass &amp; Iron Vessel Roasting</span>
+                <div className="space-y-3 pt-2 border-t border-white/15">
+                  <div className="flex items-center gap-3 text-xs sm:text-sm text-white font-medium">
+                    <CheckCircle2 className="w-4.5 h-4.5 text-[#A1C3B2] shrink-0" />
+                    <span>Traditional Brass &amp; Iron Vessel Slow-Roasting</span>
                   </div>
-                  <div className="flex items-center gap-3 text-xs text-[#1D1D1D] font-semibold">
-                    <CheckCircle2 className="w-4 h-4 text-[#1E3A2F] shrink-0" />
-                    <span>0% Refined Sugar, Boora or High-Fructose Syrup</span>
+                  <div className="flex items-center gap-3 text-xs sm:text-sm text-white font-medium">
+                    <CheckCircle2 className="w-4.5 h-4.5 text-[#A1C3B2] shrink-0" />
+                    <span>0% Refined Sugar, Boora or High-Fructose Syrups</span>
                   </div>
-                  <div className="flex items-center gap-3 text-xs text-[#1D1D1D] font-semibold">
-                    <CheckCircle2 className="w-4 h-4 text-[#1E3A2F] shrink-0" />
-                    <span>NABL Lab Re-Validation on Raw Sourcing</span>
+                  <div className="flex items-center gap-3 text-xs sm:text-sm text-white font-medium">
+                    <CheckCircle2 className="w-4.5 h-4.5 text-[#A1C3B2] shrink-0" />
+                    <span>Obstetrician Reviewed &amp; NABL Lab Safety Gate</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Right Story & Pillars */}
-            <div className="lg:col-span-7 space-y-6">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#1E3A2F] block">
-                Ayurvedic Maternal Science
+            {/* Right Ayurvedic Science & 3 Glass Pillars */}
+            <div className="lg:col-span-6 space-y-6">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#F8EBE6] block">
+                Ayurvedic Maternal Science &amp; Recovery
               </span>
-              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1D1D1D] tracking-tight leading-tight">
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
                 Pure ingredients. <br />
-                <span className="underline decoration-[#9DBDA6] decoration-4 underline-offset-8 font-normal text-[#1E3A2F]">Simple rituals.</span>
+                <span className="underline decoration-[#C86D51] decoration-4 underline-offset-8 font-normal text-[#F3D8CD]">
+                  Simple rituals.
+                </span>
               </h2>
-              <p className="text-sm sm:text-base text-[#574F49] leading-relaxed">
-                Traditional Indian postpartum and prenatal wisdom understood maternal recovery long before modern packaged snacks existed. We restore that sacred knowledge with clinical obstetrician governance.
+              <p className="text-sm sm:text-base text-white/80 leading-relaxed font-light">
+                Traditional Indian maternal wisdom understood recovery long before modern packaged snacks existed. We restore that sacred knowledge with clinical obstetrician governance and pure organic ingredients.
               </p>
 
-              {/* 3 Value Pillars */}
+              {/* 3 Value Glass Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-                <div className="p-4 rounded-[12px] border border-[#E6DFD5] bg-[#FAF7F2]">
-                  <h4 className="font-display font-bold text-sm text-[#1D1D1D]">Steady Energy</h4>
-                  <p className="text-xs text-[#776D66] mt-1">
-                    Complex whole millets prevent sugar spikes and afternoon fatigue.
+                <div className="p-4.5 rounded-[16px] border border-white/20 bg-white/10 backdrop-blur-md hover:bg-white/15 transition-all">
+                  <h4 className="font-display font-bold text-sm text-white">Steady Energy</h4>
+                  <p className="text-xs text-white/80 mt-1.5 leading-relaxed">
+                    Complex whole millets prevent sugar spikes &amp; afternoon fatigue.
                   </p>
                 </div>
-                <div className="p-4 rounded-[12px] border border-[#E6DFD5] bg-[#FAF7F2]">
-                  <h4 className="font-display font-bold text-sm text-[#1D1D1D]">Pelvic Strength</h4>
-                  <p className="text-xs text-[#776D66] mt-1">
-                    Pure Acacia Gond (edible gum) lubricates joints and lower back recovery.
+                <div className="p-4.5 rounded-[16px] border border-white/20 bg-white/10 backdrop-blur-md hover:bg-white/15 transition-all">
+                  <h4 className="font-display font-bold text-sm text-white">Pelvic Strength</h4>
+                  <p className="text-xs text-white/80 mt-1.5 leading-relaxed">
+                    Pure Acacia Gond (edible gum) lubricates spinal joints &amp; recovery.
                   </p>
                 </div>
-                <div className="p-4 rounded-[12px] border border-[#E6DFD5] bg-[#FAF7F2]">
-                  <h4 className="font-display font-bold text-sm text-[#1D1D1D]">Gentle Digestion</h4>
-                  <p className="text-xs text-[#776D66] mt-1">
-                    Cardamom and light dry fruits respect sensitive gastric balance.
+                <div className="p-4.5 rounded-[16px] border border-white/20 bg-white/10 backdrop-blur-md hover:bg-white/15 transition-all">
+                  <h4 className="font-display font-bold text-sm text-white">Gentle Digestion</h4>
+                  <p className="text-xs text-white/80 mt-1.5 leading-relaxed">
+                    Cardamom &amp; citrus zest respect sensitive pregnancy palates.
                   </p>
                 </div>
               </div>
